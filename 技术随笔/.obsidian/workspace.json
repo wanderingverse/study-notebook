@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 学习笔记/开发常用命令、注解、快捷键.md",
+                "file": "Java 学习笔记/MinIO.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "开发常用命令、注解、快捷键"
+              "title": "MinIO"
             }
           }
         ]
@@ -167,9 +167,9 @@
   },
   "active": "1e1db420887e9e36",
   "lastOpenFiles": [
+    "Java 学习笔记/开发常用命令、注解、快捷键.md",
     "Java 学习笔记/PDF 识别.md",
     "Java 学习笔记/Nginx.md",
-    "Java 学习笔记/开发常用命令、注解、快捷键.md",
     "Java 学习笔记/ElasticSearch.md",
     "Java 学习笔记/src/MySQL 模糊查询.png",
     "Java 学习笔记/manticore search.md",

@@ -142,7 +142,7 @@ String bucketName = "minio-default-bucket";
 // 判断指定的 bucket 是否存在  
 boolean exists = minioClient.bucketExists(BucketExistsArgs.builder().bucket(bucketName).build());  
 if (!exists) {  
-    log.info("bucketName: {} 不存在", bucketName);  
+    log.info("bucketName: {} 不存在", bucketName);
 }
 ```
 #### 删除指定的 bucket

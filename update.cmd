@@ -1,6 +1,8 @@
 @echo off
 chcp 65001
+
 git init
+
 git config user.name "wanderingverse"
 git config user.email "lh19890781942@126.com"
 git remote add origin https://github.com/wanderingverse/study-notebook.git
