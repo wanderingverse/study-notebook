@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "1fb621dbdeacb599",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd203dd27cc05f41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e1db420887e9e36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java 学习笔记/开发常用命令、注解、快捷键.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "开发常用命令、注解、快捷键"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "16dc82591b5e9c3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "78d795b3be04b71c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25ab6368e0067d3d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a8fc9f5134cde945",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "7b2efbc917d3b77d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "832d2f97aadee336",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java 学习笔记/开发常用命令、注解、快捷键.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "开发常用命令、注解、快捷键 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a353fb8f078cfa52",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c6c443e05e7a7e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de3e02d420c06e7c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Java 学习笔记/manticore search.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "manticore search 的出链列表"
+            }
+          },
+          {
+            "id": "1c22f8e7fa167a56",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e83d34a8ed064416",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "random-note:开始漫游笔记": false,
+      "publish:发布更改": false
+    }
+  },
+  "active": "1e1db420887e9e36",
+  "lastOpenFiles": [
+    "Java 学习笔记/PDF 识别.md",
+    "Java 学习笔记/Nginx.md",
+    "Java 学习笔记/开发常用命令、注解、快捷键.md",
+    "Java 学习笔记/ElasticSearch.md",
+    "Java 学习笔记/src/MySQL 模糊查询.png",
+    "Java 学习笔记/manticore search.md",
+    "Java 学习笔记/RabbitMQ.md",
+    "Java 学习笔记/MinIO.md",
+    "Java 学习笔记/幂等性保证方案.md",
+    "Java 学习笔记/数据库.md",
+    "Java 学习笔记/Kafka.md",
+    "Java 学习笔记/RBAC 模型.md",
+    "Java 学习笔记/Java开发规范.md",
+    "Java 学习笔记/frp.md",
+    "Java 学习笔记/提示词.md",
+    "开发随笔/在 SpringBoot 中配置额外的 Tomcat 服务器.md",
+    "Java 学习笔记/[Manticore.md",
+    "Java 学习笔记/数据加密.md",
+    "Java 学习笔记/RuoYi.md",
+    "Java 学习笔记/Spring Boot.md",
+    "Java 学习笔记/Spring WebClient.md"
+  ]
+}

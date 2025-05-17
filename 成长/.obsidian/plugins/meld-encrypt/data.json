@@ -1,0 +1,12 @@
+{
+  "confirmPassword": true,
+  "rememberPassword": true,
+  "rememberPasswordTimeout": 0,
+  "rememberPasswordLevel": "vault",
+  "rememberPasswordExternalFilePaths": [],
+  "featureWholeNoteEncrypt": {},
+  "featureInplaceEncrypt": {
+    "expandToWholeLines": false,
+    "showMarkerWhenReadingDefault": true
+  }
+}
