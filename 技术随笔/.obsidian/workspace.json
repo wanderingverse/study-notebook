@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 学习笔记/模板引擎.md",
+                "file": "Java 学习笔记/Nginx.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "模板引擎"
+              "title": "Nginx"
             }
           }
         ]
@@ -167,6 +167,7 @@
   },
   "active": "38e0d6c3a440153d",
   "lastOpenFiles": [
+    "Java 学习笔记/模板引擎.md",
     "Java 学习笔记/软件开发流程.md",
     "Java 学习笔记/Java开发规范.md",
     "Java 学习笔记/Kafka.md",
