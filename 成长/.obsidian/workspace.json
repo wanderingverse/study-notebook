@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1dbbc96eaf7fb1bb",
+        "id": "fe288f7c07151957",
         "type": "tabs",
         "children": [
           {
-            "id": "cf1f39d4c016c31c",
+            "id": "7172426d5b6210f9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "meld-encrypted-view",
+              "state": {
+                "file": "经历/2025年/2025年5月19日.mdenc",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2025年5月19日"
             }
           }
         ]
@@ -167,15 +171,16 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "cf1f39d4c016c31c",
+  "active": "7172426d5b6210f9",
   "lastOpenFiles": [
-    "读书笔记/话题/学习.md",
-    "经历/记录/要求.mdenc",
-    "经历/记录/密码.mdenc",
+    "读书笔记/想读的书.md",
     "经历/2025年/2025年5月19日.mdenc",
-    "经历/2025年/2025年5月9日.mdenc",
-    "经历/2025年/2025年5月12日.mdenc",
+    "经历/记录/要求.mdenc",
     "经历/2025年/2025年5月15日.mdenc",
+    "经历/2025年/2025年5月12日.mdenc",
+    "读书笔记/话题/学习.md",
+    "经历/记录/密码.mdenc",
+    "经历/2025年/2025年5月9日.mdenc",
     "觉醒/第一章 总述.md",
     "读书笔记/议论/玄学理论.md",
     "读书笔记/议论/为什么说有钱的人越来越有钱？.md",
@@ -186,7 +191,6 @@
     "读书笔记/议论.md",
     "读书笔记/摘抄/描述.md",
     "读书笔记/摘抄/短句.md",
-    "读书笔记/想读的书.md",
     "读书笔记/摘抄",
     "读书笔记/话题",
     "读书笔记",
