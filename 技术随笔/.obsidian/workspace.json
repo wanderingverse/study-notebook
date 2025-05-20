@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 学习笔记/manticore search.md",
+                "file": "Java 学习笔记/Datafaker.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "manticore search"
+              "title": "Datafaker"
             }
           }
         ]
@@ -167,6 +167,8 @@
   },
   "active": "38e0d6c3a440153d",
   "lastOpenFiles": [
+    "Java 学习笔记/manticore search.md",
+    "Java 学习笔记/Datafaker.md",
     "Java 学习笔记/Spring WebClient.md",
     "Java 学习笔记/Java.md",
     "Java 学习笔记/Stream 流.md",
@@ -189,10 +191,8 @@
     "Java 学习笔记/PDF 识别.md",
     "Java 学习笔记/ElasticSearch.md",
     "Java 学习笔记/src/MySQL 模糊查询.png",
-    "Java 学习笔记/manticore search.md",
     "Java 学习笔记/幂等性保证方案.md",
     "Java 学习笔记/数据库.md",
-    "Java 学习笔记/frp.md",
-    "开发随笔/在 SpringBoot 中配置额外的 Tomcat 服务器.md"
+    "Java 学习笔记/frp.md"
   ]
 }
