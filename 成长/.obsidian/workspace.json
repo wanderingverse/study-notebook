@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fe288f7c07151957",
+        "id": "ef57b7b198476e1c",
         "type": "tabs",
         "children": [
           {
-            "id": "7172426d5b6210f9",
+            "id": "059a379eaec598f4",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "经历/2025年/2025年5月19日.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025年5月19日"
+              "title": "新标签页"
             }
           }
         ]
@@ -171,7 +167,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "7172426d5b6210f9",
+  "active": "059a379eaec598f4",
   "lastOpenFiles": [
     "读书笔记/想读的书.md",
     "经历/2025年/2025年5月19日.mdenc",
