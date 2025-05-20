@@ -19,6 +19,3 @@ Map 是一个接口，用于存储键值对（key-value）。键是唯一的，�
 - 判断流中的元素是否满足指定条件：`boolean anyMatch(x -> 条件)`
 - 将 Stream 流对象转换为 List`<T>`：List`<T>` collect(Collectors.toList())
 - 获取 Stream 流中条件最大的元素：``Optional<T> max(Comparator.comparing(T::条件))`
-
-
-

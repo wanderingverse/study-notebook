@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 学习笔记/Nginx.md",
+                "file": "Java 学习笔记/manticore search.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nginx"
+              "title": "manticore search"
             }
           }
         ]
@@ -81,13 +81,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java 学习笔记/开发常用命令、注解、快捷键.md",
+                "file": "Java 学习笔记/manticore search.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "开发常用命令、注解、快捷键 的大纲"
+              "title": "manticore search 的大纲"
             }
           }
         ]
@@ -167,16 +167,23 @@
   },
   "active": "38e0d6c3a440153d",
   "lastOpenFiles": [
+    "Java 学习笔记/Spring WebClient.md",
+    "Java 学习笔记/Java.md",
+    "Java 学习笔记/Stream 流.md",
+    "Java 学习笔记/Java开发规范.md",
+    "Java 学习笔记/Java 设计模式.md",
+    "Java 学习笔记/Java 类加载器.md",
+    "Java 学习笔记/Java 异常类继承关系.md",
+    "Java 学习笔记/Spring Boot.md",
+    "Java 学习笔记/提示词.md",
+    "Java 学习笔记/Nginx.md",
     "Java 学习笔记/模板引擎.md",
     "Java 学习笔记/软件开发流程.md",
-    "Java 学习笔记/Java开发规范.md",
     "Java 学习笔记/Kafka.md",
     "Java 学习笔记/MinIO.md",
-    "Java 学习笔记/Nginx.md",
     "Java 学习笔记/RabbitMQ.md",
     "Java 学习笔记/RBAC 模型.md",
     "Java 学习笔记/RuoYi 源码.md",
-    "Java 学习笔记/Stream 流.md",
     "Unreal Engine/Unreal Engine.md",
     "Java 学习笔记/开发常用命令、注解、快捷键.md",
     "Java 学习笔记/PDF 识别.md",
@@ -186,11 +193,6 @@
     "Java 学习笔记/幂等性保证方案.md",
     "Java 学习笔记/数据库.md",
     "Java 学习笔记/frp.md",
-    "Java 学习笔记/提示词.md",
-    "开发随笔/在 SpringBoot 中配置额外的 Tomcat 服务器.md",
-    "Java 学习笔记/[Manticore.md",
-    "Java 学习笔记/数据加密.md",
-    "Java 学习笔记/Spring Boot.md",
-    "Java 学习笔记/Spring WebClient.md"
+    "开发随笔/在 SpringBoot 中配置额外的 Tomcat 服务器.md"
   ]
 }

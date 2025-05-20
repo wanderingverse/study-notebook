@@ -1,31 +1,20 @@
 {
   "main": {
-    "id": "e1f940b5df6d7bcf",
+    "id": "1daa81f4e9c0bf20",
     "type": "split",
     "children": [
       {
-        "id": "ef57b7b198476e1c",
+        "id": "3f026921a11f8c7b",
         "type": "tabs",
         "children": [
           {
-            "id": "059a379eaec598f4",
+            "id": "56a3626892f87528",
             "type": "leaf",
             "state": {
-<<<<<<< HEAD
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
               "title": "新标签页"
-=======
-              "type": "markdown",
-              "state": {
-                "file": "觉醒/第二章 人的存在是梦境.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "第二章 人的存在是梦境"
->>>>>>> 1b8fab46b6e05db848156c8bb504d339c34ecb7a
             }
           }
         ]
@@ -34,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3749db744d18051e",
+    "id": "6b0cd2fdee002f61",
     "type": "split",
     "children": [
       {
-        "id": "fa5199fa28a53d37",
+        "id": "58951b81bb03bab8",
         "type": "tabs",
         "children": [
           {
-            "id": "dd2c22ad692636c3",
+            "id": "af3455678e2567dc",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +44,7 @@
             }
           },
           {
-            "id": "f68e70f4593e6938",
+            "id": "9faa0b6ba0bf4eb1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,28 +61,13 @@
             }
           },
           {
-            "id": "31a9f486c8c4b252",
+            "id": "3c2ae656af50a94b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
-            }
-          },
-          {
-            "id": "aa69e9777a0db34e",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "经历/2025年/2025年5月15日.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "2025年5月15日 的大纲"
             }
           }
         ]
@@ -103,20 +77,20 @@
     "width": 300
   },
   "right": {
-    "id": "94743905b217509b",
+    "id": "052681838759c09b",
     "type": "split",
     "children": [
       {
-        "id": "f29188d27aab8553",
+        "id": "823625dcb7697726",
         "type": "tabs",
         "children": [
           {
-            "id": "11ae2efcca665d9f",
+            "id": "ba7189132f769e96",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/2025年/2025年4月18日.md",
+                "file": "经历/记录/负债.mdenc",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,25 +100,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025年4月18日 的反向链接列表"
+              "title": "负债 的反向链接列表"
             }
           },
           {
-            "id": "4350f4ae64889470",
+            "id": "3334b76dea68991c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "经历/2025年/2025年4月18日.md",
+                "file": "经历/记录/负债.mdenc",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025年4月18日 的出链列表"
+              "title": "负债 的出链列表"
             }
           },
           {
-            "id": "3b981ffd1727380c",
+            "id": "d8bc949122bf495b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -156,6 +130,21 @@
               },
               "icon": "lucide-tags",
               "title": "标签"
+            }
+          },
+          {
+            "id": "697792e53c712426",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "经历/记录/负债.mdenc",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "负债 的大纲"
             }
           }
         ]
@@ -178,39 +167,13 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "059a379eaec598f4",
+  "active": "56a3626892f87528",
   "lastOpenFiles": [
-    "觉醒/第一章 总述.md",
+    "经历/记录/负债.mdenc",
+    "经历/2025年/2025年5月20日.mdenc",
     "经历/2025年/2025年5月19日.mdenc",
-    "经历/2025年/2025年5月15日.mdenc",
-    "读书笔记/想读的书.md",
     "经历/记录/要求.mdenc",
-    "经历/2025年/2025年5月12日.mdenc",
-    "读书笔记/话题/学习.md",
-    "经历/记录/密码.mdenc",
-    "经历/2025年/2025年5月9日.mdenc",
-    "读书笔记/议论/玄学理论.md",
-    "读书笔记/议论/为什么说有钱的人越来越有钱？.md",
-    "读书笔记/话题/心理.md",
-    "读书笔记/话题/爱情.md",
-    "读书笔记/话题/生活.md",
-    "读书笔记/议论",
-    "读书笔记/议论.md",
-    "读书笔记/摘抄/描述.md",
-    "读书笔记/摘抄/短句.md",
-    "读书笔记/摘抄",
-    "读书笔记/话题",
-    "读书笔记",
-    "参考/love-course-2016-2019-master/docs/wu-ya-jiu-shu/【乌鸦救赎】连招聊天指南：4-PLAY连招第一招----自我引导（上）.md",
-    "技能成长/摄影和修图/src/Pasted image 20250223204421.png",
-    "男性觉醒/第一章 总述.md",
-    "人生经历/杂记.md",
-    "技能成长/摄影和修图/PS.md",
-    "男性觉醒/第三章 自我引导.md",
-    "参考/love-course-2016-2019-master/docs/wu-ya-jiu-shu/SUMMARY.md",
-    "参考/love-course-2016-2019-master/目录.md",
-    "参考/ibooker-plain-dealer-master/目录.md",
-    "男性觉醒/第零章 行动纲领.md",
-    "男性觉醒/第二章 人的存在是梦境.md"
+    "经历/2025年/2025年4月18日.mdenc",
+    "经历/2025年/2025年5月6日.mdenc"
   ]
 }
