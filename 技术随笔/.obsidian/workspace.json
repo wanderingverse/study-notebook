@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 学习笔记/Datafaker.md",
+                "file": "Java 学习笔记/Spring Boot.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Datafaker"
+              "title": "Spring Boot"
             }
           }
         ]
@@ -167,10 +167,12 @@
   },
   "active": "38e0d6c3a440153d",
   "lastOpenFiles": [
-    "Java 学习笔记/manticore search.md",
-    "Java 学习笔记/Datafaker.md",
-    "Java 学习笔记/Spring WebClient.md",
     "Java 学习笔记/Java.md",
+    "Java 学习笔记/计算机专业英语.md",
+    "Java 学习笔记/开发常用命令、注解、快捷键.md",
+    "Java 学习笔记/Datafaker.md",
+    "Java 学习笔记/manticore search.md",
+    "Java 学习笔记/Spring WebClient.md",
     "Java 学习笔记/Stream 流.md",
     "Java 学习笔记/Java开发规范.md",
     "Java 学习笔记/Java 设计模式.md",
@@ -187,12 +189,10 @@
     "Java 学习笔记/RBAC 模型.md",
     "Java 学习笔记/RuoYi 源码.md",
     "Unreal Engine/Unreal Engine.md",
-    "Java 学习笔记/开发常用命令、注解、快捷键.md",
     "Java 学习笔记/PDF 识别.md",
     "Java 学习笔记/ElasticSearch.md",
     "Java 学习笔记/src/MySQL 模糊查询.png",
     "Java 学习笔记/幂等性保证方案.md",
-    "Java 学习笔记/数据库.md",
-    "Java 学习笔记/frp.md"
+    "Java 学习笔记/数据库.md"
   ]
 }
