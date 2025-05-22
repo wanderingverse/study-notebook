@@ -11,10 +11,14 @@
             "id": "1fbe4d83e95593ca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "技能/英语/单词.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "单词"
             }
           }
         ]
@@ -69,6 +73,21 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "697792e53c712426",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "技能/英语/单词.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "单词 的大纲"
+            }
           }
         ]
       }
@@ -90,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/记录/负债.mdenc",
+                "file": "技能/英语/单词.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "负债 的反向链接列表"
+              "title": "单词 的反向链接列表"
             }
           },
           {
@@ -131,21 +150,6 @@
               "icon": "lucide-tags",
               "title": "标签"
             }
-          },
-          {
-            "id": "697792e53c712426",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "经历/记录/负债.mdenc",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "负债 的大纲"
-            }
           }
         ]
       }
@@ -167,12 +171,15 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "af3455678e2567dc",
+  "active": "1fbe4d83e95593ca",
   "lastOpenFiles": [
+    "技能/英语/短句.md",
+    "技能/英语/单词.md",
+    "技能/英语/语法.md",
     "读书/英语/2025年5月.md",
     "经历/2025年/2025年5月22日.mdenc",
     "读书/想读的书.md",
-    "读书/英语",
+    "技能/英语",
     "读书/未命名.md",
     "经历/2025年/2025年5月21日.mdenc",
     "经历/2025年/2025年5月20日.mdenc",

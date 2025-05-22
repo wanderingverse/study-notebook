@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38e0d6c3a440153d",
+            "id": "9df5dcafa221bd28",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "计算机专业英语"
             }
+          },
+          {
+            "id": "e44b33710d08f06e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Java 学习笔记/Joshua Bloch - Effective Java (3rd) - 2018.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Joshua Bloch - Effective Java (3rd) - 2018"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,10 +178,12 @@
       "publish:发布更改": false
     }
   },
-  "active": "38e0d6c3a440153d",
+  "active": "e44b33710d08f06e",
   "lastOpenFiles": [
-    "Java 学习笔记/Nginx.md",
     "Java 学习笔记/计算机专业英语.md",
+    "Java 学习笔记/Joshua Bloch - Effective Java (3rd) - 2018.pdf",
+    "三维建模/Blender.md",
+    "Java 学习笔记/Nginx.md",
     "Java 学习笔记/Spring Boot.md",
     "Java 学习笔记/Java.md",
     "Java 学习笔记/开发常用命令、注解、快捷键.md",
@@ -191,8 +206,6 @@
     "Unreal Engine/Unreal Engine.md",
     "Java 学习笔记/PDF 识别.md",
     "Java 学习笔记/ElasticSearch.md",
-    "Java 学习笔记/src/MySQL 模糊查询.png",
-    "Java 学习笔记/幂等性保证方案.md",
-    "Java 学习笔记/数据库.md"
+    "Java 学习笔记/src/MySQL 模糊查询.png"
   ]
 }
