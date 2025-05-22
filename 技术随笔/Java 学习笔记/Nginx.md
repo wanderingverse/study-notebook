@@ -27,7 +27,9 @@ server {
 `location /`：匹配所有以`/` 开头的请求。
 `proxy_pass http://localhost:3721`：将请求反向代理给监听在 3721 端口的后端服务器。
 ### 常用命令
-- 启动 Nginx：`start nginx`
-- 重新加载 Nginx 配置：`nginx -s reload`
+- **启动 Nginx**：`start nginx`
+- **重新加载 Nginx 配置，重启 Nginx**：`nginx -s reload`
+- **查看 Nginx 状态**：`systemctl status nginx`
+- **配置开启自启**：`systemctl enable nginx`
 
 https://zhuanlan.zhihu.com/p/431796992

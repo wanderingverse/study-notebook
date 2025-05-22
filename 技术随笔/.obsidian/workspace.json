@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java 学习笔记/Spring Boot.md",
+                "file": "Java 学习笔记/计算机专业英语.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Spring Boot"
+              "title": "计算机专业英语"
             }
           }
         ]
@@ -167,8 +167,10 @@
   },
   "active": "38e0d6c3a440153d",
   "lastOpenFiles": [
-    "Java 学习笔记/Java.md",
+    "Java 学习笔记/Nginx.md",
     "Java 学习笔记/计算机专业英语.md",
+    "Java 学习笔记/Spring Boot.md",
+    "Java 学习笔记/Java.md",
     "Java 学习笔记/开发常用命令、注解、快捷键.md",
     "Java 学习笔记/Datafaker.md",
     "Java 学习笔记/manticore search.md",
@@ -178,9 +180,7 @@
     "Java 学习笔记/Java 设计模式.md",
     "Java 学习笔记/Java 类加载器.md",
     "Java 学习笔记/Java 异常类继承关系.md",
-    "Java 学习笔记/Spring Boot.md",
     "Java 学习笔记/提示词.md",
-    "Java 学习笔记/Nginx.md",
     "Java 学习笔记/模板引擎.md",
     "Java 学习笔记/软件开发流程.md",
     "Java 学习笔记/Kafka.md",
