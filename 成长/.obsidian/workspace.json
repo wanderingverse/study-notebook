@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "408539bb73895dc2",
+        "id": "0f4d08e5c0127b79",
         "type": "tabs",
         "children": [
           {
-            "id": "fc25ec78973fd193",
+            "id": "d9f542ce809ec12b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -167,7 +167,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "fc25ec78973fd193",
+  "active": "d9f542ce809ec12b",
   "lastOpenFiles": [
     "经历/2025年/2025年8月10日.mdenc",
     "经历/记录/计划.mdenc",
