@@ -1,0 +1,15 @@
+{
+  "showLineNumber": false,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./src",
+  "propertiesInDocument": "visible",
+  "focusNewTab": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "spellcheck": false,
+  "promptDelete": false,
+  "strictLineBreaks": false
+}

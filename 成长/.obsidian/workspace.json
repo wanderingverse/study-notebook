@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "09f58799243b0f8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "408539bb73895dc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc25ec78973fd193",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2cdec10bb3f651bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "02d5c06ced3203fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c1be777de3fae1c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "dc8e935874413c2a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "71530b94fd6e394c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "55dfe2647e5af0d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "7af309ea061ef454",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b2feb1ed286dd4c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "经历/记录/计划.mdenc",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "计划 的反向链接列表"
+            }
+          },
+          {
+            "id": "f67a02ee434fbebf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "经历/记录/计划.mdenc",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "计划 的出链列表"
+            }
+          },
+          {
+            "id": "0b7a0b36ae61c52f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "16540a9cd7872db8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "经历/记录/计划.mdenc",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "计划 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "meld-encrypt:New encrypted note": false,
+      "meld-encrypt:Convert to or from an Encrypted note": false,
+      "meld-encrypt:Encrypt/Decrypt In-place": false
+    }
+  },
+  "active": "fc25ec78973fd193",
+  "lastOpenFiles": [
+    "经历/2025年/2025年8月10日.mdenc",
+    "经历/记录/计划.mdenc",
+    "经历/记录/负债.mdenc",
+    "经历/2025年/2025年8月8日.mdenc",
+    "经历/记录/谨记.mdenc",
+    "经历/记录/考试.mdenc",
+    "经历/记录/密码.mdenc",
+    "经历/记录/命数.mdenc",
+    "经历/记录/要求.mdenc",
+    "经历/记录/硬核自救方案.mdenc",
+    "经历/2025年/2025年8月7日.mdenc",
+    "经历/临时.md"
+  ]
+}

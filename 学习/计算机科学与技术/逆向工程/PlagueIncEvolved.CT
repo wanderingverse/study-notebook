@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"DNA 点数额外增加"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{
+  Game   : PlagueIncEvolved.exe
+  Version:
+  Date   : 2025-07-05
+  Author : WanderingVerse
+
+  This script adds +10 DNA points each time DNA is updated.
+}
+
+[ENABLE]
+// ---------- Memory injection setup ----------
+aobscanmodule(INJECT,PlagueExternal.dll,89 51 04 C3 CC) // finds the instruction: mov [rcx+04],edx; ret
+alloc(newmem,$1000,INJECT)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  add edx,10            // &lt;-- Add 10 to edx before storing it
+  mov [rcx+04],edx      // original instruction
+  ret                   // return to caller
+
+  // NOTE: `int 3` was removed; it's unnecessary and could crash if executed
+
+  jmp return
+
+INJECT:
+  jmp newmem
+  nop                   // fill remaining bytes (because jmp is 5 bytes, and original is 5 bytes too)
+
+return:
+registersymbol(INJECT)
+
+[DISABLE]
+// ---------- Cleanup and restore ----------
+INJECT:
+  db 89 51 04 C3 CC     // restore original bytes: mov [rcx+04],edx; ret
+
+unregistersymbol(INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: PlagueExternal.SetEvoPoints+B
+
+PlagueExternal.DiseaseTest+359: CC                 - int 3
+PlagueExternal.DiseaseTest+35A: CC                 - int 3
+PlagueExternal.DiseaseTest+35B: CC                 - int 3
+PlagueExternal.DiseaseTest+35C: CC                 - int 3
+PlagueExternal.DiseaseTest+35D: CC                 - int 3
+PlagueExternal.DiseaseTest+35E: CC                 - int 3
+PlagueExternal.DiseaseTest+35F: CC                 - int 3
+PlagueExternal.SetEvoPoints: 8B C2                 - mov eax,edx
+PlagueExternal.SetEvoPoints+2: 2B 41 04            - sub eax,[rcx+04]
+PlagueExternal.SetEvoPoints+5: 01 81 C4 01 00 00   - add [rcx+000001C4],eax
+// ---------- INJECTING HERE ----------
+PlagueExternal.SetEvoPoints+B: 89 51 04            - mov [rcx+04],edx
+// ---------- DONE INJECTING  ----------
+PlagueExternal.SetEvoPoints+E: C3                  - ret
+PlagueExternal.SetEvoPoints+F: CC                  - int 3
+PlagueExternal.CheckEvo: 8B 91 C4 01 00 00         - mov edx,[rcx+000001C4]
+PlagueExternal.CheckEvo+6: 33 C0                   - xor eax,eax
+PlagueExternal.CheckEvo+8: 39 51 04                - cmp [rcx+04],edx
+PlagueExternal.CheckEvo+B: 0F 94 C0                - sete al
+PlagueExternal.CheckEvo+E: C3                      - ret
+PlagueExternal.CheckEvo+F: CC                      - int 3
+PlagueExternal.SetTurn: 8B C2                      - mov eax,edx
+PlagueExternal.SetTurn+2: 2B 41 70                 - sub eax,[rcx+70]
+}
+
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
