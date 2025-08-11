@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0f4d08e5c0127b79",
+        "id": "26df3b9440c282a9",
         "type": "tabs",
         "children": [
           {
-            "id": "d9f542ce809ec12b",
+            "id": "674ecf9ea78d2738",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "meld-encrypted-view",
+              "state": {
+                "file": "工作/网方华信/开发日报.mdenc",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "开发日报"
             }
           }
         ]
@@ -167,19 +171,19 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "d9f542ce809ec12b",
+  "active": "674ecf9ea78d2738",
   "lastOpenFiles": [
-    "经历/2025年/2025年8月10日.mdenc",
+    "经历/2025年/2025年8月11日.mdenc",
     "经历/记录/计划.mdenc",
+    "经历/记录/要求.mdenc",
+    "经历/2025年/2025年8月10日.mdenc",
     "经历/记录/负债.mdenc",
     "经历/2025年/2025年8月8日.mdenc",
     "经历/记录/谨记.mdenc",
     "经历/记录/考试.mdenc",
     "经历/记录/密码.mdenc",
     "经历/记录/命数.mdenc",
-    "经历/记录/要求.mdenc",
     "经历/记录/硬核自救方案.mdenc",
-    "经历/2025年/2025年8月7日.mdenc",
     "经历/临时.md"
   ]
 }
