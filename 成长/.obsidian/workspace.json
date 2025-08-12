@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "a70a5a753fa465f9",
+        "id": "81fcac8a15836b2c",
         "type": "tabs",
         "children": [
           {
-            "id": "7158d10c514e8a46",
+            "id": "0fafc9774a68f4a6",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/计划.mdenc",
+                "file": "经历/2025年/2025年8月12日.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "计划"
+              "title": "2025年8月12日"
+            }
+          },
+          {
+            "id": "c55fd87121b11432",
+            "type": "leaf",
+            "state": {
+              "type": "meld-encrypted-view",
+              "state": {
+                "file": "工作/网方华信/开发日报.mdenc",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "开发日报"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +186,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "7158d10c514e8a46",
+  "active": "c55fd87121b11432",
   "lastOpenFiles": [
     "经历/2025年/2025年8月12日.mdenc",
     "工作/网方华信/开发日报.mdenc",

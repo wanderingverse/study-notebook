@@ -96,13 +96,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/消息队列.md",
+                "file": "Java/开发常用命令、注解、快捷键.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "消息队列 的大纲"
+              "title": "开发常用命令、注解、快捷键 的大纲"
             }
           }
         ]
@@ -184,9 +184,9 @@
   "active": "95f6e5fc8d604ded",
   "lastOpenFiles": [
     "Java/开发常用命令、注解、快捷键.md",
+    "Java/消息队列.md",
     "Java/Datafaker.md",
     "Java/Java 开发规范.md",
-    "Java/消息队列.md",
     "Java/数据库.md",
     "Java/Spring Boot.md",
     "Java/Java.md",
