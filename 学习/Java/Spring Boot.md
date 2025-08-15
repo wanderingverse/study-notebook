@@ -16,6 +16,11 @@
 ### 注解和 AOP
 [【SpringBoot】AOP 自定义注解的使用详解_spring boot aop注解-CSDN博客](https://blog.csdn.net/yuxiangdeming/article/details/129159139)
 #### 注解
+#### 常用注解
+##### @EventListener(ApplicationReadyEvent.class)
+事件监听注解，用于监听 Spring 事件。
+`ApplicationReadyEvent` 是 Spring Boot 提供的一个特定事件，表示 Spring 容器启动完成、所有 `ApplicationRunner` 和 `CommandLineRunner` 都执行完毕、应用已经完全就绪，可以接收请求。
+
 #### AOP
 AOP（Aspect Oriented Programming，面向切面编程）是通过预编译方式和运行期动态代理实现核心业务逻辑之外的横切行为的统一维护的一种技术。AOP 是面向对象编程（OOP）的补充和扩展。利用 AOP 可以对业务逻辑各部分进行隔离，降低模块之间的耦合度，并将那些影响多个类的公共行为封装到一个可重用模块，提高程序的复用性。
 AOP 是 Spring 框架中的一个核心内容。在 Spring 中，AOP 代理可以用 JDK 动态代理或者 CGLIB 代理 CglibAopProxy 实现。Spring 中 AOP 代理由 Spring 的 IOC 容器负责生成和管理，其依赖关系也由 IOC 容器负责管理。
@@ -52,6 +57,20 @@ spring-boot-starter-web 是 Spring Boot 框架里用于构建 Web 应用程序�
 - spring.application.name: ProjectName：指定当前 Spring Boot 应用的名字。
 #### 自定义 starter
 [参考](https://blog.csdn.net/m0_62128476/article/details/141948032)
+### ApplicationRunner
+`ApplicationRunner` 是 Spring Boot 提供的**接口**，用于在应用启动后立即执行代码。
+它提供一个方法：
+```java
+void run(ApplicationArguments args) throws Exception;
+```
+这个方法会在 Spring 容器初始化完成后、Spring Boot 启动完成前被调用。可以重写该方法，在这里做一些应用启动后的初始化操作。如：
+- 加载配置到内存
+- 初始化缓存
+- 打印启动日志
+- 检查数据库或外部依赖是否可用
+示例
+```
+```
 ### application.yml
 #### 配置 mysql 连接
 在 Spring Boot 中，得益于 Spring Boot 提供的 **自动配置（Auto Configuration）** 机制和 **Spring JDBC** 等模块的集成。`application.yml` 能够自动配置数据库连接。
