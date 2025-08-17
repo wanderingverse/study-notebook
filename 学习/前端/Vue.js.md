@@ -17,6 +17,10 @@ Vue.js 是一套构建用户界面的渐进式框架。Vue 的目标是通过尽
 - public：静态资源文件夹，如图片、字体等。
 	- favicon.ico：网站图标。
 - src：项目源代码开发目录
+	- api：封装的请求 API
+		- requestApi.js：封装的请求 API
+	- utils：
+		- request.js：封装 axios
 	- assets：静态资源（如图片、字体等）
 	- components：可复用的 Vue 组件。Vue 组件是应用的基本构建单位。使用单文件组件（`.vue` 文件）定义。
 	- views：页面级组件
@@ -82,26 +86,87 @@ Vue 组件是 Vue 应用的核心构建单元。一个组件包含三个部分�
 #### 在 HTML 标签上绑定变量：`<h1>{{ title }}</h1>`
 #### 创建一个响应式引用
 `ref` 创建的变量会变成一个包含 `.value` 属性的对象，`title.value` 就是你访问 `title` 的实际值
-```
+```js
 import {ref} from 'vue'
-let title = ref('登录')
+const title = ref('登录')
 ```
 `let` 是用来声明一个可修改的变量，你可以随时修改它的值。
 `const` 用来声明一个常量，一旦赋值后，变量的引用不可变。注意，`const` 并不意味着变量的值不可改变，而是变量本身不能重新赋值（即不能指向不同的对象或基本类型值），但对象的属性可以修改。
-#### 发送axios
+## Vue 生命周期方法
+```js
+<script setup>
+onMounted(() => {
+	// 当组件完成挂载（DOM 已渲染）后触发
+})
+</script>
+```
+## 接口调用
+### 封装 axios
+在 `src/utils/request.js` 中封装 axios 。
+```js
+import axios from "axios"  
+  
+const service = axios.create({  
+    baseURL: "/api", timeout: 5000  
+})  
+  
+// 请求拦截器  
+service.interceptors.request.use(config => {  
+    return config  
+})  
+  
+// 响应拦截器  
+service.interceptors.response.use(response => response.data, error => {  
+    console.error("API Error:", error)  
+    return Promise.reject(error)  
+})  
+  
+export default service
+```
+### 封装 API
+在 `src/utils/request.js` 中封装 API。可按业务模块划分多个 `.js` 文件。此处创建一个`requestApi.js`作为示例。
+```js
+
+import request from "@/utils/request"  
+  
+  
+/**  
+ * 示例：获取博客文章列表  
+ * @param params  
+ * @returns {*}  
+ */  
+export function fetchBlogPostList(params) {  
+    return request({  
+        url: "/blog/post/list", method: "get", params  
+    })  
+}
+```
+### 发送请求
 ```js
 <template>  
   <button @click="fetchData">发送请求</button>  
 </template>
 ```
 ```js
-<script setup>
-let fetchData = async () => {  
-  try {  
-    const res = await axios.get('/api/system/login/test')  
-  } catch (error) {  
-  }
-</script>
+<script setup>  
+import {fetchBlogPostList} from "@/api/post.js";  
+  
+const handleClick = async () => {  
+    try {
+        const res = await fetchBlogPostList();  
+        console.log(res);  
+    } catch (error) {  
+        console.log(error);  
+    }  
+}  
+</script>  
+  
+<template>  
+    <el-button @click="handleClick">按钮</el-button>  
+</template>  
+  
+<style scoped>  
+</style>
 ```
 ## Vue Router
 Vue 路由允许通过不同的 URL 访问不同的内容以实现多视图的单页 Web 应用（single page web application，SPA）。需要添加 Vue Router 依赖：`npm install vue-router`。
@@ -148,6 +213,137 @@ app.mount('#app')
   
 <style scoped>  
 </style>
+```
+### 路由跳转
+```js
+{  
+    path: '/blog-post/:参数',  
+    name: 'BlogPost',  
+    component: BlogPost  
+}
+```
+```js
+<script setup>
+
+const router = useRouter()
+router.push({name: "BlogPost", params: {参数}})
+
+</script>
+```
+## 全局状态管理 Pinia
+提供跨页面状态共享的依赖，可以在多组件之间传递数据。需要添加依赖：`npm install pinia`
+### 挂载
+在 `./src/main.js` 文件内挂载 Pinia
+```js
+import { createApp } from 'vue'
+import App from './App.vue'
+import { createPinia } from 'pinia'
+
+const app = createApp(App)
+const pinia = createPinia()
+app.use(pinia)
+app.mount('#app')
+```
+### 创建 Store
+在 `src/stores` 下创建 `*.js` 文件管理全局状态。自定义名称用 `XXX` 代替。
+```js
+import {defineStore} from "pinia";  
+  
+export const useXXXStore = defineStore("XXX", {  
+    state: () => ({  
+        id: "",  
+    }),  
+    actions: {  
+        // 更新方法  
+        set(val) {  
+            this.id = val  
+        },  
+        // 清空方法  
+        clear() {  
+            this.id = ""  
+        }  
+    }  
+})
+```
+### 使用 Store
+```js
+<script setup>
+
+const store = useXXXStore()
+// 调用：如 store.set(val)
+store.set("123")
+// 获取：store 中管理的变量值
+console.log("获取到：",store.id)
+</script>
+```
+## 事件总线 mitt
+mitt 是一个轻量事件库，能够自定义事件总线，使用发布/订阅模式。事件触发只调用订阅回调。需要添加依赖：`npm install mitt`
+### 创建全局事件
+在`src/events`下创建文件 `Emitter.js`，保证全局只有一个事件总线实例。
+```js
+import mitt from 'mitt'
+
+const emitter = mitt()
+
+export default emitter
+```
+在`src/events`下创建文件 `EventListener.js`，封装事件监听和释放方法。
+```
+import emitter from "@/events/Emitter.js";  
+import {onMounted, onUnmounted} from "vue";  
+  
+/**  
+ * 通用事件监听方法  
+ * @param eventName 事件名  
+ * @param callback 回调方法  
+ */  
+export function useEventListener(eventName, callback) {  
+    onMounted(() => emitter.on(eventName, callback))  
+    onUnmounted(() => emitter.off(eventName, callback))  
+}
+```
+### 触发事件
+```vue
+<script setup>
+import emitter from '@/Emitter.js'
+
+// 触发事件
+emitter.emit('事件名')
+</script>
+```
+### 监听事件
+#### 封装监听和释放
+```vue
+<script setup>
+import emitter from '@/Emitter.js'
+
+const doSomething = () => {
+	// 事件发生，执行自定义方法
+}
+
+// 监听事件
+useEventListener('事件名', doSomething)
+</script>
+```
+#### 手动监听和释放
+```vue
+<script setup>
+import emitter from '@/Emitter.js'
+
+const doSomething = () => {
+	// 事件发生，执行自定义方法
+}
+
+// 组件加载后开启监听
+onMounted(() => {
+  emitter.on('事件名', doSomething)
+})
+
+// 组件卸载时取消监听
+onUnmounted(() => {
+  emitter.off('事件名', doSomething)
+})
+</script>
 ```
 ## vite.config.js 配置
 ### 配置自定义端口
