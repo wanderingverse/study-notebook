@@ -68,10 +68,98 @@ void run(ApplicationArguments args) throws Exception;
 - 初始化缓存
 - 打印启动日志
 - 检查数据库或外部依赖是否可用
-示例
-```
+#### 示例：启动后输出日志信息
+```java
+/**  
+ * 启动后信息输出日志  
+ */
+@Slf4j
+@Component  
+public class StartupLogger implements ApplicationRunner {  
+    private final long maxMemory = Runtime.getRuntime().maxMemory() / (1024 * 1024);  
+    private final long totalMemory = Runtime.getRuntime().totalMemory() / (1024 * 1024);  
+    private final long freeMemory = Runtime.getRuntime().freeMemory() / (1024 * 1024);  
+    
+    @Resource  
+    private Environment environment;  
+  
+    @Override  
+    public void run(ApplicationArguments args) {  
+        log.info("============================================================");  
+        log.info("                      系统启动信息");  
+        log.info("============================================================");  
+        log.info("【系统信息】");  
+        log.info("  操作系统：         {} {}", System.getProperty("os.name"), System.getProperty("os.version"));  
+        log.info("  用户名：           {}", System.getProperty("user.name"));  
+        log.info("  用户目录：         {}", System.getProperty("user.home"));  
+        log.info("  工作目录：         {}", System.getProperty("user.dir"));  
+        log.info("------------------------------------------------------------");  
+        log.info("【Java 信息】");  
+        log.info("  Java版本：         {}", System.getProperty("java.version"));  
+        log.info("  Java路径：         {}", System.getProperty("java.home"));  
+        log.info("  命令行参数：        {}", args.getOptionNames());  
+        log.info("  运行环境：          {}", Arrays.toString(environment.getActiveProfiles()));  
+        log.info("  JVM 最大可用内存：   {} MB", maxMemory);  
+        log.info("  JVM 已分配内存：     {} MB", totalMemory);  
+        log.info("  JVM 空闲内存：      {} MB", freeMemory);  
+        log.info("------------------------------------------------------------");  
+        log.info("【服务信息】");  
+        log.info("  Spring Boot版本：  {}", SpringBootVersion.getVersion());  
+        log.info("  MySQL URL：       {}", environment.getProperty("spring.datasource.url"));  
+        log.info("============================================================");  
+    }  
+}
 ```
 ### application.yml
+#### 配置监听端口和 HTTP/2
+Chrome 浏览器允许的到同一个域名的单次最大 TCP 并发连接数一般是 **6 个**。这个限制是基于每个域名的，而不是每个标签页或浏览器的全局限制，即可以同时与多个不同域名建立超过 6 个连接。
+`HTTP/1.1` 和 `HTTP/2`：
+- `HTTP/1.1` 受限于每个域名 6 个连接。SpringBoot 默认使用 `HTTP/1.1`。
+- `HTTP/2`允许**多路复用**。可以在单个 TCP 连接上同时发送多个请求和接收多个响应。即使限制为 6 个连接，使用 `HTTP/2` 的网站也能实现更高的并发性和性能。
+##### **私钥**（Private Key）和 **公钥证书**（Certificate / Public Key）
+- 私钥：自己保管的、用于解密客户端发送的加密信息，以及签名服务器身份。
+- 公钥证书：用于让客户端验证身份。客户端会检查证书是否可信。证书中记录公钥（Public Key）、服务器域名（CN）、颁发机构信息（Issuer）、有效期（Validity）、签名等信息。
+##### **自签名证书** 和 **CA 签名证书**
+- **自签名证书**（Self-signed）：自行生成的证书，没有第三方机构签名，用于测试环境。浏览器会产生安全警告。
+- **CA 签名证书**（Certificate Authority）：由受信任的第三方颁发。浏览器默认信任，适合正式上线的 HTTPS 服务。
+##### 密钥库文件生成
+使用 JDK 自带 keytool 工具用以生成自签名证书。
+```C++
+keytool -genkeypair \
+  -alias tomcat \
+  -keyalg RSA \
+  -keysize 2048 \
+  -storetype PKCS12 \
+  -keystore keystore.p12 \
+  -validity 3650
+```
+- -genkeypair：生成公钥+私钥对
+- -alias tomcat：指定条目别名
+- -keyalg RSA：指定生成密钥对时使用的加密算法，此处使用 RSA 非对称加密算法。RSA 表示生成 `公钥 + 私钥对`。
+- -keysize 2048：密钥长度，指定为 2048 位。
+- -storetype PKCS12：指定密钥库文件类型为：`.p12` 文件
+- -keystore keystore.p12：指定输出的文件名为：`keystore.p12`
+- -validity 3650：指定证书有效期，单位：天。此处为 10 年。
+##### 配置 SpringBoot yaml 文件
+```yaml
+server:  
+  port: 3721  
+  ssl:  
+    key-store: classpath:keystore.p12
+    key-store-password: 123456
+    key-store-type: PKCS12
+    key-alias: tomcat
+  http2:
+    enabled: true
+```
+- ssl.key-store：指向密钥库文件的存放位置。这里保存了私钥和证书。
+	- `classpath:keystore.p12`：`classpath` 表示放在 `resources` 目录下。此处的`keystore.p12` 为密钥库文件，保存私钥和证书。
+- ssl.key-store-password：打开密钥库文件的密码。Spring Boot 会在启动时读取密钥库文件，然后用指定的密码（此处是：123456）解密密钥库文件，获取里面的私钥和证书，根据 `ssl.key-alias` 指定的别名，找到对应的条目，然后用获取到的信息建立 HTTPS 连接。
+- ssl.key-store-type：密钥库类型。常见`PKCS12`或`JKS`。PKCS12 是现代标准，兼容性好。
+- ssl.key-alias：在密钥库中有多个条目时，用这个别名指定使用哪一个密钥和证书。此处条目是：`tomcat`。
+	- 一个m密钥库文件里可以存多个`私钥 + 证书`的组合，每个组合叫一个`条目`，每个条目都有一个唯一的`别名（alias）`用以标识。
+	- 如果没有指定 `key-alias`，Spring Boot 会尝试使用密钥库文件中的第一个可用条目。
+- http2.enabled：指定是否开启 HTTP/2 协议支持。
 #### 配置 mysql 连接
 在 Spring Boot 中，得益于 Spring Boot 提供的 **自动配置（Auto Configuration）** 机制和 **Spring JDBC** 等模块的集成。`application.yml` 能够自动配置数据库连接。
 具体来说：Spring Boot 提供了大量的自动配置类，它们会在应用启动时根据配置和类路径中存在的依赖自动进行配置。例如当引入了 MySQL JDBC 驱动 `com.mysql.cj.jdbc.Driver`，Spring Boot 就会利用 `spring-boot-starter-jdbc` 自动加载相关配置，并尝试连接数据库。
