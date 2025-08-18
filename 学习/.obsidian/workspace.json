@@ -52,8 +52,7 @@
               "title": "Spring Boot"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Spring Boot.md",
+                "file": "Java/消息队列.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring Boot 的大纲"
+              "title": "消息队列 的大纲"
             }
           }
         ],
@@ -198,17 +197,17 @@
       "publish:发布更改": false
     }
   },
-  "active": "a1ad7c595f373d9c",
+  "active": "ffc9eb688979240d",
   "lastOpenFiles": [
+    "Java/Java 开发规范.md",
+    "Java/Spring Boot.md",
     "Java/消息队列.md",
     "Java/WebClient.md",
     "Java/实时数据同步.md",
     "前端/Vue.js.md",
-    "Java/Java 开发规范.md",
     "Java/开发常用命令、注解、快捷键.md",
     "前端/Element Plus.md",
     "Java/数据库.md",
-    "Java/Spring Boot.md",
     "前端/JavaScript.md",
     "前端/HTML.md",
     "前端/CSS.md",
