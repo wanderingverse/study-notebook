@@ -19,8 +19,15 @@
 #### 常用注解
 ##### @EventListener(ApplicationReadyEvent.class)
 事件监听注解，用于监听 Spring 事件。
-`ApplicationReadyEvent` 是 Spring Boot 提供的一个特定事件，表示 Spring 容器启动完成、所有 `ApplicationRunner` 和 `CommandLineRunner` 都执行完毕、应用已经完全就绪，可以接收请求。
-
+`ApplicationReadyEvent` 是 Spring Boot 提供的一个特定事件，表示 Spring 容器启动完成、所有 `ApplicationRunner` 和 `CommandLineRunner` 都执行完毕、应用已经完全就绪，可以接收请求
+##### @Component
+注解在类上，标识这个类作为 Spring 中的一个组件，会被扫描并注册到Spring 容器中，受 Spring 管理。
+##### @Configuration
+注解在类上，标记这个类是一个配置类。Spring 会把 `@Configuration` 标记的类本身作为一个 Bean 放到容器中。被这个注解标记的配置类会被 CGLIB 代理，多次调用同一个 `@Bean` 方法，Spring 会保证返回同一个单例。
+##### @Bean
+注解在方法上，这个方法的返回对象会被 Spring 注册为 Bean。`@Bean` 创建的对象默认是单例（singleton）。Spring 会在容器启动时创建一次 Bean 实例，并在整个应用中复用。每次注入的都是同一个实例。
+##### @PostConstruct
+注解在方法上，当类的实例创建并且依赖注入完成后，Spring 会自动调用这个方法。它是在 构造函数之后、Bean 可用之前执行的回调方法。常用于初始化资源。
 #### AOP
 AOP（Aspect Oriented Programming，面向切面编程）是通过预编译方式和运行期动态代理实现核心业务逻辑之外的横切行为的统一维护的一种技术。AOP 是面向对象编程（OOP）的补充和扩展。利用 AOP 可以对业务逻辑各部分进行隔离，降低模块之间的耦合度，并将那些影响多个类的公共行为封装到一个可重用模块，提高程序的复用性。
 AOP 是 Spring 框架中的一个核心内容。在 Spring 中，AOP 代理可以用 JDK 动态代理或者 CGLIB 代理 CglibAopProxy 实现。Spring 中 AOP 代理由 Spring 的 IOC 容器负责生成和管理，其依赖关系也由 IOC 容器负责管理。
@@ -202,8 +209,12 @@ Spring Boot 默认支持从以下位置加载配置文件，并会优先使用�
 Spring Boot 的配置文件按层次结构进行合并，且外部配置优先级更高。Spring Boot 会将多个配置文件合并成一个 Environment，如果某个配置项在高优先级文件中未定义，则会使用低优先级文件中的配置项。
 #### 读取配置项
 在 Spring Boot 中，通过注入 `@Value` 注解或使用 `@ConfigurationProperties` 读取 `application.yml` 中的配置项。还可以通过注入 `Environment` 对象读取。
-##### @Value
-使用 `@Value` 注解读取单个配置项。
+##### @Value(value="${}")
+`@Value` 注解标记在成员变量上，用于读取单个配置项。Spring 会在 Bean 实例化之后，把配置文件中的值注入到字段。
+```java
+@Value(value="${spring.datasource.username}")
+private String username;
+```
 ##### 读取 `Environment` 对象
 ###### 注入  `Environment` 对象
 ```java

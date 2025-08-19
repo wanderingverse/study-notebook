@@ -10,17 +10,22 @@ MinIO 是一个高性能的对象存储服务，用于存储大规模非结构�
 docker run -p 9000:9000 -p 9090:9090 \
      --name minio \
      -d --restart=always \
-     -e "MINIO_ACCESS_KEY=minioadmin" \
-     -e "MINIO_SECRET_KEY=minioadmin" \
+     -e "MINIO_ROOT_USER=minio_root_user" \
+     -e "MINIO_ROOT_PASSWORD=minio_root_password" \
      -v /home/minio/data:/data \
      -v /home/minio/config:/root/.minio \
      minio/minio server \
-     /data --console-address ":9090" -address ":9000"
+     /data --console-address ":9090"
 ```
-- `9000:9000`：将容器的 9000 端口映射到宿主机的 9000 端口，用于 MinIO API 访问。
-- `9090:9090`：将容器的 9090 端口映射到宿主机的 9090 端口，用于 MinIO Web 控制台访问。
-- `MINIO_ACCESS_KEY=minioadmin`：设置 Minio 的访问密钥 ID（用户名）为：minioadmin。
-- `MINIO_SECRET_KEY=minioadmin`：设置 Minio 的访问密钥（密码）为：minioadmin。
+- `9000:9000`：将容器的 9000 监听端口映射到宿主机的 9000 端口，用于 MinIO API 访问。
+- `9090:9090`：将容器的 9090 监听端口映射到宿主机的 9090 端口，用于 MinIO Web 控制台访问。
+- `MINIO_ROOT_USER=minioadmin`：设置 Minio 的访问用户。此处设置为：minio_root_user。
+- `MINIO_ROOT_PASSWORD=minioadmin`：设置 Minio 的访问密码。此处设置为：minio_root_password。
+- `server`：以 Server 模式启动 Minio。
+	- `server` 模式：标准模式，用于直接提供 S3 兼容对象存储服务。指定数据目录后，在其中直接管理存储桶（bucket）、对象文件。
+	- `gateway` 模式：MinIO 作为一个网关，后端存储数据时不在本地，而是委托给给别的存储服务（如 Azure Blob、GCS、HDFS 等）。MinIO 对外还是暴露 S3 API，但实际上数据存到其他的后端存储。
+- `/data`：指定MinIO 数据存储的目录。
+- `--console-address ":9090"`：指定 MinIO 管理控制台（Web UI）的监听地址和端口。此处绑定容器内部的 `9090` 端口。通过浏览器访问该端口来打开 MinIO 的 Web 管理页面。
 ## Buckets
 MinIO uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.
 MinIO 使用存储桶来组织对象。存储桶类似于文件系统中的文件夹或目录，每个存储桶可以容纳任意数量的对象。
@@ -181,6 +186,40 @@ minioClient.removeObject(RemoveObjectArgs.builder()
 ### 对象管理
 #### 检查对象是否存在
 #### 获取对象元数据
+## SpringBoot 集成
+### 配置 yaml
+```C++
+minio:  
+  url: http://39.106.10.8:9000  
+  access-key: minio_root_user  
+  secret-key: minio_root_password  
+  bucket-name: bucket-default
+```
+### 配置类
+```
+@Configuration  
+public class MinioConfig {  
+  
+    @Value("${minio.url}")  
+    private String url;  
+  
+    @Value("${minio.access-key}")  
+    private String accessKey;  
+  
+    @Value("${minio.secret-key}")  
+    private String secretKey;  
+  
+    @Value("${minio.bucket-name}")  
+    private String bucketName;  
+  
+    private MinioClient minioClient;  
+  
+    @PostConstruct  
+    private void initMinioClient() {  
+        minioClient = MinioClient.builder().endpoint(url).credentials(accessKey, secretKey).build();  
+    }  
+}
+```
 ## 断点续传
 MinIO 基于分块上传（Multipart Upload），可将一个大文件拆分为多个小块，每个分块单独存储和上传。以此实现并发、失败重试、断点续传功能。
 ### 分块上传（Multipart Upload）
