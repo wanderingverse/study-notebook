@@ -4,21 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "b3f1040329086d56",
+        "id": "bab3ff62324c1153",
         "type": "tabs",
         "children": [
           {
+<<<<<<< HEAD
             "id": "de2c74740ecbec13",
+=======
+            "id": "760d351be9e22954",
+>>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Java 开发规范.md",
+                "file": "Java/大模型开发.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Java 开发规范"
             }
           },
@@ -35,6 +40,9 @@
               },
               "icon": "lucide-file",
               "title": "Vue.js"
+=======
+              "title": "大模型开发"
+>>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
             }
           }
         ]
@@ -96,13 +104,21 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "Java/Java 开发规范.md",
+=======
+                "file": "Java/大模型开发.md",
+>>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
+<<<<<<< HEAD
               "title": "Java 开发规范 的大纲"
+=======
+              "title": "大模型开发 的大纲"
+>>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
             }
           }
         ]
@@ -181,8 +197,9 @@
       "publish:发布更改": false
     }
   },
-  "active": "de2c74740ecbec13",
+  "active": "760d351be9e22954",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Java/Spring Boot.md",
     "Java/Nginx.md",
     "前端/Vue.js.md",
@@ -191,6 +208,19 @@
     "Java/WebClient.md",
     "Java/实时数据同步.md",
     "Java/开发常用命令、注解、快捷键.md",
+=======
+    "Java/Java.md",
+    "Java/大模型开发.md",
+    "Java/Java 开发规范.md",
+    "C++/C++.md",
+    "Java/MinIO.md",
+    "Java/Spring Boot.md",
+    "Java/开发常用命令、注解、快捷键.md",
+    "Java/消息队列.md",
+    "Java/WebClient.md",
+    "Java/实时数据同步.md",
+    "前端/Vue.js.md",
+>>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
     "前端/Element Plus.md",
     "Java/数据库.md",
     "前端/JavaScript.md",
@@ -198,14 +228,11 @@
     "前端/CSS.md",
     "Java/ElasticSearch.md",
     "Java/Datafaker.md",
-    "Java/Java.md",
-    "Java/MinIO.md",
     "Java/Kafka.md",
     "技术书籍/java 面试题.pdf",
     "技术书籍/Joshua Bloch - Effective Java (3rd) - 2018.pdf",
     "Java/RBAC 模型.md",
     "Java/RuoYi 源码.md",
-    "C++/C++.md",
     "英语/计算机专业英语.md",
     "英语/短语.md",
     "英语/语法.md",
