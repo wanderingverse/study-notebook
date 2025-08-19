@@ -2,6 +2,11 @@
 Nginx 是一个开源 Web 服务器和反向代理服务器，可以实现负载均衡、缓存、反向代理、SSL 终止
 等功能。
 ### 安装
+[nginx 下载](https://nginx.org/en/download.html)
+### 目录结构
+- conf：存放 Nginx 配置文件的目录
+- html：存放静态 html 文件的目录
+- logs：存放Nginx日志的目录
 ### 常用配置
 在 `nginx.conf` 中配置。
 ```nginx

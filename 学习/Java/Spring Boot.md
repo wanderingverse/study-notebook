@@ -125,13 +125,7 @@ Chrome 浏览器允许的到同一个域名的单次最大 TCP 并发连接数�
 ##### 密钥库文件生成
 使用 JDK 自带 keytool 工具用以生成自签名证书。
 ```C++
-keytool -genkeypair \
-  -alias tomcat \
-  -keyalg RSA \
-  -keysize 2048 \
-  -storetype PKCS12 \
-  -keystore keystore.p12 \
-  -validity 3650
+keytool -genkeypair -alias tomcat -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650
 ```
 - -genkeypair：生成公钥+私钥对
 - -alias tomcat：指定条目别名
@@ -140,6 +134,12 @@ keytool -genkeypair \
 - -storetype PKCS12：指定密钥库文件类型为：`.p12` 文件
 - -keystore keystore.p12：指定输出的文件名为：`keystore.p12`
 - -validity 3650：指定证书有效期，单位：天。此处为 10 年。
+##### `.p12`导出为`.crt`
+使用 JDK 自带 keytool 工具导出。
+```C++
+# 从 .p12 导出证书
+keytool -export -rfc -keystore keystore.p12 -alias tomcat -file keystore.crt
+```
 ##### 配置 SpringBoot yaml 文件
 ```yaml
 server:  

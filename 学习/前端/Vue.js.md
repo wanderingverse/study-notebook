@@ -360,9 +360,11 @@ server: {
         '/api': {  
             target: 'http://localhost:3721',  
             changeOrigin: true,  
-            rewrite: (path) => path.replace(/^\/api/, ''),  
+            rewrite: (path) => path.replace(/^\/api/, ''),
+            secure: false,
         },  
     },  
 },
 ```
 配置所有以 `/api` 开头的请求都被代理到 `http://localhost:3721` 服务器，并且在转发时会移除 `/api` 前缀。
+secure: false 表示允许自签名证书。

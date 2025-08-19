@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d12342e845e8de32",
+            "id": "de2c74740ecbec13",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -23,22 +23,21 @@
             }
           },
           {
-            "id": "de2c74740ecbec13",
+            "id": "e78f1560bb24bdff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Spring Boot.md",
+                "file": "前端/Vue.js.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Spring Boot"
+              "title": "Vue.js"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,17 +96,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Spring Boot.md",
+                "file": "Java/Java 开发规范.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring Boot 的大纲"
+              "title": "Java 开发规范 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,12 +183,13 @@
   },
   "active": "de2c74740ecbec13",
   "lastOpenFiles": [
+    "Java/Spring Boot.md",
+    "Java/Nginx.md",
+    "前端/Vue.js.md",
     "Java/Java 开发规范.md",
     "Java/消息队列.md",
-    "Java/Spring Boot.md",
     "Java/WebClient.md",
     "Java/实时数据同步.md",
-    "前端/Vue.js.md",
     "Java/开发常用命令、注解、快捷键.md",
     "前端/Element Plus.md",
     "Java/数据库.md",
@@ -214,7 +213,6 @@
     "技术书籍/src/人员和时间之间的关系——需要沟通的可分解任务.png",
     "计算机科学与技术/图论/图论.md",
     "计算机科学与技术/图论",
-    "计算机科学与技术/编译原理/编译原理.md",
     "计算机科学与技术/编译原理",
     "计算机科学与技术/算法导论",
     "计算机科学与技术/数据库系统原理",
