@@ -1,48 +1,25 @@
 {
   "main": {
-    "id": "9461e4b88c1b4b41",
+    "id": "bb665139596d54e0",
     "type": "split",
     "children": [
       {
-        "id": "bab3ff62324c1153",
+        "id": "bab66d1566d1fcec",
         "type": "tabs",
         "children": [
           {
-<<<<<<< HEAD
-            "id": "de2c74740ecbec13",
-=======
-            "id": "760d351be9e22954",
->>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
+            "id": "58cff1c18ef04b7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/大模型开发.md",
+                "file": "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "Java 开发规范"
-            }
-          },
-          {
-            "id": "e78f1560bb24bdff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "前端/Vue.js.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Vue.js"
-=======
-              "title": "大模型开发"
->>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
+              "title": "第一章 计算机网络体系结构"
             }
           }
         ]
@@ -51,28 +28,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7ea9fa462649fef7",
+    "id": "2a07096abcc53d81",
     "type": "split",
     "children": [
       {
-        "id": "99c637796573a0bc",
+        "id": "83f6b7de40fdc740",
         "type": "tabs",
         "children": [
           {
-            "id": "b36408258c4502c4",
+            "id": "fe6928adf206b463",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabeticalReverse",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
           },
           {
-            "id": "93cdae963efcc28d",
+            "id": "081cfecb45fcc795",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -89,36 +66,13 @@
             }
           },
           {
-            "id": "f417e498a85e616a",
+            "id": "da3d493d70ff9a22",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
-            }
-          },
-          {
-            "id": "a1ad7c595f373d9c",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "Java/Java 开发规范.md",
-=======
-                "file": "Java/大模型开发.md",
->>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-<<<<<<< HEAD
-              "title": "Java 开发规范 的大纲"
-=======
-              "title": "大模型开发 的大纲"
->>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
             }
           }
         ]
@@ -128,29 +82,44 @@
     "width": 300
   },
   "right": {
-    "id": "91ca85578f62d980",
+    "id": "7bbac638fc04ef65",
     "type": "split",
     "children": [
       {
-        "id": "c1c4888692f5702f",
+        "id": "c3f9457f6c68659a",
         "type": "tabs",
         "children": [
           {
-            "id": "11f54a88ffae0479",
+            "id": "009bd7deaf0b5cfc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "第一章 计算机网络体系结构 的大纲"
+            }
+          },
+          {
+            "id": "4ed8d5db3427ee1a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "逆向工程/汇编语言.md",
+                "file": "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "汇编语言 的出链列表"
+              "title": "第一章 计算机网络体系结构 的出链列表"
             }
           },
           {
-            "id": "00aee04218ba029e",
+            "id": "7d657c5a15d103f1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -165,7 +134,7 @@
             }
           },
           {
-            "id": "9c6b1e277ae34c4a",
+            "id": "39a71f0317f20161",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -178,13 +147,11 @@
               "title": "添加笔记属性"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,57 +164,12 @@
       "publish:发布更改": false
     }
   },
-  "active": "760d351be9e22954",
+  "active": "58cff1c18ef04b7e",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Java/Spring Boot.md",
-    "Java/Nginx.md",
-    "前端/Vue.js.md",
-    "Java/Java 开发规范.md",
-    "Java/消息队列.md",
-    "Java/WebClient.md",
-    "Java/实时数据同步.md",
-    "Java/开发常用命令、注解、快捷键.md",
-=======
-    "Java/Java.md",
-    "Java/大模型开发.md",
-    "Java/Java 开发规范.md",
-    "C++/C++.md",
-    "Java/MinIO.md",
-    "Java/Spring Boot.md",
-    "Java/开发常用命令、注解、快捷键.md",
-    "Java/消息队列.md",
-    "Java/WebClient.md",
-    "Java/实时数据同步.md",
-    "前端/Vue.js.md",
->>>>>>> 7203afbf11a5a513d966f251b3a352f6512dcd28
-    "前端/Element Plus.md",
-    "Java/数据库.md",
-    "前端/JavaScript.md",
-    "前端/HTML.md",
-    "前端/CSS.md",
-    "Java/ElasticSearch.md",
-    "Java/Datafaker.md",
-    "Java/Kafka.md",
-    "技术书籍/java 面试题.pdf",
-    "技术书籍/Joshua Bloch - Effective Java (3rd) - 2018.pdf",
-    "Java/RBAC 模型.md",
-    "Java/RuoYi 源码.md",
-    "英语/计算机专业英语.md",
-    "英语/短语.md",
-    "英语/语法.md",
-    "计算机科学与技术/人工智能/提示词.md",
-    "技术书籍/src/人员和时间之间的关系——需要沟通的可分解任务.png",
-    "计算机科学与技术/图论/图论.md",
-    "计算机科学与技术/图论",
-    "计算机科学与技术/编译原理",
-    "计算机科学与技术/算法导论",
-    "计算机科学与技术/数据库系统原理",
-    "C++",
-    "计算机科学与技术/计算机网络/src/Pasted image 20250805225158.png",
-    "计算机科学与技术/计算机网络/src/Pasted image 20250805224803.png",
-    "计算机科学与技术/计算机网络/src",
-    "计算机科学与技术/计算机网络",
-    "计算机科学与技术/离散数学/src/文氏图.png"
+    "计算机科学与技术/计算机网络/src/第三阶段因特网.png",
+    "计算机科学与技术/计算机网络/src/Pasted image 20250819205319.png",
+    "计算机科学与技术/计算机网络/src/NSFNET 网络的三级结构.png",
+    "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
+    "计算机科学与技术/计算机网络/src/1.png"
   ]
 }
