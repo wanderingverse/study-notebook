@@ -345,6 +345,9 @@ onUnmounted(() => {
 })
 </script>
 ```
+## markdown 渲染
+[imzbf/md-editor-v3](https://github.com/imzbf/md-editor-v3)
+
 ## vite.config.js 配置
 ### 配置自定义端口
 ```js

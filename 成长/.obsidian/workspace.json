@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f1121299b70b32d5",
+        "id": "1400ecdf9276fa38",
         "type": "tabs",
         "children": [
           {
-            "id": "a16b90c471ced8b0",
+            "id": "a60ffb82020ce520",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/记录/命数.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "命数 的反向链接列表"
+              "title": "开发日报 的反向链接列表"
             }
           },
           {
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -171,7 +172,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "a16b90c471ced8b0",
+  "active": "a60ffb82020ce520",
   "lastOpenFiles": [
     "工作/深造路径.mdenc",
     "经历/记录/谨记.mdenc",
