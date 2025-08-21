@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Java.md",
+                "file": "前端/Vue.js.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "Vue.js"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Java.md",
+                "file": "前端/Vue.js.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Java 的大纲"
+              "title": "Vue.js 的大纲"
             }
           },
           {
@@ -165,8 +165,9 @@
       "publish:发布更改": false
     }
   },
-  "active": "14cedefa6f5669f2",
+  "active": "fe6928adf206b463",
   "lastOpenFiles": [
+    "Java/Java.md",
     "计算机科学与技术/编译原理/编译原理.md",
     "计算机科学与技术/密码学/密码学.md",
     "计算机科学与技术/密码学",

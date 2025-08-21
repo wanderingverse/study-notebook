@@ -225,8 +225,13 @@ app.mount('#app')
 ```js
 <script setup>
 
+// 单页面跳转
 const router = useRouter()
 router.push({name: "BlogPost", params: {参数}})
+
+// 新标签页打开
+const url = router.resolve({name: "BlogPost", params: {id}})  
+window.open(url.href, '_blank')
 
 </script>
 ```
