@@ -83,15 +83,50 @@ Vue 组件是 Vue 应用的核心构建单元。一个组件包含三个部分�
 在 vue 项目工作目录下执行：`npm run build`。
 执行完成后，会在 Vue 项目下生成一个 dist 目录，该目录包含 index.html 文件及 static 目录，static 目录包含了静态文件 js、css 以及图片目录 images（如果有图片的话）。
 # Vue.js 开发
-#### 在 HTML 标签上绑定变量：`<h1>{{ title }}</h1>`
-#### 创建一个响应式引用
-`ref` 创建的变量会变成一个包含 `.value` 属性的对象，`title.value` 就是你访问 `title` 的实际值
+## 变量
+### 创建响应式引用
+#### ref
+为单个值创建响应式引用，可以是原始类型或对象。
+##### 创建
 ```js
 import {ref} from 'vue'
 const title = ref('登录')
 ```
 `let` 是用来声明一个可修改的变量，你可以随时修改它的值。
 `const` 用来声明一个常量，一旦赋值后，变量的引用不可变。注意，`const` 并不意味着变量的值不可改变，而是变量本身不能重新赋值（即不能指向不同的对象或基本类型值），但对象的属性可以修改。
+##### 访问或修改
+```js
+title.value
+```
+##### 模板绑定
+模板中使用时，不需要 `.value`，Vue 会自动解包。
+```vue
+<p>{{ count }}</p>
+```
+#### reactive
+为整个对象或数组创建响应式引用。
+##### 创建
+```js
+import {reactive} from 'vue';
+
+const value = reactive({  
+    id: route.params.id,  
+    title: "",  
+    summary: "",  
+    content: "",  
+});
+```
+##### 使用
+直接使用。
+```js
+value.id
+```
+#### 绑定变量
+`<h1>{{ title }}</h1>`
+## 事件
+#### 绑定事件
+`<标签 @事件="函数"></标签>`
+
 ## Vue 生命周期方法
 ```js
 <script setup>
@@ -233,6 +268,14 @@ router.push({name: "BlogPost", params: {参数}})
 const url = router.resolve({name: "BlogPost", params: {id}})  
 window.open(url.href, '_blank')
 
+</script>
+```
+```js
+<script setup>
+
+// 获取路由参数
+const route = useRoute();
+const 参数 = route.params.参数;
 </script>
 ```
 ## 全局状态管理 Pinia

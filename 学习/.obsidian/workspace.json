@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/数据库.md",
+                "file": "前端/Vue.js.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "数据库"
+              "title": "Vue.js"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/数据库.md",
+                "file": "前端/Vue.js.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数据库 的大纲"
+              "title": "Vue.js 的大纲"
             }
           },
           {
@@ -166,13 +166,13 @@
   },
   "active": "126eb21ad0fd3d39",
   "lastOpenFiles": [
+    "Java/数据库.md",
     "Java/Java.md",
     "技术书籍/《人月神话》阅读笔记.md",
     "前端/Vue.js.md",
     "计算机科学与技术/编译原理/编译原理.md",
     "计算机科学与技术/密码学/密码学.md",
     "计算机科学与技术/密码学",
-    "Java/数据库.md",
     "计算机科学与技术/人工智能/提示词.md",
     "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
     "C++/dsf1.canvas",
