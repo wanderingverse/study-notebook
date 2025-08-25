@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a47ceb7fd61495b2",
+        "id": "06ecdba963a4c569",
         "type": "tabs",
         "children": [
           {
-            "id": "c55eecb4527b255f",
+            "id": "b39b3c4663e8c7ba",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/记录/密码.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "密码"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/2025年/2025年8月25日.mdenc",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "开发日报 的反向链接列表"
+              "title": "2025年8月25日 的反向链接列表"
             }
           },
           {
@@ -142,16 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/记录/计划.mdenc",
+                "file": "经历/2025年/2025年8月25日.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "计划 的大纲"
+              "title": "2025年8月25日 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -172,11 +173,15 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "c55eecb4527b255f",
+  "active": "b39b3c4663e8c7ba",
   "lastOpenFiles": [
+    "工作/网方华信/开发日报.mdenc",
+    "读书/摘抄/描述.md",
+    "读书/想读的书.md",
+    "经历/2025年/2025年8月25日.mdenc",
+    "经历/记录/计划.mdenc",
     "经历/2025年/2025年8月22日.mdenc",
     "经历/记录/密码.mdenc",
-    "工作/网方华信/开发日报.mdenc",
     "读书/议论/架构设计原则.md",
     "读书/议论/张小龙的微信设计观.md",
     "读书/话题/学习.md",
@@ -184,10 +189,7 @@
     "经历/记录/负债.mdenc",
     "工作/深造路径.mdenc",
     "经历/记录/谨记.mdenc",
-    "经历/记录/计划.mdenc",
     "经历/2025年/2025年8月18日.mdenc",
-    "经历/2025年/2025年8月12日.mdenc",
-    "经历/2025年/2025年8月11日.mdenc",
     "经历/临时.md"
   ]
 }
