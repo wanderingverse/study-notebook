@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4e82819c32906303",
+        "id": "68c4ffd06946e121",
         "type": "tabs",
         "children": [
           {
-            "id": "f970476b1a5068b5",
+            "id": "e2699442fe3575aa",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
+              "type": "markdown",
               "state": {
-                "file": "经历/2025年/2025年8月26日.mdenc",
+                "file": "读书/摘抄/短句.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025年8月26日"
+              "title": "短句"
             }
           }
         ]
@@ -173,14 +173,15 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "f970476b1a5068b5",
+  "active": "e2699442fe3575aa",
   "lastOpenFiles": [
+    "读书/摘抄/描述.md",
+    "读书/摘抄/短句.md",
     "工作/网方华信/开发日报.mdenc",
     "工作/深造路径.mdenc",
     "工作/个人职业发展战略计划书.mdenc",
     "经历/2025年/2025年8月26日.mdenc",
     "经历/2025年/2025年8月25日.mdenc",
-    "读书/摘抄/描述.md",
     "读书/想读的书.md",
     "经历/记录/计划.mdenc",
     "经历/2025年/2025年8月22日.mdenc",
@@ -190,7 +191,6 @@
     "读书/话题/学习.md",
     "经历/2025年/2025年8月21日.mdenc",
     "经历/记录/负债.mdenc",
-    "经历/记录/谨记.mdenc",
     "经历/临时.md"
   ]
 }
