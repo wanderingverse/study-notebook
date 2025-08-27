@@ -12,3 +12,4 @@ const app = createApp(App)
 app.use(ElementPlus)
 ```
 3. 使用 Element Plus 组件：按照官方文档，在 `.vue` 文件中使用不同组件。
+4. 卸载依赖

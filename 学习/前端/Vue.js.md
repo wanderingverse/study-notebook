@@ -10,6 +10,8 @@ Vue.js 是一套构建用户界面的渐进式框架。Vue 的目标是通过尽
 	- Vue 官方脚手架从 Vue 3 开始，默认选用 **Vite** 作为构建工具。以前 Vue CLI 基于 webpack。
 	- 查看 vue 版本：nvm list vue。
 4. 安装依赖：在 vue 项目工作目录下执行 `npm install`。
+	- 安装指定依赖：`npm install 依赖名`
+	- 卸载指定依赖：`npm uninstall 依赖名`
 5. 启动开发服务器 Vite：在 vue 项目工作目录下执行 `npm run dev`。实际上运行的是 Vite 提供的开发命令，默认在 `vite.config.js` 中配置。Vite 会启动一个本地服务器，如 http://localhost:5173
 ## 项目结构
 ### 目录结构
@@ -396,6 +398,36 @@ onUnmounted(() => {
 ## markdown 渲染
 [imzbf/md-editor-v3](https://github.com/imzbf/md-editor-v3)
 
+## 日期解析
+### dayjs
+#### 安装
+```C++
+npm install dayjs
+```
+#### 解析 ISO 字符串
+```js
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import 'dayjs/locale/zh-cn';
+
+// 解析 ISO 字符串
+const isoString = "2025-08-27T17:55:22";
+const date = dayjs(isoString);
+
+// 格式化
+console.log(date.format('YYYY-MM-DD HH:mm:ss')); // 2025-08-27 17:55:22
+console.log(date.format('YYYY年MM月DD日 HH:mm')); // 2025年08月27日 17:55
+
+// 获取年月日
+console.log(date.year());  // 2025
+console.log(date.month() + 1); // 8（month 从 0 开始）
+console.log(date.date());  // 27
+
+// 相对时间
+dayjs.extend(relativeTime);
+dayjs.locale('zh-cn');
+console.log(dayjs(isoString).fromNow()); // 输出 "刚刚" / "2天前" 等
+```
 ## vite.config.js 配置
 ### 配置自定义端口
 ```js

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "68c4ffd06946e121",
+        "id": "01896aa14bfc19f1",
         "type": "tabs",
         "children": [
           {
-            "id": "e2699442fe3575aa",
+            "id": "de425adf615e56d1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "读书/摘抄/短句.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "短句"
+              "title": "新标签页"
             }
           }
         ]
@@ -173,10 +169,10 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "e2699442fe3575aa",
+  "active": "de425adf615e56d1",
   "lastOpenFiles": [
-    "读书/摘抄/描述.md",
     "读书/摘抄/短句.md",
+    "读书/摘抄/描述.md",
     "工作/网方华信/开发日报.mdenc",
     "工作/深造路径.mdenc",
     "工作/个人职业发展战略计划书.mdenc",

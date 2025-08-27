@@ -1,5 +1,18 @@
 ### Spring MVC
-##### 重定向
+#### 全局异常处理
+在Spring MVC中，使用`@RestControllerAdvice` 注解创建一个全局异常处理器：GlobalExceptionHandler。在这个类中，可以包含处理各种异常的方法，这些方法使用`@ExceptionHandler(异常类.class)`注解进行标注。
+```java
+@Slf4j  
+@RestControllerAdvice  
+public class GlobalExceptionHandler {  
+    @ExceptionHandler(Exception.class)  
+    public AjaxResult handleException(Exception e) {  
+        log.error("异常", e);  
+        return AjaxResult.error("异常");  
+    }  
+}
+```
+#### 重定向
 ```java
 // 后端指定浏览器重定向到视图
     @GetMapping("/add")
