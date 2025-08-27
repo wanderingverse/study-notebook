@@ -1,4 +1,49 @@
 ### Spring MVC
+#### 拦截器（Interceptor）
+拦截器是一种动态拦截方法调用的机制，在 SpringMVC 中动态拦截控制器方法（Controller 方法）的执行。
+##### 全局拦截器
+```java
+@Slf4j  
+@Component  
+public class GlobalInterceptor implements HandlerInterceptor {  
+  
+  
+    /**  
+     * Controller 方法调用前执行  
+     *  
+     * @param request  request  
+     * @param response response  
+     * @param handler  handler  
+     * @return boolean     */    @Override  
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {  
+        return true;  
+    }  
+  
+  
+    /**  
+     * Controller 方法调用正常返回后执行  
+     *  
+     * @param request      request  
+     * @param response     response  
+     * @param handler      handler  
+     * @param modelAndView modelAndView  
+     */    @Override  
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {  
+    }  
+  
+  
+    /**  
+     * Controller 方法调用完成后执行，无论是否发生了异常  
+     *  
+     * @param request  request  
+     * @param response response  
+     * @param handler  handler  
+     * @param ex       若没有异常则为 null  
+     */    @Override  
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) {  
+    }  
+}
+```
 #### 全局异常处理
 在Spring MVC中，使用`@RestControllerAdvice` 注解创建一个全局异常处理器：GlobalExceptionHandler。在这个类中，可以包含处理各种异常的方法，这些方法使用`@ExceptionHandler(异常类.class)`注解进行标注。
 ```java
