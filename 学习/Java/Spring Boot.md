@@ -2,6 +2,7 @@
 #### 拦截器（Interceptor）
 拦截器是一种动态拦截方法调用的机制，在 SpringMVC 中动态拦截控制器方法（Controller 方法）的执行。
 ##### 全局拦截器
+###### 自定义拦截器
 ```java
 @Slf4j  
 @Component  
@@ -42,6 +43,24 @@ public class GlobalInterceptor implements HandlerInterceptor {
      */    @Override  
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) {  
     }  
+}
+```
+###### 注册自定义拦截器
+```Java
+@Configuration
+public class WebMvcConfig implements WebMvcConfigurer {
+    @Resource
+    private GlobalInterceptor globalInterceptor;
+    
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 注册自定义拦截器
+        registry.addInterceptor(globalInterceptor)
+                // 拦截的请求
+                .addPathPatterns("/**")
+                // 不拦截的请求
+                .excludePathPatterns("");
+    }
 }
 ```
 #### 全局异常处理
