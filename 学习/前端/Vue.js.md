@@ -23,7 +23,9 @@ Vue.js 是一套构建用户界面的渐进式框架。Vue 的目标是通过尽
 		- requestApi.js：封装的请求 API
 	- utils：
 		- request.js：封装 axios
-	- assets：静态资源（如图片、字体等）
+	- assets：静态资源（如图片、字体、样式等）
+		- main.css：全局样式
+	- types：类型声明文件
 	- components：可复用的 Vue 组件。Vue 组件是应用的基本构建单位。使用单文件组件（`.vue` 文件）定义。
 	- views：页面级组件
 	- router：路由配置目录。需要 `vue-router` 依赖。
@@ -428,6 +430,8 @@ dayjs.extend(relativeTime);
 dayjs.locale('zh-cn');
 console.log(dayjs(isoString).fromNow()); // 输出 "刚刚" / "2天前" 等
 ```
+## 动效
+[inspira-ui](https://github.com/unovue/inspira-ui)
 ## vite.config.js 配置
 ### 配置自定义端口
 ```js
