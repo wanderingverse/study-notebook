@@ -37,7 +37,8 @@
               "title": "Java 开发规范"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "uk",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +91,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/数据库.md",
+                "file": "Java/Java 开发规范.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数据库 的大纲"
+              "title": "Java 开发规范 的大纲"
             }
           },
           {
@@ -181,11 +181,11 @@
       "publish:发布更改": false
     }
   },
-  "active": "9928835871f701f5",
+  "active": "298e41e0267d74ce",
   "lastOpenFiles": [
+    "Java/数据库.md",
     "Java/Java 开发规范.md",
     "Java/Spring Boot.md",
-    "Java/数据库.md",
     "Java/Java.md",
     "计算机科学与技术/密码学/国家商用密码算法.md",
     "Java/数据加密.md",

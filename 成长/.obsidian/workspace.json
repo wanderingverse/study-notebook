@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d54acb2f54d0a2d1",
+        "id": "5dc384e0b9206226",
         "type": "tabs",
         "children": [
           {
-            "id": "22d4ed59810c0e20",
+            "id": "b102d643863ef0b0",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "新标签页"
             }
           }
         ]
@@ -173,10 +169,13 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "22d4ed59810c0e20",
+  "active": "8c1be777de3fae1c",
   "lastOpenFiles": [
-    "工作/深造路径.mdenc",
+    "经历/记录/谨记.mdenc",
+    "经历/记录/负债.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/记录/计划.mdenc",
+    "工作/深造路径.mdenc",
     "经历/记录/密码.mdenc",
     "读书/摘抄/短句.md",
     "读书/摘抄/描述.md",
@@ -184,13 +183,11 @@
     "经历/2025年/2025年8月26日.mdenc",
     "经历/2025年/2025年8月25日.mdenc",
     "读书/想读的书.md",
-    "经历/记录/计划.mdenc",
     "经历/2025年/2025年8月22日.mdenc",
     "读书/议论/架构设计原则.md",
     "读书/议论/张小龙的微信设计观.md",
     "读书/话题/学习.md",
     "经历/2025年/2025年8月21日.mdenc",
-    "经历/记录/负债.mdenc",
     "经历/临时.md"
   ]
 }
