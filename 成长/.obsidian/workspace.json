@@ -11,10 +11,14 @@
             "id": "b102d643863ef0b0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "meld-encrypted-view",
+              "state": {
+                "file": "工作/网方华信/开发日报.mdenc",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "开发日报"
             }
           }
         ]
@@ -169,7 +173,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "8c1be777de3fae1c",
+  "active": "b102d643863ef0b0",
   "lastOpenFiles": [
     "经历/记录/谨记.mdenc",
     "经历/记录/负债.mdenc",
