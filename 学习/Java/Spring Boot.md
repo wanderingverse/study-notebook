@@ -123,6 +123,22 @@ AOP 是 Spring 框架中的一个核心内容。在 Spring 中，AOP 代理可�
 
 ##### 织入（Weaving）
 
+### SpEL
+Spring 表达式语言（Spring Expression Language，SpEL）是一个功能强大的表达式语言，用于在 Spring 运行时动态查询和操作对象。
+[一文吃透 Spring 表达式语言（SpEL），Spring 高级开发者必须掌握！ - 知乎](https://zhuanlan.zhihu.com/p/1917584196890785099)
+
+#### 字面量表达式
+SpEL 支持字符串、数字、布尔值和 null 等字面量类型。
+```Java
+// 创建一个表达式解析器  
+ExpressionParser parser = new SpelExpressionParser();  
+// 解析表达式  
+Expression expression = parser.parseExpression("'字符串'");  
+// 获取表达式的值  
+String message = expression.getValue(String.class);  
+System.out.println(message);
+```
+
 ### starter
 SpringBoot 的开箱即用基于一个个的 starter（场景启动器）。SpringBoot 把开发常用的场景抽取成一个个 starter，使得开发者通过引入 SpringBoot 提供的场景启动器，再进行少量的配置就能使用相应的功能。
 #### starter 命名规范
