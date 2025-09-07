@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Spring Boot.md",
+                "file": "Unreal Engine/Unreal Engine.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Spring Boot"
+              "title": "Unreal Engine"
             }
           }
         ],
@@ -111,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Spring Boot.md",
+                "file": "Unreal Engine/Unreal Engine.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring Boot 的大纲"
+              "title": "Unreal Engine 的大纲"
             }
           },
           {
@@ -171,7 +171,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -183,9 +182,10 @@
   },
   "active": "298e41e0267d74ce",
   "lastOpenFiles": [
+    "三维建模/Blender.md",
+    "Java/Spring Boot.md",
     "Java/Java 开发规范.md",
     "Java/数据库.md",
-    "Java/Spring Boot.md",
     "Java/Java.md",
     "计算机科学与技术/密码学/国家商用密码算法.md",
     "Java/数据加密.md",
