@@ -147,12 +147,12 @@
               "title": "Unreal Engine 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,10 +162,9 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
-      "publish:发布更改": false,
-      "bases:创建新数据库": false
+      "publish:发布更改": false
     }
   },
-  "active": "69a2dca4ef8e9bc8",
+  "active": "f69b2837b1791e6d",
   "lastOpenFiles": []
 }

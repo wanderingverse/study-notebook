@@ -11,10 +11,14 @@
             "id": "0c8ccb2490aa0ec6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "meld-encrypted-view",
+              "state": {
+                "file": "经历/记录/密码.mdenc",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "密码"
             }
           }
         ]
@@ -162,7 +166,6 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false,
       "meld-encrypt:New encrypted note": false,
       "meld-encrypt:Convert to or from an Encrypted note": false,
       "meld-encrypt:Encrypt/Decrypt In-place": false

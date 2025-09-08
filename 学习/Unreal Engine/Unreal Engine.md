@@ -21,4 +21,5 @@
 **复制 Actor**：按下 Alt 键，移动 Actor
 **多选 Actor**：按下 Ctrl，点击多个 Actor
 - **临时更改 Actor 共同轴向**：按下鼠标中键，移动多个 Actor 的共同轴向。
-
+**吸附到附近的 Actor**：按住 V 键移动 Actor。
+**导入模型资产**：导入 `.fbx` 文件。
