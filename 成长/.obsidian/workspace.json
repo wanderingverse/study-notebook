@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bb794a2741a04b58",
+        "id": "ffb8faa882120ba6",
         "type": "tabs",
         "children": [
           {
-            "id": "96458c0448cb0cb4",
+            "id": "b3939eb1e21ce48c",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -173,11 +173,13 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "96458c0448cb0cb4",
+  "active": "b3939eb1e21ce48c",
   "lastOpenFiles": [
-    "经历/记录/谨记.mdenc",
-    "经历/记录/负债.mdenc",
+    "经历/记录/命数.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/记录/负债.mdenc",
+    "经历/2025年/2025年9月8日.mdenc",
+    "经历/记录/谨记.mdenc",
     "经历/记录/计划.mdenc",
     "工作/深造路径.mdenc",
     "经历/记录/密码.mdenc",
@@ -187,11 +189,9 @@
     "经历/2025年/2025年8月26日.mdenc",
     "经历/2025年/2025年8月25日.mdenc",
     "读书/想读的书.md",
-    "经历/2025年/2025年8月22日.mdenc",
     "读书/议论/架构设计原则.md",
     "读书/议论/张小龙的微信设计观.md",
     "读书/话题/学习.md",
-    "经历/2025年/2025年8月21日.mdenc",
     "经历/临时.md"
   ]
 }
