@@ -1,32 +1,24 @@
 {
   "main": {
-    "id": "09f58799243b0f8e",
+    "id": "4b2346094df335b2",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "ffb8faa882120ba6",
+        "id": "4ce794feb4454511",
         "type": "tabs",
         "children": [
           {
-            "id": "b3939eb1e21ce48c",
-=======
-        "id": "a81ac223896740d0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c9cc98cfc289f176",
->>>>>>> 60dd35d939b9626ee6258eb4702e756b520251fa
+            "id": "3531d5055daf1529",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "开发日报"
             }
           }
         ]
@@ -35,20 +27,20 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "2cdec10bb3f651bc",
+    "id": "7a4b7318312e57de",
     "type": "split",
     "children": [
       {
-        "id": "02d5c06ced3203fd",
+        "id": "157b6dad5b6e157d",
         "type": "tabs",
         "children": [
           {
-            "id": "8c1be777de3fae1c",
+            "id": "291ad833fb9ba3ee",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabeticalReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -56,7 +48,7 @@
             }
           },
           {
-            "id": "dc8e935874413c2a",
+            "id": "3f91d86c45198f08",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -73,7 +65,7 @@
             }
           },
           {
-            "id": "71530b94fd6e394c",
+            "id": "19f5a3a6a5b09839",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -89,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "55dfe2647e5af0d5",
+    "id": "348533a7aafdb677",
     "type": "split",
     "children": [
       {
-        "id": "7af309ea061ef454",
+        "id": "3a13c2b530c01157",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2feb1ed286dd4c",
+            "id": "d231002b0eb940a6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/2025年/2025年8月25日.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025年8月25日 的反向链接列表"
+              "title": "开发日报 的反向链接列表"
             }
           },
           {
-            "id": "f67a02ee434fbebf",
+            "id": "f80efbb8d2eba41f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "经历/记录/计划.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "计划 的出链列表"
+              "title": "开发日报 的出链列表"
             }
           },
           {
-            "id": "0b7a0b36ae61c52f",
+            "id": "0585f0c4cc4b265b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -145,22 +137,21 @@
             }
           },
           {
-            "id": "16540a9cd7872db8",
+            "id": "37db022ee7a053c0",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/2025年/2025年8月25日.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025年8月25日 的大纲"
+              "title": "开发日报 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -175,34 +166,14 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
       "meld-encrypt:New encrypted note": false,
       "meld-encrypt:Convert to or from an Encrypted note": false,
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-<<<<<<< HEAD
-  "active": "b3939eb1e21ce48c",
-=======
-  "active": "c9cc98cfc289f176",
->>>>>>> 60dd35d939b9626ee6258eb4702e756b520251fa
+  "active": "3531d5055daf1529",
   "lastOpenFiles": [
-    "经历/记录/命数.mdenc",
-    "工作/网方华信/开发日报.mdenc",
-    "经历/记录/负债.mdenc",
-    "经历/2025年/2025年9月8日.mdenc",
-    "经历/记录/谨记.mdenc",
-    "经历/记录/计划.mdenc",
-    "工作/深造路径.mdenc",
-    "经历/记录/密码.mdenc",
-    "读书/摘抄/短句.md",
-    "读书/摘抄/描述.md",
-    "工作/个人职业发展战略计划书.mdenc",
-    "经历/2025年/2025年8月26日.mdenc",
-    "经历/2025年/2025年8月25日.mdenc",
-    "读书/想读的书.md",
-    "读书/议论/架构设计原则.md",
-    "读书/议论/张小龙的微信设计观.md",
-    "读书/话题/学习.md",
-    "经历/临时.md"
+    "工作/个人职业发展战略计划书.mdenc"
   ]
 }
