@@ -4,21 +4,29 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "ffb8faa882120ba6",
         "type": "tabs",
         "children": [
           {
             "id": "b3939eb1e21ce48c",
+=======
+        "id": "a81ac223896740d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9cc98cfc289f176",
+>>>>>>> 60dd35d939b9626ee6258eb4702e756b520251fa
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/记录/密码.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "密码"
             }
           }
         ]
@@ -161,7 +169,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -173,7 +180,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
+<<<<<<< HEAD
   "active": "b3939eb1e21ce48c",
+=======
+  "active": "c9cc98cfc289f176",
+>>>>>>> 60dd35d939b9626ee6258eb4702e756b520251fa
   "lastOpenFiles": [
     "经历/记录/命数.mdenc",
     "工作/网方华信/开发日报.mdenc",
