@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7daa71fe90ef39d9",
+        "id": "657293a46448c8da",
         "type": "tabs",
         "children": [
           {
-            "id": "0c8ccb2490aa0ec6",
+            "id": "ea184172ce722d24",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "开发日报"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -171,8 +172,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "0c8ccb2490aa0ec6",
+  "active": "ea184172ce722d24",
   "lastOpenFiles": [
+    "经历/自媒体/程序员健身.md",
+    "经历/记录/要求.mdenc",
+    "经历/自媒体",
     "工作/个人职业发展战略计划书.mdenc"
   ]
 }
