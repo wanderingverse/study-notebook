@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5c72c78c95c33822",
+        "id": "59d672c181f4461f",
         "type": "tabs",
         "children": [
           {
-            "id": "522198419d35cd2b",
+            "id": "971c99d37e619843",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
+              "type": "markdown",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/2025年/2025年9月10日.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "2025年9月10日"
             }
           }
         ]
@@ -172,8 +172,12 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "522198419d35cd2b",
+  "active": "971c99d37e619843",
   "lastOpenFiles": [
+    "经历/2025年/2025年9月10日.md",
+    "经历/记录/命数.mdenc",
+    "经历/记录/密码.mdenc",
+    "工作/网方华信/开发日报.mdenc",
     "经历/自媒体/程序员健身.md",
     "经历/记录/要求.mdenc",
     "经历/自媒体",
