@@ -87,3 +87,4 @@ sb.append("字符串0：").append(stringNo1)
 #### ArithmeticException
 #### UnsupportedOperationException
 不支持操作异常。当试图调用未实现或无法实现的方法时抛出。
+## HttpClient
