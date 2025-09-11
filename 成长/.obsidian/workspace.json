@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f59b6473f674867e",
+        "id": "ea17fa2c6a70f20e",
         "type": "tabs",
         "children": [
           {
-            "id": "bde1c9c5b4243827",
+            "id": "977f9a02b239c53a",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -172,16 +172,19 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "bde1c9c5b4243827",
+  "active": "977f9a02b239c53a",
   "lastOpenFiles": [
+    "经历/2025年/2025年9月10日.mdenc",
+    "经历/2025年/2025年8月6日.mdenc",
+    "经历/2025年/2025年7月3日.mdenc",
+    "经历/2025年/2025年5月21日.mdenc",
+    "经历/2025年/2025年5月6日.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "经历/2025年/2025年9月11日.mdenc",
-    "经历/2025年/2025年9月10日.mdenc",
     "经历/记录/命数.mdenc",
     "经历/记录/密码.mdenc",
     "经历/自媒体/程序员健身.md",
     "经历/记录/要求.mdenc",
-    "经历/自媒体",
-    "工作/个人职业发展战略计划书.mdenc"
+    "经历/自媒体"
   ]
 }
