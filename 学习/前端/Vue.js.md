@@ -431,7 +431,8 @@ dayjs.locale('zh-cn');
 console.log(dayjs(isoString).fromNow()); // 输出 "刚刚" / "2天前" 等
 ```
 ## 动效
-[inspira-ui](https://github.com/unovue/inspira-ui)
+[Inspira UI](https://inspira-ui.com/docs/zh-cn)
+
 ## vite.config.js 配置
 ### 配置自定义端口
 ```js

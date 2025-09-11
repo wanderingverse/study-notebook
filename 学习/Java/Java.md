@@ -88,3 +88,28 @@ sb.append("字符串0：").append(stringNo1)
 #### UnsupportedOperationException
 不支持操作异常。当试图调用未实现或无法实现的方法时抛出。
 ## HttpClient
+### 创建 HttpClient 实例
+#### 创建默认实例
+```Java
+// 创建默认配置的 HttpClient 实例
+HttpClient defaultClient = HttpClient.newHttpClient();
+```
+#### 创建自定义配置实例
+```java
+HttpClient.Builder builder = HttpClient  
+        .newBuilder()  
+        // TCP 连接超时时间  
+        .connectTimeout(Duration.ofMillis(CONNECT_TIMEOUT_MILLIS))  
+        // 自动跟随重定向  
+        .followRedirects(HttpClient.Redirect.ALWAYS);  
+try (HttpClient httpClient = builder.build()) {  
+  
+} catch (Exception e) {  
+    log.error("创建 HttpClient 失败", e);  
+}
+```
+### 发送请求
+#### 发送 GET 请求
+```Java
+
+```

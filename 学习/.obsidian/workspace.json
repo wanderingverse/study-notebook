@@ -4,41 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "6072b2a81be29e46",
+        "id": "b482093f4efbd6b3",
         "type": "tabs",
         "children": [
           {
-            "id": "cbe85393109b65ee",
+            "id": "89508fc174611df3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/大模型开发.md",
+                "file": "前端/Vue.js.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "大模型开发"
-            }
-          },
-          {
-            "id": "3543e4c8afba0f09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unreal Engine/Unreal Engine.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Unreal Engine"
+              "title": "Vue.js"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Unreal Engine/Unreal Engine.md",
+                "file": "前端/Vue.js.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Unreal Engine 的大纲"
+              "title": "Vue.js 的大纲"
             }
           }
         ],
@@ -182,16 +166,18 @@
       "publish:发布更改": false
     }
   },
-  "active": "3543e4c8afba0f09",
+  "active": "89508fc174611df3",
   "lastOpenFiles": [
-    "Java/大模型开发.md",
     "Java/认证和授权.md",
     "Java/Spring Boot.md",
-    "Java/数据库.md",
     "Java/Java.md",
     "Java/WebClient.md",
-    "Java/数据加密.md",
+    "前端/Vue.js.md",
+    "Java/Nginx.md",
     "Unreal Engine/Unreal Engine.md",
+    "Java/大模型开发.md",
+    "Java/数据库.md",
+    "Java/数据加密.md",
     "计算机科学与技术/密码学/密码学.md",
     "计算机科学与技术/密码学/国家商用密码算法.md"
   ]
