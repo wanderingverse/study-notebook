@@ -63,7 +63,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     }
 }
 ```
-#### 全局异常处理
+#### 全局异常和自定义异常
 在Spring MVC中，使用`@RestControllerAdvice` 注解创建一个全局异常处理器：GlobalExceptionHandler。在这个类中，可以包含处理各种异常的方法，这些方法使用`@ExceptionHandler(异常类.class)`注解进行标注。
 ```java
 @Slf4j  
@@ -76,6 +76,7 @@ public class GlobalExceptionHandler {
     }  
 }
 ```
+在 SpringBoot 中，使用 自定义异常。
 #### 重定向
 ```java
 // 后端指定浏览器重定向到视图
