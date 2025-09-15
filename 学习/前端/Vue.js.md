@@ -360,7 +360,7 @@ export function useEventListener(eventName, callback) {
 import emitter from '@/Emitter.js'
 
 // 触发事件
-emitter.emit('事件名')
+emitter.emit('事件名',参数)
 </script>
 ```
 ### 监听事件
@@ -369,7 +369,7 @@ emitter.emit('事件名')
 <script setup>
 import emitter from '@/Emitter.js'
 
-const doSomething = () => {
+const doSomething = (参数) => {
 	// 事件发生，执行自定义方法
 }
 
