@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2b43eab5f7f1a8c5",
+        "id": "cd0cff57258c19ab",
         "type": "tabs",
         "children": [
           {
-            "id": "70a7aa0c33d0369e",
+            "id": "0c6229220c2ff343",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "新标签页"
             }
           }
         ]
@@ -172,7 +168,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "70a7aa0c33d0369e",
+  "active": "0c6229220c2ff343",
   "lastOpenFiles": [
     "经历/2025年/2025年9月10日.mdenc",
     "经历/2025年/2025年8月6日.mdenc",
