@@ -431,7 +431,8 @@ dayjs.locale('zh-cn');
 console.log(dayjs(isoString).fromNow()); // 输出 "刚刚" / "2天前" 等
 ```
 ## 动效
-[Inspira UI](https://inspira-ui.com/docs/zh-cn)
+[canvas-confetti](https://github.com/catdad/canvas-confetti)
+[Canvas Confetti 五彩纸屑特效 JS 插件canvas-confetti 是一个 canvas 五彩纸屑特 - 掘金](https://juejin.cn/post/7150201876066074661)
 
 ## vite.config.js 配置
 ### 配置自定义端口
