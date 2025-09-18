@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/Vue.js.md",
+                "file": "Java/Spring Boot.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Vue.js"
+              "title": "Spring Boot"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端/Vue.js.md",
+                "file": "Java/Spring Boot.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Vue.js 的大纲"
+              "title": "Spring Boot 的大纲"
             }
           }
         ],
@@ -168,9 +168,10 @@
   },
   "active": "0b00ba7ac0a5a9b0",
   "lastOpenFiles": [
-    "Java/开发常用命令、注解、快捷键.md",
-    "前端/Vue.js.md",
     "Java/认证和授权.md",
+    "Java/Spring Boot.md",
+    "前端/Vue.js.md",
+    "Java/开发常用命令、注解、快捷键.md",
     "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
     "计算机科学与技术/计算机网络/第二章 物理层.md",
     "Java/RBAC 模型.md",
@@ -184,7 +185,6 @@
     "Java/单元测试方法.md",
     "Java/大模型开发.md",
     "Java/持续集成和持续部署.md",
-    "Java/Spring Boot.md",
     "Java/Java 开发规范.md",
     "计算机科学与技术/人工智能/提示词.md",
     "Java/数据库.md",
