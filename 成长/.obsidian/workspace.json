@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "92ff0bff8a978748",
+        "id": "8dbd5144630298f7",
         "type": "tabs",
         "children": [
           {
-            "id": "908daad406af42d8",
+            "id": "1cd95138cf2b7891",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -172,10 +172,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "908daad406af42d8",
+  "active": "1cd95138cf2b7891",
   "lastOpenFiles": [
-    "经历/2025年/2025年9月23日.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年9月24日.mdenc",
+    "经历/2025年/2025年9月23日.mdenc",
     "经历/自媒体/程序员健身.md",
     "经历/2025年/2025年9月22日.mdenc",
     "觉醒/第三章 自我引导.md",
@@ -187,7 +188,6 @@
     "经历/记录/考试.mdenc",
     "经历/记录/密码.mdenc",
     "经历/记录/硬核自救方案.mdenc",
-    "经历/2025年/2025年9月19日.mdenc",
     "读书/想读的书.md"
   ]
 }
