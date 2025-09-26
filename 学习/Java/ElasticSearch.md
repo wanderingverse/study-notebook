@@ -133,3 +133,5 @@ public class ElasticSearchConfig {
 ### 删除文档
 删除指定索引名 `index_name` 下指定 id 的文档。
 `DELETE /index_name/_doc/{id}`
+
+

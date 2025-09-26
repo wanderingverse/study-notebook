@@ -105,7 +105,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f69b2837b1791e6d",
+            "id": "270a2a6792c0b888",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          },
+          {
+            "id": "6581c4a1e59c5841",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -118,33 +128,9 @@
               "icon": "lucide-list",
               "title": "ElasticSearch 的大纲"
             }
-          },
-          {
-            "id": "270a2a6792c0b888",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
-            }
-          },
-          {
-            "id": "6f6f5ab7e8fcb3fe",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,6 +138,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -162,12 +149,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "30dddf9f80f91684",
+  "active": "6581c4a1e59c5841",
   "lastOpenFiles": [
-    "Java/src/ElasticSearch 文档.png",
-    "Java/src/倒排索引的创建.png",
     "Java/开发常用命令、注解、快捷键.md",
     "Java/ElasticSearch.md",
+    "Java/src/ElasticSearch 文档.png",
+    "Java/src/倒排索引的创建.png",
     "Java/MinIO.md",
     "Java/src/MySQL 模糊查询.png",
     "计算机科学与技术/数据结构与算法/【Java】数据结构与算法.md",
