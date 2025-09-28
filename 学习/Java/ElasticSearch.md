@@ -82,8 +82,8 @@ docker run \
 }
 ```
 ## SpringBoot 集成
-### 初始化 RestHighLevelClient
-elasticsearch 提供的API中，与 elasticsearch 的所有交互都封装在一个名为 RestHighLevelClient 的类中，必须先完成这个对象的初始化，建立与 elasticsearch 的连接。
+### RestHighLevelClient
+elasticsearch 提供的 API 中，与 elasticsearch 的所有交互都封装在一个名为 RestHighLevelClient 的类中，必须先完成这个对象的初始化，建立与 elasticsearch 的连接。
 #### 引入 RestHighLevelClient 依赖
 ```xml
 <!-- ElasticSearch -->  
