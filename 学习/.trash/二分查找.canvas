@@ -1,7 +1,0 @@
-{
-	"nodes":[
-		{"id":"ccf252b3627fd3ec","x":-209,"y":-196,"width":250,"height":60,"type":"text","text":""},
-		{"id":"55d2c9369dbe532e","x":-280,"y":-340,"width":260,"height":50,"type":"text","text":"有序数组 A，内含 n 个元素"}
-	],
-	"edges":[]
-}

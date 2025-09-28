@@ -105,16 +105,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "270a2a6792c0b888",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
-            }
-          },
-          {
             "id": "6581c4a1e59c5841",
             "type": "leaf",
             "state": {
@@ -130,7 +120,7 @@
             }
           },
           {
-            "id": "b964a3a4849c60e2",
+            "id": "a98eb7cab88ad62f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -144,7 +134,7 @@
             }
           },
           {
-            "id": "4ee138f5e9cf78d0",
+            "id": "7bc4fae2e68567c8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -159,7 +149,7 @@
             }
           },
           {
-            "id": "c4958afd0fc5c082",
+            "id": "1ef33823d1dab1c6",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -172,8 +162,7 @@
               "title": "添加笔记属性"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,7 +170,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -192,7 +180,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f0d1e7826c1d44c0",
+  "active": "6581c4a1e59c5841",
   "lastOpenFiles": [
     "Java/ElasticSearch.md",
     "Java/开发常用命令、注解、快捷键.md",

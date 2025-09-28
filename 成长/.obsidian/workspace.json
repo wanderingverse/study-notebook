@@ -13,12 +13,12 @@
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/2025年/2025年9月24日.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "2025年9月24日"
             }
           }
         ]
@@ -160,7 +160,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -174,6 +173,7 @@
   },
   "active": "9878111b5e9462f4",
   "lastOpenFiles": [
+    "经历/记录/负债.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "经历/2025年/2025年9月24日.mdenc",
     "经历/2025年/2025年9月23日.mdenc",
@@ -183,7 +183,6 @@
     "觉醒/第二章 人的存在是梦境.md",
     "经历/记录/命数.mdenc",
     "经历/记录/要求.mdenc",
-    "经历/记录/负债.mdenc",
     "经历/记录/谨记.mdenc",
     "经历/记录/考试.mdenc",
     "经历/记录/密码.mdenc",
