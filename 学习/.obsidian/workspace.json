@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/持续集成和持续部署.md",
+                "file": "Java/Spring Boot.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "持续集成和持续部署"
+              "title": "Spring Boot"
             }
           },
           {
@@ -90,7 +90,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/持续集成和持续部署.md",
+                "file": "Java/Spring Boot.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "持续集成和持续部署 的大纲"
+              "title": "Spring Boot 的大纲"
             }
           },
           {
@@ -180,9 +181,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6581c4a1e59c5841",
+  "active": "ffe41d3a022eec22",
   "lastOpenFiles": [
     "Java/ElasticSearch.md",
+    "Java/Java 基础.md",
+    "Java/持续集成和持续部署.md",
     "Java/开发常用命令、注解、快捷键.md",
     "Java/src/ElasticSearch 文档.png",
     "Java/src/倒排索引的创建.png",
@@ -200,9 +203,7 @@
     "计算机科学与技术/数据结构与算法/流程图",
     "计算机科学与技术/数据结构与算法/算法导论.md",
     "Java/Java 高级.md",
-    "Java/Java 基础.md",
     "Java/Java 开发规范.md",
-    "Java/持续集成和持续部署.md",
     "Java/消息队列.md",
     "计算机科学与技术/人工智能/提示词.md",
     "Java/数据库.md",
