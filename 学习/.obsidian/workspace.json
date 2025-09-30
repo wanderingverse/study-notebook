@@ -1,48 +1,25 @@
 {
   "main": {
-    "id": "4a0a0847486efa23",
+    "id": "b2a6367572a15706",
     "type": "split",
     "children": [
       {
-        "id": "4d521d6ad9ca0485",
+        "id": "5e0534e4c0f271da",
         "type": "tabs",
         "children": [
           {
-            "id": "973a1992f0f46021",
+            "id": "37550128c6a6b968",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "计算机科学与技术/操作系统/文件管理/文件管理.md",
-=======
-                "file": "Java/Spring Boot.md",
->>>>>>> 2cb026cf1ba11cf4cbc9e457c30df3f5f5e15f53
+                "file": "Java/认证和授权.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "文件管理"
-=======
-              "title": "Spring Boot"
-            }
-          },
-          {
-            "id": "0334f2f010d4534b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/开发常用命令、注解、快捷键.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "开发常用命令、注解、快捷键"
->>>>>>> 2cb026cf1ba11cf4cbc9e457c30df3f5f5e15f53
+              "title": "认证和授权"
             }
           }
         ]
@@ -51,15 +28,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "40d4512c4aebf36a",
+    "id": "b31858e9417329ca",
     "type": "split",
     "children": [
       {
-        "id": "dadd978542ac6a20",
+        "id": "f22a7d63792cf7cf",
         "type": "tabs",
         "children": [
           {
-            "id": "f0d1e7826c1d44c0",
+            "id": "04419ff548e805a2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -72,7 +49,7 @@
             }
           },
           {
-            "id": "ffe41d3a022eec22",
+            "id": "b89d7a87fd14f409",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -89,7 +66,7 @@
             }
           },
           {
-            "id": "d9c5a0779e984445",
+            "id": "df4243fb870bd7c7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -98,60 +75,35 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "818c0589041c5d2e",
+    "id": "45c76b9fb20355c2",
     "type": "split",
     "children": [
       {
-        "id": "79e3387d7a985db3",
+        "id": "71dffdbc6df68947",
         "type": "tabs",
         "children": [
           {
-            "id": "6581c4a1e59c5841",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "计算机科学与技术/操作系统/文件管理/文件管理.md",
-=======
-                "file": "Java/Spring Boot.md",
->>>>>>> 2cb026cf1ba11cf4cbc9e457c30df3f5f5e15f53
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-<<<<<<< HEAD
-              "title": "文件管理 的大纲"
-=======
-              "title": "Spring Boot 的大纲"
->>>>>>> 2cb026cf1ba11cf4cbc9e457c30df3f5f5e15f53
-            }
-          },
-          {
-            "id": "a98eb7cab88ad62f",
+            "id": "e4851a2530a42c7d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/持续集成和持续部署.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "持续集成和持续部署 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "7bc4fae2e68567c8",
+            "id": "b21c657e7a1dec7a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,7 +118,7 @@
             }
           },
           {
-            "id": "1ef33823d1dab1c6",
+            "id": "da73094a8f38aa2c",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -178,16 +130,30 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "5cc5d057a5e7229f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -195,61 +161,16 @@
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
       "publish:发布更改": false,
+      "bases:创建新数据库": false,
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-<<<<<<< HEAD
-  "active": "973a1992f0f46021",
-=======
-  "active": "ffe41d3a022eec22",
->>>>>>> 2cb026cf1ba11cf4cbc9e457c30df3f5f5e15f53
+  "active": "37550128c6a6b968",
   "lastOpenFiles": [
-    "计算机科学与技术/操作系统/文件管理/src/顺序索引文件.png",
-    "计算机科学与技术/操作系统/文件管理/src/索引文件.png",
-    "计算机科学与技术/操作系统/文件管理/src/定长顺序文件.png",
-    "计算机科学与技术/操作系统/文件管理/src/可变长顺序文件.png",
-    "计算机科学与技术/操作系统/文件管理/src",
-    "计算机科学与技术/操作系统/未命名.md",
-    "计算机科学与技术/操作系统/文件管理",
-    "计算机科学与技术/操作系统/文件管理/文件管理.md",
-    "计算机科学与技术/操作系统/进程管理.md",
-    "计算机科学与技术/操作系统/内存管理.md",
-    "计算机科学与技术/操作系统/操作系统概述.md",
-    "计算机科学与技术/操作系统/Linux.md",
-    "计算机科学与技术/计算机网络/第二章 物理层.md",
-    "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
-    "计算机科学与技术/数据结构与算法/【Java】数据结构与算法.md",
-    "计算机科学与技术/数据结构与算法/数据结构与算法.md",
+    "Java/工作流引擎.md",
+    "Java/单元测试方法.md",
+    "Java/大模型开发.md",
     "Java/持续集成和持续部署.md",
-    "Java/ElasticSearch.md",
-    "Java/Java 基础.md",
-    "Java/持续集成和持续部署.md",
-    "Java/开发常用命令、注解、快捷键.md",
-    "Java/src/ElasticSearch 文档.png",
-    "Java/src/倒排索引的创建.png",
-    "Java/MinIO.md",
-    "Java/src/MySQL 模糊查询.png",
-    "计算机科学与技术/数据结构与算法/流程图/二分查找.md",
-    "Java/实时数据同步.md",
-    "计算机科学与技术/数据结构与算法/流程图/131231.base",
-    "计算机科学与技术/数据结构与算法/流程图/Untitled.md",
-    "计算机科学与技术/数据结构与算法/流程图/二分查找.canvas",
-    "计算机科学与技术/数据结构与算法/二分查找.md",
-    "计算机科学与技术/数据结构与算法/流程图/【流程图】数据结构与算法.canvas",
-    "计算机科学与技术/数据结构与算法/流程图",
-    "计算机科学与技术/数据结构与算法/算法导论.md",
-    "Java/Java 高级.md",
-    "Java/Java 开发规范.md",
-    "Java/消息队列.md",
-    "计算机科学与技术/人工智能/提示词.md",
-    "Java/数据库.md",
-    "逆向工程/Cheat Engine/罪恶都市/gta-vc.CT",
-    "逆向工程/Cheat Engine/罪恶都市",
-    "逆向工程/Cheat Engine/骑马与砍杀：战团/骑砍.txt",
-    "逆向工程/Cheat Engine/骑马与砍杀：战团",
-    "逆向工程/Cheat Engine/鬼谷八荒/鬼谷.txt",
-    "逆向工程/Cheat Engine/鬼谷八荒/男1.png",
-    "逆向工程/Cheat Engine/鬼谷八荒",
-    "逆向工程/鬼谷八荒/男1.png"
+    "计算机科学与技术/人工智能/MCP.md"
   ]
 }
