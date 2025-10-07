@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "db9a37635fc8d7d0",
+        "id": "c339efd87dd2f496",
         "type": "tabs",
         "children": [
           {
-            "id": "1e490411f476d6e0",
+            "id": "24cd1a52639f100a",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
+              "type": "markdown",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/2025年/2025年10月3日.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "2025年10月3日"
             }
           }
         ]
@@ -160,7 +160,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,8 +171,9 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "1e490411f476d6e0",
+  "active": "24cd1a52639f100a",
   "lastOpenFiles": [
+    "经历/2025年/2025年10月3日.md",
     "经历/记录/负债.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "经历/2025年/2025年9月24日.mdenc",
@@ -187,7 +187,6 @@
     "经历/记录/谨记.mdenc",
     "经历/记录/考试.mdenc",
     "经历/记录/密码.mdenc",
-    "经历/记录/硬核自救方案.mdenc",
     "读书/想读的书.md"
   ]
 }

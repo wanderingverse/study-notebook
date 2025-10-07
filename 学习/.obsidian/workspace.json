@@ -161,7 +161,6 @@
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
       "publish:发布更改": false,
-      "bases:创建新数据库": false,
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
