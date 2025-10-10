@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eafceb101301370e",
+        "id": "c86b28cb6df04028",
         "type": "tabs",
         "children": [
           {
-            "id": "5171fa7905340f16",
+            "id": "7e42aba5e4148627",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -172,22 +172,22 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "5171fa7905340f16",
+  "active": "7e42aba5e4148627",
   "lastOpenFiles": [
-    "经历/2025年/2025年10月3日.mdenc",
+    "经历/2025年/2025年10月10日.mdenc",
+    "工作/网方华信/开发日报.mdenc",
     "经历/记录/养生.mdenc",
+    "经历/2025年/2025年10月3日.mdenc",
     "经历/记录/要求.mdenc",
     "工作/深造路径.mdenc",
     "经历/自媒体/程序员健身.md",
     "经历/记录/负债.mdenc",
-    "工作/网方华信/开发日报.mdenc",
     "经历/2025年/2025年9月24日.mdenc",
     "经历/2025年/2025年9月23日.mdenc",
     "经历/2025年/2025年9月22日.mdenc",
     "觉醒/第三章 自我引导.md",
     "觉醒/第二章 人的存在是梦境.md",
     "经历/记录/命数.mdenc",
-    "经历/记录/谨记.mdenc",
     "读书/想读的书.md"
   ]
 }

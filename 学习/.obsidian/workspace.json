@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/认证和授权.md",
+                "file": "Java/Java 基础.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "认证和授权"
+              "title": "Java 基础"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "MessageF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -167,6 +168,9 @@
   },
   "active": "37550128c6a6b968",
   "lastOpenFiles": [
+    "Java/开发常用命令、注解、快捷键.md",
+    "Java/Spring Boot.md",
+    "Java/认证和授权.md",
     "Java/工作流引擎.md",
     "Java/单元测试方法.md",
     "Java/大模型开发.md",
