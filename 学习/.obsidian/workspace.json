@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Java 基础.md",
+                "file": "Java/消息队列.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Java 基础"
+              "title": "消息队列"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MessageF",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,20 +90,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4851a2530a42c7d",
+            "id": "5cc5d057a5e7229f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java/消息队列.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "消息队列 的大纲"
+            }
+          },
+          {
+            "id": "2ecf5dfe41a50b94",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Java/消息队列.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "消息队列 的出链列表"
             }
           },
           {
-            "id": "b21c657e7a1dec7a",
+            "id": "5bafb6ab6e920990",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -119,7 +134,7 @@
             }
           },
           {
-            "id": "da73094a8f38aa2c",
+            "id": "ab28ae49fbf49138",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -131,27 +146,12 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "5cc5d057a5e7229f",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,9 +169,10 @@
   "active": "37550128c6a6b968",
   "lastOpenFiles": [
     "Java/开发常用命令、注解、快捷键.md",
+    "Java/工作流引擎.md",
+    "Java/Java 基础.md",
     "Java/Spring Boot.md",
     "Java/认证和授权.md",
-    "Java/工作流引擎.md",
     "Java/单元测试方法.md",
     "Java/大模型开发.md",
     "Java/持续集成和持续部署.md",
