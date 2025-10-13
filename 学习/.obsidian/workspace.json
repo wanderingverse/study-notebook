@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/消息队列.md",
+                "file": "金融/炒股入门.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "消息队列"
+              "title": "炒股入门"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/消息队列.md",
+                "file": "金融/炒股入门.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "消息队列 的大纲"
+              "title": "炒股入门 的大纲"
             }
           },
           {
@@ -168,6 +168,10 @@
   },
   "active": "37550128c6a6b968",
   "lastOpenFiles": [
+    "Java/ElasticSearch.md",
+    "金融/炒股入门.md",
+    "Java/消息队列.md",
+    "金融",
     "Java/开发常用命令、注解、快捷键.md",
     "Java/工作流引擎.md",
     "Java/Java 基础.md",
