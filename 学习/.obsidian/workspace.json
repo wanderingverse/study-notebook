@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "金融/炒股入门.md",
+                "file": "金融/宏观经济学/宏观经济学.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "炒股入门"
+              "title": "宏观经济学"
             }
           }
         ]
@@ -95,56 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "金融/炒股入门.md",
+                "file": "金融/宏观经济学/宏观经济学.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "炒股入门 的大纲"
-            }
-          },
-          {
-            "id": "2ecf5dfe41a50b94",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Java/消息队列.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "消息队列 的出链列表"
-            }
-          },
-          {
-            "id": "5bafb6ab6e920990",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
-            "id": "ab28ae49fbf49138",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
+              "title": "宏观经济学 的大纲"
             }
           }
         ]
@@ -168,18 +125,38 @@
   },
   "active": "37550128c6a6b968",
   "lastOpenFiles": [
+    "金融/股票快速入门.md",
+    "金融/src/Pasted image 20251016112024.png",
+    "金融/src/Pasted image 20251016111141.png",
+    "金融/src/Pasted image 20251016111037.png",
+    "金融/宏观经济学/宏观经济学.md",
+    "金融/宏观经济学/src/价格指数计算示例：早餐价格指数.png",
+    "金融/宏观经济学/src",
+    "金融/宏观经济学",
+    "金融/src",
+    "Java/WebClient.md",
+    "Java/RBAC 模型.md",
+    "Java/PDF 识别.md",
+    "Java/Java 基础.md",
+    "Java/持续集成和持续部署.md",
+    "C++/C++.md",
+    "三维建模/Blender.md",
+    "前端/Vue.js.md",
+    "前端/JavaScript.md",
+    "前端/HTML.md",
+    "前端/CSS.md",
+    "前端/开源组件库.md",
+    "前端/Naive UI.md",
+    "前端/Element Plus.md",
+    "逆向工程/网络抓包.md",
+    "金融/货币金融学.md",
+    "金融/投资学.md",
+    "金融/经济数据分析.md",
+    "金融/金融市场分析.md",
     "Java/ElasticSearch.md",
-    "金融/炒股入门.md",
     "Java/消息队列.md",
     "金融",
     "Java/开发常用命令、注解、快捷键.md",
-    "Java/工作流引擎.md",
-    "Java/Java 基础.md",
-    "Java/Spring Boot.md",
-    "Java/认证和授权.md",
-    "Java/单元测试方法.md",
-    "Java/大模型开发.md",
-    "Java/持续集成和持续部署.md",
-    "计算机科学与技术/人工智能/MCP.md"
+    "Java/工作流引擎.md"
   ]
 }
