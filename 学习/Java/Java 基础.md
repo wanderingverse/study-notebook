@@ -3,23 +3,49 @@ Java 开发工具包。包括 JRE 和开发工具（如 javac 编译器、javado
 ## JRE（Java Runtime Environment）
 Java 运行时环境。包括 JVM 和运行 Java 程序所需的类库，用于运行 Java 程序。
 ### JVM（Java Virtual Machine）
-Java 虚拟机。负责执行字节码（.class）文件，实现 Java 的跨平台特性。
-# Java
-## 数据类型
-### byte
-- 8位有符号整数。
-- 取值范围：`[-128,127] = [-2⁷, 2⁷-1]`
-- 默认值：0
-- 包装类型：Byte
-### short
-- 16 位有符号整数。
-- 取值范围：[-32768,32767] = [-2¹⁵,2¹⁵-1]
-- 默认值：0
-- 包装类型：Short
-## Object
-### Object 简介
-### Object 常用方法
-
+Java 虚拟机。定义了 Java 字节码如何被执行。包括内存模型、垃圾回收、线程模型、跨平台特性等。
+Java 程序编译后的字节码在任何遵循 JVM 规范的实现上都能运行。
+HotSpot 是 Oracle 提供的 JVM 的一个具体实现，负责执行字节码（.class）文件，是最常用的 JVM 实现之一。
+# 注释和文档注释
+- 单行注释：
+	- // 普通注释内容
+	- // TODO：标识待完成的任务，用于提醒开发者后续需要补充实现
+	- // FIXME：标识代码有问题，需要修复
+- 多行注释：
+# 数据类型
+- **byte**
+	- 8位有符号整数。
+	- 取值范围：`[-128,127] = [-2⁷, 2⁷-1]`
+	- 默认值：0
+	- 包装类型：Byte
+- **short**
+	- 16 位有符号整数。
+	- 取值范围：[-32768,32767] = [-2¹⁵,2¹⁵-1]
+	- 默认值：0
+	- 包装类型：Short
+# 启动参数和 JVM 命令
+## 启动参数
+`-X` 开头表示可调的扩展参数。
+- 设置 JVM 的最大（maximum）堆内存（heap memory）：`-Xmx1024M`
+- 设置 JVM 启动时初始（minimum）分配的堆内存：`-Xms1024M`
+- 设置每个线程最大允许的栈内存（stack memory）大小：`-Xss256K`
+	- 注意：最大栈内存数值指定过小会导致 JVM 启动失败。
+- 开启本地内存跟踪（NMT）：`-XX:NativeMemoryTracking=summary`
+	- JVM 提供了对本地（Native）内存分配的跟踪功能，开启此参数可分析 JVM 本身和本地库（JNI、Direct ByteBuffer 等）占用的内存，帮助定位内存泄漏或性能调优。
+	- 通过 `jcmd` 查看本地内存占用信息：`jcmd {进程 pid} VM.native_memory`
+		- `jcmd`：JDK 自带的命令行工具，位于 JDK 安装目录中的`bin`目录下。
+		- 必须开启 `NMT` 才能通过 `jcmd` 获取信息，否则提示 `NMT` 未开启。
+## JVM 命令
+- 查看指定进程的默认栈大小：`jinfo -flag ThreadStackSize {进程 pid}`
+	- `jinfo`：JDK 自带的命令行工具，位于 JDK 安装目录中的`bin`目录下。
+- 查看 Java 的运行时信息：`java -XshowSettings:properties -version`
+	- java.version：Java SE 版本号
+	- java.home：JDK 安装目录
+	- java.vm.version：JVM 版本号
+	- os.name：操作系统名称
+	- os.arch：操作系统架构
+	- sun.arch.data.model：数据模型（32/64位）
+# 未分类
 ## Stream
 ### Stream 简介
 `Stream`将要处理的`元素集合`看作一种流，在流的过程中，借助`Stream API` 对流中的元素进行操作，比如筛选、排序、聚合等。
@@ -77,9 +103,10 @@ StringBuffer sb = new StringBuffer();
 sb.append("字符串0：").append(stringNo1)
   .append("；字符串1：").append(stringNo2);
 ```
-## 异常
-### Exception
+# Throwable
+## Exception
 受检异常（Checked Exception）：继承自 Exception 类的异常。受检异常要求程序员必须要显式处理。如果某个方法可能抛出受检异常，程序员必须使用 try-catch 语句块来捕获异常并处理，或者在方法签名中使用 throws 关键字将异常抛出，交给调用该方法的代码去处理。
+### IOException
 ### RuntimeException
 非受检异常（unchecked exception）：继承自 RuntimeException 类的异常，又称运行时异常。非受检异常不必要被显式捕获或声明才能抛出。编译器不会强制要求程序员在代码中显式地捕获或声明这些异常，程序员可以选择不处理这些异常，而是让它们在运行时直接抛出。
 #### NullPointerException
@@ -87,6 +114,12 @@ sb.append("字符串0：").append(stringNo1)
 #### ArithmeticException
 #### UnsupportedOperationException
 不支持操作异常。当试图调用未实现或无法实现的方法时抛出。
+## Error
+系统级错误，由 JVM 抛出。指示系统或虚拟机层级上出现问题，不应由程序处理。
+### OutOfMemoryError
+内存溢出错误。
+### StackOverflowError
+栈溢出错误。常出现在较深的方法调用以及递归方法中。
 ## HttpClient
 ### 创建 HttpClient 实例
 #### 创建默认实例

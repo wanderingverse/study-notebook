@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "金融/宏观经济学/宏观经济学.md",
+                "file": "Java/开发常用命令、注解、快捷键.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "宏观经济学"
+              "title": "开发常用命令、注解、快捷键"
+            }
+          },
+          {
+            "id": "c75f2f81ec08d2cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Java 基础.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Java 基础"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,13 +111,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "金融/宏观经济学/宏观经济学.md",
+                "file": "Java/Java 基础.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "宏观经济学 的大纲"
+              "title": "Java 基础 的大纲"
             }
           },
           {
@@ -166,13 +182,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "37550128c6a6b968",
+  "active": "c75f2f81ec08d2cf",
   "lastOpenFiles": [
+    "Java/开发常用命令、注解、快捷键.md",
+    "Java/Java 基础.md",
+    "Java/Java 开发规范.md",
+    "Java/Java 进阶.md",
+    "Java/Java 设计模式.md",
+    "Java/Java 类加载器.md",
+    "金融/宏观经济学/宏观经济学.md",
     "金融/股票快速入门.md",
     "金融/src/Pasted image 20251016112024.png",
     "金融/src/Pasted image 20251016111141.png",
     "金融/src/Pasted image 20251016111037.png",
-    "金融/宏观经济学/宏观经济学.md",
     "金融/宏观经济学/src/价格指数计算示例：早餐价格指数.png",
     "金融/宏观经济学/src",
     "金融/宏观经济学",
@@ -180,7 +202,6 @@
     "Java/WebClient.md",
     "Java/RBAC 模型.md",
     "Java/PDF 识别.md",
-    "Java/Java 基础.md",
     "Java/持续集成和持续部署.md",
     "C++/C++.md",
     "三维建模/Blender.md",
@@ -196,10 +217,6 @@
     "金融/投资学.md",
     "金融/经济数据分析.md",
     "金融/金融市场分析.md",
-    "Java/ElasticSearch.md",
-    "Java/消息队列.md",
-    "金融",
-    "Java/开发常用命令、注解、快捷键.md",
-    "Java/工作流引擎.md"
+    "金融"
   ]
 }
