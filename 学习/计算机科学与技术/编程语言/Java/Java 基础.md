@@ -1,8 +1,11 @@
-# JDK（Java Development Kit）
+# Java 概述
+## Java 虚拟机规范
+Java 虚拟机规范（Java Virtual Machine Specification，JVMS）是 Java 官方标准文档，定义了 JVM 的行为和 Java 语言运行时的要求。定义比如 Java 字节码怎么执行、内存模型怎么分配、异常怎么处理、类加载器怎么工作等。它不关心具体的实现（HotSpot 或 GraalVM），只定义应该如何行为。
+## JDK（Java Development Kit）
 Java 开发工具包。包括 JRE 和开发工具（如 javac 编译器、javadoc、调试器等），用于开发和编译 Java 程序。
-## JRE（Java Runtime Environment）
+### JRE（Java Runtime Environment）
 Java 运行时环境。包括 JVM 和运行 Java 程序所需的类库，用于运行 Java 程序。
-### JVM（Java Virtual Machine）
+#### JVM（Java Virtual Machine）
 Java 虚拟机。定义了 Java 字节码如何被执行。包括内存模型、垃圾回收、线程模型、跨平台特性等。
 Java 程序编译后的字节码在任何遵循 JVM 规范的实现上都能运行。
 HotSpot 是 Oracle 提供的 JVM 的一个具体实现，负责执行字节码（.class）文件，是最常用的 JVM 实现之一。
