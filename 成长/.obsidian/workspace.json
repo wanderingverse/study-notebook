@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "75899d3308b2469e",
+        "id": "4bf5d96e95fe4640",
         "type": "tabs",
         "children": [
           {
-            "id": "dab6af99b015612d",
+            "id": "1061f21950c95f3d",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "开发日报"
             }
           }
         ]
@@ -172,12 +172,12 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "dab6af99b015612d",
+  "active": "1061f21950c95f3d",
   "lastOpenFiles": [
+    "经历/记录/密码.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "工作/深造路径.mdenc",
     "经历/2025年/2025年10月13日.mdenc",
-    "经历/记录/密码.mdenc",
     "经历/2025年/2025年10月10日.mdenc",
     "经历/记录/养生.mdenc",
     "经历/2025年/2025年10月3日.mdenc",
