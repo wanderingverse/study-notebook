@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4bf5d96e95fe4640",
+        "id": "98128ab6c1b042a0",
         "type": "tabs",
         "children": [
           {
-            "id": "1061f21950c95f3d",
+            "id": "58e85397cdb1e22b",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "新标签页"
             }
           }
         ]
@@ -160,7 +156,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,16 +167,16 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "1061f21950c95f3d",
+  "active": "58e85397cdb1e22b",
   "lastOpenFiles": [
+    "经历/记录/要求.mdenc",
+    "经历/记录/养生.mdenc",
     "经历/记录/密码.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "工作/深造路径.mdenc",
     "经历/2025年/2025年10月13日.mdenc",
     "经历/2025年/2025年10月10日.mdenc",
-    "经历/记录/养生.mdenc",
     "经历/2025年/2025年10月3日.mdenc",
-    "经历/记录/要求.mdenc",
     "经历/自媒体/程序员健身.md",
     "经历/记录/负债.mdenc",
     "经历/2025年/2025年9月24日.mdenc",
