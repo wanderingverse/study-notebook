@@ -1,28 +1,29 @@
-## 待学习
+# 待学习
 1、数据库设计与优化
 2、事务处理与并发控制
 3、数据库安全与权限管理
 4、分布式数据库与集群
 5、故障排查与性能监控
-## [MySQL](https://dev.mysql.com/doc/refman/8.0/en/)
+# [MySQL](https://dev.mysql.com/doc/refman/8.0/en/)
 [黑马程序员 MySQL数据库入门到精通，从mysql安装到mysql高级、mysql优化全囊括_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Kr4y1i7ru?spm_id_from=333.788.videopod.episodes&vd_source=32d7b7aca593de01e7de9c2be4a87152)
 
-### 存储引擎
-#### InnoDB
-##### 限制
+## 存储引擎
+### InnoDB
+#### 限制
 - 一个表中最多可以包含 1017 列（≈ 2<sup>10</sup> 列），包含虚拟生成的列。
 - 一个表中最多可以包含 64 个（2<sup>7</sup> 个）二级索引（非主键索引）。
 	- 一个表中最多可以有 64+1=65 个索引，包含 1 个主键索引和最多 64 个二级索引。
 - 多列索引（复合索引）最多允许 16 列（2<sup>4</sup> 列）。 超过限制将返回错误。
-### 命令和语句
-#### 命令
+## 命令和语句
+### 命令
 - 连接 MySQL：`mysql -h <ip> -u <username> -p<password>`
 	- ip：MySQL 数据库连接地址，缺省时默认连接 localhost。
 	- username：MySQL 用户名。
 	- password：用户名密码。
 		- `-p` 和密码之间不能有空格。MySQL 官方安全规范不允许直接在 `-p` 后面用空格跟密码（可以用无空格写法，但不推荐，因为密码会暴露在命令历史里）。
 		- 推荐使用提示输入密码的方式连接数据库。即不输入（缺省） password，交由 MySQL 提示输入。
-#### 事务
+### 语句
+#### 事务语句
 DML 可在事务中执行。DDL 语句自动提交，不受事务管理。
 ```mysql
 start transaction;
@@ -147,19 +148,7 @@ SELECT 列名,
 	END AS 条件列别名
 FROM 表名;
 ```
-### 函数
-- `DATE_SUB(date, INTERVAL expr unit)`：从一个日期或日期时间中减去指定时间间隔的日期并返回。
-	- date：要计算的日期类型的值
-	- expr：减去的数值。
-	- unit：时间单位。
-		- QUARTER：季度（3个月）
-		- YEAR：年
-		- MONTH：月
-		- DAY：天
-		- HOUR：小时
-		- SECOND：秒
-- `COALESCE(value1, value2, value3, ...)`：按顺序检查参数，返回第一个非 NULL 的值。如果所有参数都是 NULL，最终返回 NULL。
-- `MAX(value)`：找出当前表里的最大值。
+## 数据类型和函数
 ### 数据类型
 - tinyint
 	- 占用空间：1 字节
@@ -191,7 +180,20 @@ FROM 表名;
 	- 可存储范围：视编码方式而定。
 - datetime
 - JSON
-### 执行计划
+### 函数
+- `DATE_SUB(date, INTERVAL expr unit)`：从一个日期或日期时间中减去指定时间间隔的日期并返回。
+	- date：要计算的日期类型的值
+	- expr：减去的数值。
+	- unit：时间单位。
+		- QUARTER：季度（3个月）
+		- YEAR：年
+		- MONTH：月
+		- DAY：天
+		- HOUR：小时
+		- SECOND：秒
+- `COALESCE(value1, value2, value3, ...)`：按顺序检查参数，返回第一个非 NULL 的值。如果所有参数都是 NULL，最终返回 NULL。
+- `MAX(value)`：找出当前表里的最大值。
+## 执行计划
 执行计划（**Execution Plan**）供开发者观察数据库实际如何执行一条指定的 SQL 。
 ```mysql
 explain SQL语句;
@@ -223,6 +225,17 @@ EXPLAIN ANALYZE SQL语句;
 - `Extra`：额外信息
 	- `Using where`：使用了 `WHERE` 条件过滤。
 	- `Using join buffer`：使用了连接缓冲区（一般是因为没有索引支持 `JOIN` 条件）。
+## 约束和索引
+### 约束和属性
+- 主键约束：`PRIMARY KEY`
+	- 约束字段为主键。主键要求唯一（UNIQUE） 和非空（NOT NULL）。
+	- 一个表中最多只能有一个主键，即最多只能有一个 `PRIMARY KEY` 列。
+	- 可以由多个列组成复合主键如 `PRIMARY KEY (字段1, 字段2, …)`，此时单列可重复，但组合唯一。
+	- 自动建立聚簇索引（clustered index）。
+- 值生成属性：`AUTO_INCREMENT`
+	- 用于自动编号。当字段在插入新行时未指定值，自动生成一个比当前最大值大的整数。
+	- 仅适用于整数类型字段（`INT`, `BIGINT` 等）
+	- 每个表最多只能有一个 `AUTO_INCREMENT` 列。
 ### 索引
 #### 索引设计原则
 - **数据量少的表或更新频繁的表不适合加索引**：当表的数据量很小（如几百条以内），数据库在执行 SQL 查询时，全表扫描比使用索引更快。而且索引是一个额外的结构，会占用内存或磁盘空间。对小表或频繁更新的表来说，维护这些索引（如插入/删除/更新时自动更新索引）会带来额外负担，却不能带来明显的性能提升。在高并发写入的场景中，索引越多，写操作的性能越差，因为每次写入都要先锁定和更新多个索引。
