@@ -94,7 +94,13 @@ public class GlobalExceptionHandler {
 ### 注解和 AOP
 [【SpringBoot】AOP 自定义注解的使用详解_spring boot aop注解-CSDN博客](https://blog.csdn.net/yuxiangdeming/article/details/129159139)
 #### 注解
-#### 常用注解
+##### @EnableAsync
+注解在`SpringBootApplication`类上，表示启用 Spring 的异步方法执行功能。标识此注解后，`@Async`注解生效。
+Spring 会在启动时加载一个`AsyncAnnotationBeanPostProcessor`后置处理器，扫描所有拥有`@Async`注解的方法，对这些方法所在的 Bean 生成代理对象，当调用该方法时，Spring 不会直接执行原方法，而是把调用任务交给线程池异步执行。
+线程池默认使用`SimpleAsyncTaskExecutor`。
+##### @Async
+`@Async`是 Spring 提供的异步方法执行注解，注解在方法上。拥有该注解的方法被调用时，该方法的调用交由线程池执行，调用线程立即返回，不等待方法完成。
+需要启用`@EnableAsync`。
 ##### @EventListener(ApplicationReadyEvent.class)
 事件监听注解，用于监听 Spring 事件。
 `ApplicationReadyEvent` 是 Spring Boot 提供的一个特定事件，表示 Spring 容器启动完成、所有 `ApplicationRunner` 和 `CommandLineRunner` 都执行完毕、应用已经完全就绪，可以接收请求

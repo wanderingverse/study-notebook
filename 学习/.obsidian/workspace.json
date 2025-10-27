@@ -1,33 +1,25 @@
 {
   "main": {
-    "id": "b2a6367572a15706",
+    "id": "a9575b8b4bd3d964",
     "type": "split",
     "children": [
       {
-        "id": "0b6fa71458f2f149",
+        "id": "557be8a8cb93ee46",
         "type": "tabs",
         "children": [
           {
-            "id": "1fb9a1e78c45fb06",
+            "id": "4557d8736d6d4d06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "计算机科学与技术/数据库系统原理/MySQL.md",
-=======
-                "file": "计算机科学与技术/人工智能/提示词.md",
->>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
+                "file": "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "MySQL"
-=======
-              "title": "提示词"
->>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
+              "title": "第一章 计算机网络体系结构"
             }
           }
         ]
@@ -36,34 +28,34 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b31858e9417329ca",
+    "id": "79da78b71c02ccfe",
     "type": "split",
     "children": [
       {
-        "id": "f22a7d63792cf7cf",
+        "id": "cadc5cb11b82b800",
         "type": "tabs",
         "children": [
           {
-            "id": "04419ff548e805a2",
+            "id": "42664f1b013c4ba5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
           },
           {
-            "id": "b89d7a87fd14f409",
+            "id": "6cccff96bfbcc536",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -74,7 +66,7 @@
             }
           },
           {
-            "id": "df4243fb870bd7c7",
+            "id": "e33a4c1d507e4e36",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -90,52 +82,29 @@
     "width": 300
   },
   "right": {
-    "id": "45c76b9fb20355c2",
+    "id": "f879747d1a4df9bc",
     "type": "split",
     "children": [
       {
-        "id": "71dffdbc6df68947",
+        "id": "8a68c34109971891",
         "type": "tabs",
         "children": [
           {
-            "id": "5cc5d057a5e7229f",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "计算机科学与技术/数据库系统原理/MySQL.md",
-=======
-                "file": "计算机科学与技术/人工智能/提示词.md",
->>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-<<<<<<< HEAD
-              "title": "MySQL 的大纲"
-=======
-              "title": "提示词 的大纲"
->>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
-            }
-          },
-          {
-            "id": "b7890bfc385f8d3a",
+            "id": "013bb767401b5f75",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "金融/宏观经济学/宏观经济学.md",
+                "file": "计算机科学与技术/后端开发/Spring Boot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "宏观经济学 的出链列表"
+              "title": "Spring Boot 的出链列表"
             }
           },
           {
-            "id": "e03c7b0d87df88dc",
+            "id": "0a980b628c37d399",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -150,7 +119,7 @@
             }
           },
           {
-            "id": "bfae2523a0328b50",
+            "id": "8c71f961d4d42c4b",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -162,8 +131,24 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "4ab65ba0ae9d9079",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "第一章 计算机网络体系结构 的大纲"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -178,61 +163,20 @@
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
       "publish:发布更改": false,
+      "bases:创建新数据库": false,
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "1fb9a1e78c45fb06",
+  "active": "4557d8736d6d4d06",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "计算机科学与技术/数据库系统原理/数据库系统原理.md",
-    "计算机科学与技术/数据库系统原理/数据库设计.md",
-    "计算机科学与技术/数据库系统原理/MySQL.md",
-    "计算机科学与技术/后端开发/Java 开发规范.md",
-    "计算机科学与技术/后端开发/幂等性保证方案.md",
-    "计算机科学与技术/人工智能/提示词.md",
-    "计算机科学与技术/人工智能/MCP.md",
-    "计算机科学与技术/密码学/数据加密.md",
-    "计算机科学与技术/密码学/密码学.md",
-    "计算机科学与技术/密码学/国家商用密码算法.md",
-    "计算机科学与技术/后端开发/PDF 识别.md",
-=======
-    "计算机科学与技术/密码学/国家商用密码算法.md",
-    "计算机科学与技术/密码学/密码学.md",
-    "计算机科学与技术/后端开发/数据库.md",
-    "计算机科学与技术/数据库系统原理/数据库设计.md",
-    "计算机科学与技术/数据库系统原理/数据库系统原理.md",
->>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
-    "计算机科学与技术/后端开发/开发常用命令、注解、快捷键.md",
-    "计算机科学与技术/后端开发/正则表达式.md",
-    "计算机科学与技术/后端开发/Servlet 容器.md",
-    "计算机科学与技术/编程语言/Java/Java 基础.md",
+    "计算机科学与技术/计算机网络/第二章 物理层.md",
+    "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
+    "计算机科学与技术/操作系统/内存管理.md",
+    "计算机科学与技术/操作系统/进程管理.md",
+    "计算机科学与技术/操作系统/操作系统概述.md",
+    "计算机科学与技术/操作系统/文件管理/文件管理.md",
     "计算机科学与技术/后端开发/Spring Boot.md",
-    "计算机科学与技术/编程语言/Java/Java 进阶.md",
-    "计算机科学与技术/编程语言/Java/src/操作数栈结构.png",
-    "计算机科学与技术/编程语言/Java/src/局部变量表数组结构.png",
-    "计算机科学与技术/逆向工程/汇编语言.md",
-    "计算机科学与技术/逆向工程/网络抓包.md",
-    "计算机科学与技术/游戏开发.md",
-    "计算机科学与技术/游戏开发",
-    "计算机科学与技术/编程语言/C++/C++.md",
-    "计算机科学与技术/编程语言",
-    "计算机科学与技术/后端开发/src/倒排索引的创建.png",
-    "计算机科学与技术/编程语言/Java/src",
-    "计算机科学与技术/Java Web 开发/未命名.md",
-    "计算机科学与技术/编程语言/Java",
-    "计算机科学与技术/编程语言/Java/src/JVM运行时内存结构.png",
-    "计算机科学与技术/编译原理/编译原理.md",
-    "计算机科学与技术/图论/图论.md",
-    "计算机科学与技术/数据库",
-    "计算机科学与技术/后端开发/Java 设计模式.md",
-    "计算机科学与技术/后端开发/Java 类加载器.md",
-    "金融/src/Pasted image 20251016112024.png",
-    "金融/src/Pasted image 20251016111141.png",
-    "金融/src/Pasted image 20251016111037.png",
-    "金融学/宏观经济学/src/价格指数计算示例：早餐价格指数.png",
-    "金融学/宏观经济学/src",
-    "金融学/宏观经济学",
-    "金融/src",
-    "金融学"
+    "计算机科学与技术/密码学/数据加密.md",
+    "计算机科学与技术/密码学/密码学.md"
   ]
 }
