@@ -13,13 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "计算机科学与技术/数据库系统原理/MySQL.md",
+=======
+                "file": "计算机科学与技术/人工智能/提示词.md",
+>>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "MySQL"
+=======
+              "title": "提示词"
+>>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
             }
           }
         ]
@@ -95,13 +103,21 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "计算机科学与技术/数据库系统原理/MySQL.md",
+=======
+                "file": "计算机科学与技术/人工智能/提示词.md",
+>>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
+<<<<<<< HEAD
               "title": "MySQL 的大纲"
+=======
+              "title": "提示词 的大纲"
+>>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
             }
           },
           {
@@ -155,7 +171,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -168,6 +183,7 @@
   },
   "active": "1fb9a1e78c45fb06",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "计算机科学与技术/数据库系统原理/数据库系统原理.md",
     "计算机科学与技术/数据库系统原理/数据库设计.md",
     "计算机科学与技术/数据库系统原理/MySQL.md",
@@ -179,6 +195,13 @@
     "计算机科学与技术/密码学/密码学.md",
     "计算机科学与技术/密码学/国家商用密码算法.md",
     "计算机科学与技术/后端开发/PDF 识别.md",
+=======
+    "计算机科学与技术/密码学/国家商用密码算法.md",
+    "计算机科学与技术/密码学/密码学.md",
+    "计算机科学与技术/后端开发/数据库.md",
+    "计算机科学与技术/数据库系统原理/数据库设计.md",
+    "计算机科学与技术/数据库系统原理/数据库系统原理.md",
+>>>>>>> e1a570610a1e2131c2484a54b7bc980e33a9ba47
     "计算机科学与技术/后端开发/开发常用命令、注解、快捷键.md",
     "计算机科学与技术/后端开发/正则表达式.md",
     "计算机科学与技术/后端开发/Servlet 容器.md",
