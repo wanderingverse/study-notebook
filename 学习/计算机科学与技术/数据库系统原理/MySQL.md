@@ -192,7 +192,8 @@ FROM 表名;
 		- HOUR：小时
 		- SECOND：秒
 - `COALESCE(value1, value2, value3, ...)`：按顺序检查参数，返回第一个非 NULL 的值。如果所有参数都是 NULL，最终返回 NULL。
-- `MAX(value)`：找出当前表里的最大值。
+- `MAX(value)`：找出当前表里指定列中的最大值。
+- `ROUND(value,位数)`：保留小数结果到指定位数，四舍五入。
 ## 执行计划
 执行计划（**Execution Plan**）供开发者观察数据库实际如何执行一条指定的 SQL 。
 ```mysql
