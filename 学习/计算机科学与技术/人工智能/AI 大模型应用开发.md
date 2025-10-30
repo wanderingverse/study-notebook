@@ -19,6 +19,7 @@ AI（Artificial Intelligence，人工智能）指使机器像人类一样思考�
 通过代码实现的神经网络数学模型，称为模型。
 这种具备学习能力。可以自主学习人们事先准备好并交给他的数据。在学习的过程中，它会自动设置神经网络中需要的参数。
 通常会把参数规模在`100 B（1000 亿）`以上的模型称为**大模型**。
+token 是大模型处理文本的基本单位，不同的分词器计算得出的 token 和 token 数可能不一致。
 # 大模型应用开发
 ## 部署和调用大模型
 ### 本地部署大模型
@@ -27,20 +28,38 @@ AI（Artificial Intelligence，人工智能）指使机器像人类一样思考�
 3. 安装并启动模型到 Ollama：`ollama run 模型名`。启动后会进入交互模式，可与模型进行交互。
 4. 停止对话并退出：交互模式下输入：`/bye`
 ### 调用大模型
-[Ollama Blog](https://ollama.com/blog/thinking)
+调用文档：[Ollama Blog](https://ollama.com/blog/thinking)
 请求方式：POST
 请求体：JSON。详见官方文档。
-核心请求参数：
+核心请求参数（以`阿里云百炼大模型服务平台`为例）：
 - model：指定当前要调用的模型名。
-- messages：发送给模型的数据，模型会根据这些数据给出合适的响应。
-	- role：
-	- content：
+- messages：发送给模型的数据，模型根据发送的数据给出合适的响应。
+	- role：本条消息的类型（角色）
+		- user：用户发送的消息
+		- system：系统消息，可设定模型回复风格等。
+		- assistant：模型响应的消息。
+	- content：具体消息内容。
 - stream：调用方式。是否启用流式调用。默认使用阻塞式调用。
 - enable_search：是否启用联网搜索。启用后，模型将联网搜索结果并作为参考信息。默认不开启。
-## LangChain4J
+核心响应参数（以`阿里云百炼大模型服务平台`为例）：
+- choices：模型生成的内容**数组**，包含一或多条内容。
+	- message：本次模型输出的消息内容。
+	- finish_reason：本次输出消息的结束原因。
+		- stop：输出完毕，自然结束
+		- length：生成内容过长
+	- index：当前内容在 choices 数组中的索引。
+- usage：本次会话过程中使用的 token 信息。
+	- prompt_tokens：用户的输入转换成 token 的个数。
+	- completion_tokens：模型生成的回复转换成 token 的个数。
+	- total_tokens：用户输入和模型生成的总 token 个数。
+- created：本次会话被创建时的时间戳。
+- model：本次会话使用的模型名称。
+## [LangChain4J](https://docs.langchain4j.info)
 ### 环境搭建
 JDK：JDK 17 及以上。
-
+LangChain4J Maven 坐标：
+```
+```
 
 
 
