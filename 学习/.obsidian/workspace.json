@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/人工智能/AI 大模型应用开发.md",
+                "file": "计算机科学与技术/后端开发/消息队列.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "AI 大模型应用开发"
+              "title": "消息队列"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/人工智能/AI 大模型应用开发.md",
+                "file": "计算机科学与技术/后端开发/消息队列.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AI 大模型应用开发 的大纲"
+              "title": "消息队列 的大纲"
             }
           }
         ],
@@ -169,10 +169,10 @@
   },
   "active": "f32b2a8b2d010b20",
   "lastOpenFiles": [
+    "计算机科学与技术/人工智能/AI 大模型应用开发.md",
     "计算机科学与技术/人工智能/MCP.md",
     "计算机科学与技术/人工智能/Ollama 常用指令.md",
     "计算机科学与技术/前端开发/Vue.js.md",
-    "计算机科学与技术/人工智能/AI 大模型应用开发.md",
     "计算机科学与技术/后端开发/Maven.md",
     "计算机科学与技术/后端开发/Nginx.md",
     "计算机科学与技术/后端开发/开发常用命令、注解、快捷键.md",

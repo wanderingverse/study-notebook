@@ -54,14 +54,19 @@ token 是大模型处理文本的基本单位，不同的分词器计算得出�
 	- total_tokens：用户输入和模型生成的总 token 个数。
 - created：本次会话被创建时的时间戳。
 - model：本次会话使用的模型名称。
-## [LangChain4J](https://docs.langchain4j.info)
-### 环境搭建
-JDK：JDK 17 及以上。
-LangChain4J Maven 坐标：
+## [LangChain4J](https://docs.langchain4j.dev/)
+### 快速开始
+1. 添加 Maven 依赖。JDK 17 及以上。
+	```xml
+	<dependency>
+	    <groupId>dev.langchain4j</groupId>
+	    <artifactId>langchain4j-open-ai</artifactId>
+	    <version>1.8.0</version>
+	</dependency>
+	```
+2. 快速开始
 ```
 ```
-
-
 
 
 
