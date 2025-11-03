@@ -27,6 +27,12 @@ token 是大模型处理文本的基本单位，不同的分词器计算得出�
 2. 下载 [模型](https://ollama.com/search)。
 3. 安装并启动模型到 Ollama：`ollama run 模型名`。启动后会进入交互模式，可与模型进行交互。
 4. 停止对话并退出：交互模式下输入：`/bye`
+5. Ollama 常用命令
+	- `ollama run <模型名>`：运行指定模型（若不存在则自动下载）
+	- `ollama list`：查看本地已下载的模型列表
+	- `ollama rm <模型名>`：删除本地模型
+	- `ollama show <模型名> --modelfile`：查看模型配置
+	- `ollama show <模型名> --parameters`：查看运行参数
 ### 调用大模型
 调用文档：[Ollama Blog](https://ollama.com/blog/thinking)
 请求方式：POST
