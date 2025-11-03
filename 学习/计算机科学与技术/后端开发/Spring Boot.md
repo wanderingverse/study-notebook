@@ -227,7 +227,7 @@ spring:
       max-request-size: 10MB
 ```
 - `max-file-size`：文件通过 Spring MVC 上传（MultipartFile）时，限制一次请求中单个文件的最大上传大小。默认 `1MB`。
-- max-request-size：文件通过 Spring MVC 上传（MultipartFile）时，限制一次请求中所有文件的总上传大小。默认 `10MB`。
+- `max-request-size`：文件通过 Spring MVC 上传（MultipartFile）时，限制一次请求中所有文件的总上传大小。默认 `10MB`。
 #### 配置监听端口和 HTTP/2
 Chrome 浏览器允许的到同一个域名的单次最大 TCP 并发连接数一般是 **6 个**。这个限制是基于每个域名的，而不是每个标签页或浏览器的全局限制，即可以同时与多个不同域名建立超过 6 个连接。
 `HTTP/1.1` 和 `HTTP/2`：

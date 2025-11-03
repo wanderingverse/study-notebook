@@ -61,37 +61,166 @@ token 是大模型处理文本的基本单位，不同的分词器计算得出�
 - created：本次会话被创建时的时间戳。
 - model：本次会话使用的模型名称。
 ## [LangChain4J](https://docs.langchain4j.dev/)
-### 快速开始
+### 集成
+#### 非 SpringBoot 集成
 1. 添加 Maven 依赖。JDK 17 及以上。
 	```xml
+	<!-- LangChain4J OpenAI -->
 	<dependency>
 	    <groupId>dev.langchain4j</groupId>
 	    <artifactId>langchain4j-open-ai</artifactId>
 	    <version>1.8.0</version>
 	</dependency>
 	```
-2. 快速开始
+2. AI 配置类。其中，`AI_API_KEY` 配置到环境变量。
+	```Java
+	@Slf4j
+	@Configuration
+	public class AiConfig {
+	    /**
+	     * 模型请求 url（阿里云百炼大模型服务平台为例）
+	     */
+	    @Value("https://dashscope.aliyuncs.com/compatible-mode/v1")
+	    private String baseUrl;
+	    
+	    /**
+	     * apiKey
+	     */
+	    @Value("${AI_API_KEY}")
+	    private String apiKey;
+	
+	    /**
+	     * 模型名称
+	     */
+	    @Value("modelName")
+	    private String modelName;
+	
+	    private OpenAiChatModel openAiChatModel;
+	
+	    /**
+	     * 初始化 AI 模型
+	     */
+	    @PostConstruct
+	    private void initAi() {
+	        openAiChatModel = OpenAiChatModel.builder()
+	                                         .baseUrl(baseUrl)
+	                                         .apiKey(apiKey)
+	                                         .modelName(modelName)
+	                                         // 输出请求日志
+	                                         .logRequests(true)
+	                                         // 输出响应日志
+	                                         .logResponses(true)
+	                                         .build();
+	    }
+	
+	    /**
+	     * 向 AI 提问
+	     *
+	     * @param question question
+	     * @return answer
+	     */
+	    public String chat(String question) {
+	        return openAiChatModel.chat(question);
+	    }
+	}
+	```
+#### SpringBoot 集成
+1. 添加 Maven 依赖。JDK 17 及以上。
+	```xml
+	<!-- LangChain4J -->  
+	<dependency>  
+	    <groupId>dev.langchain4j</groupId>  
+	    <artifactId>langchain4j-spring-boot-starter</artifactId>  
+	    <version>1.8.0-beta15</version>  
+	</dependency>  
+	<!-- LangChain4J OpenAI -->  
+	<dependency>  
+	    <groupId>dev.langchain4j</groupId>  
+	    <artifactId>langchain4j-open-ai-spring-boot-starter</artifactId>  
+	    <version>1.8.0-beta15</version>  
+	</dependency>
+	```
+2. 注入 `OpenAiChatModel` 对象
+`langchain4j-open-ai-spring-boot-starter` 会自动向 IOC 容器中注册`OpenAiChatModel` 对象，供需要时注入。
+```Java
+@SpringBootTest  
+public class AiTest {  
+    @Resource  
+    private OpenAiChatModel openAiChatModel;  
+  
+    @Test  
+    void AiChatTest() {  
+        String response = openAiChatModel.chat("Hello World");  
+    }  
+}
 ```
+### AiServices 工具类
+#### 声明接口
+```Java
+public interface ArtificialIntelligenceService {  
+  
+    /**
+     * 向 AI 提问
+     *
+     * @param question question
+     * @return answer
+     */
+     String chat(String question);
+}
 ```
+#### 创建动态代理
+在声明的接口方法上添加注解：`@AiService`，LangChain4j 会扫描所有标记有该注解的接口，然后自动创建这些接口的代理对象并注册到 IOC 容器中。
+```Java
+@AiService(wiringMode = AiServiceWiringMode.EXPLICIT, chatModel = "openAiChatModel")
+public interface OpenAiService {
 
+    /**
+     * 向 AI 提问
+     *
+     * @param question question
+     * @return answer
+     */
+    @SystemMessage("value")
+    String chat(String question);
+}
+```
+##### @AiService 注解
+标记在接口上。
+- wiringMode：指定装配模式。
+	- `AiServiceWiringMode.AUTOMATIC`：默认值。自动装配。
+	- `AiServiceWiringMode.EXPLICIT`：手动装配。
+- chatModel：指定需要使用的模型对象容器名。IOC 容器中 Bean 对象的容器名默认类名首字母小写。
+##### @SystemMessage 注解
+可标记在方法上。
+参数不能为空。
+#### 注入声明的接口并使用
+```Java
+@SpringBootTest
+public class AiTest {
+    @Resource
+    private OpenAiService openAiService;
+    
+    @Test
+    void AiChatTest() {
+        String response = openAiService.chat("Hello World");
+    }
+}
+```
+### 流式调用
+#### 添加依赖
+```xml
+<!-- SpringBoot Reactive -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-webflux</artifactId>
+</dependency>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- LangChain4J Reactor -->
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-reactor</artifactId>
+    <version>1.8.0-beta15</version>
+</dependency>
+```
+#### 配置流式模型对象
 ## Spring AI
-

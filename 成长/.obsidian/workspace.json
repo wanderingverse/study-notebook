@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6e09cdc3a230e85b",
+        "id": "a100bab2042b06aa",
         "type": "tabs",
         "children": [
           {
-            "id": "e097988abd82ebb4",
+            "id": "990cb2cbe5835f39",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "经历/记录/密码.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "新标签页"
             }
           }
         ]
@@ -40,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -172,9 +168,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "1cd6e6400dec75ec",
+  "active": "990cb2cbe5835f39",
   "lastOpenFiles": [
     "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年11月3日.mdenc",
+    "工作/个人职业发展战略计划书.mdenc",
     "经历/记录/密码.mdenc",
     "经历/记录/谨记.mdenc",
     "经历/记录/命数.mdenc",
@@ -186,8 +184,6 @@
     "经历/记录/头像.png",
     "经历/记录/考试.mdenc",
     "经历/记录/负债.mdenc",
-    "经历/2025年/2025年4月18日.mdenc",
-    "工作/深造路径.mdenc",
-    "工作/个人职业发展战略计划书.mdenc"
+    "经历/2025年/2025年4月18日.mdenc"
   ]
 }
