@@ -140,7 +140,22 @@ token 是大模型处理文本的基本单位，不同的分词器计算得出�
 	    <version>1.8.0-beta15</version>  
 	</dependency>
 	```
-2. 注入 `OpenAiChatModel` 对象
+2. 编辑 `application.yaml` 配置文件
+编辑 `src/main/resources/application.yaml` 文件，配置大模型信息。此处使用阻塞式调用。
+```yaml
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      # 写入环境变量
+      api-key: ${AI_API_KEY}
+      model-name: qwen-plus
+      # 输出请求日志
+      log-requests: true
+      # 输出响应日志
+      log-responses: true
+```
+1. 注入 `OpenAiChatModel` 对象
 `langchain4j-open-ai-spring-boot-starter` 会自动向 IOC 容器中注册`OpenAiChatModel` 对象，供需要时注入。
 ```Java
 @SpringBootTest  
@@ -180,19 +195,18 @@ public interface OpenAiService {
      * @param question question
      * @return answer
      */
-    @SystemMessage("value")
-    String chat(String question);
+     String chat(String question);
 }
 ```
 ##### @AiService 注解
-标记在接口上。
+标记在接口上。可选参数如下：
 - wiringMode：指定装配模式。
 	- `AiServiceWiringMode.AUTOMATIC`：默认值。自动装配。
 	- `AiServiceWiringMode.EXPLICIT`：手动装配。
-- chatModel：指定需要使用的模型对象容器名。IOC 容器中 Bean 对象的容器名默认类名首字母小写。
-##### @SystemMessage 注解
-可标记在方法上。
-参数不能为空。
+- chatModel：指定需要使用的模型对象容器名。IOC 容器中 Bean 对象的容器名默认类名首字母小写。缺省时触发自动装配。
+- streamingChatModel：指定需要使用的流式模型对象容器名。缺省时触发自动装配。
+- chatMemory：指定需要使用的会话记忆存储对象容器名。缺省时触发自动装配。
+- chatMemoryProvider：指定需要使用的会话记忆隔离存储对象容器名。缺省时触发自动装配。
 #### 注入声明的接口并使用
 ```Java
 @SpringBootTest
@@ -207,6 +221,7 @@ public class AiTest {
 }
 ```
 ### 流式调用
+基于 `AiServices` 工具类和 `webflux`。
 #### 添加依赖
 ```xml
 <!-- SpringBoot Reactive -->
@@ -222,5 +237,156 @@ public class AiTest {
     <version>1.8.0-beta15</version>
 </dependency>
 ```
-#### 配置流式模型对象
+#### 流式调用配置
+编辑 `src/main/resources/application.yaml` 文件，配置大模型信息。指定使用流式模型对象。
+```yaml
+langchain4j:
+  open-ai:
+	# 指定使用流式模型对象
+    streaming-chat-model:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      # 写入环境变量
+      api-key: ${AI_API_KEY}
+      model-name: qwen-plus
+      # 输出请求日志
+      log-requests: true
+      # 输出响应日志
+      log-responses: true
+```
+指定 `@AiService` 注解中的 `streamingChatModel` 参数。修改接口中方法声明的返回值类型为：`Flux<T>` 以支持流式调用。
+```Java
+@AiService(wiringMode = AiServiceWiringMode.EXPLICIT,  
+        streamingChatModel = "openAiStreamingChatModel")  
+public interface OpenAiService {  
+  
+    /**  
+     * 向 AI 提问  
+     *  
+     * @param question question  
+     * @return answer     
+    */
+    Flux<String> chat(String question);  
+}
+```
+#### 接口定义
+```Java
+@Slf4j
+@RestController
+@RequestMapping("/ai/open_ai")
+public class OpenAiController {
+    @Resource
+    private OpenAiService openAiService;
+  
+    @PostMapping("/chat")
+    public Flux<String> chat(@RequestParam String question) {
+        Flux<String> flux = openAiService.chat(question);
+        return flux;
+    }
+}
+```
+###  系统提示
+`系统提示（System Prompt）`是大模型中用于设定模型角色、行为边界和对话规则的最高优先级指令。它属于`提示工程（Prompt Engineering）`中的一种基础控制手段。
+核心作用是约束和引导模型的输出行为。
+#### @SystemMessage 注解
+标记在 `@AiService` 注解的接口中定义的方法声明上，用于设定系统提示词。
+```
+@AiService
+public interface OpenAiService {
+
+    /**
+     * 向 AI 提问
+     *
+     * @param question question
+     * @return answer
+     */
+     @SystemMessage(value = "你是一名 Java 后端开发者")
+     Flux<String> chat(String question);
+}
+```
+- value：指定系统提示词，不能为空。
+- fromResource：从指定的文件加载系统提示词。文件读取根目录为资源根目录：`src/main/resources`。
+	- 如：`@SystemMessage(fromResource = "prompt/SystemPrompt.md")`指示读取 `src/main/resources/prompt/SystemPrompt.md`文件中的内容并加载到系统提示。
+#### @UserMessage 注解
+标记在 `@AiService` 注解的接口中定义的方法声明上，用于预设用户角色提示词。可在提示词字符串中，通过 `{{param}}` 的方式，动态获取用户传递的消息。其中，`param` 可自定义命名，指代传递的消息，可在方法参数中通过 `@V("param")` 指定和关联。
+```Java
+@AiService
+public interface OpenAiService {
+
+    /**
+     * 向 AI 提问
+     *
+     * @param question question
+     * @return answer
+     */
+     @UserMessage(value = "你是一名 Java 后端开发者。{{param}}")
+     Flux<String> chat(@V("param") String question);
+}
+```
+### 会话记忆与隔离
+langchian4j 提供接口 `ChatMemory`，能够自动管理会话记忆，并在对话中携带会话记忆消息一并发送给大模型。
+langchian4j 提供接口 `ChatMemoryProvider`，能够自动管理当前应用中所有的会话记忆对象，并根据 `memoryId` 从存储所有会话记忆对象的容器中匹配对应的会话记忆对象，实现会话记忆隔离。其中，`memoryId` 值取自 `@AiService` 定义的方法中，使用 `@MemoryId` 注解标记的方法参数。
+#### ChatMemory 接口
+#### ChatMemoryProvider 接口
+`ChatMemoryProvider` 接口提供一个必须实现的 `get()` 方法。如果从存储会话记忆对象的容器中没有找到指定 `memoryId` 的 `ChatMemory` 对象，`langchian4j` 则会调用 `ChatMemoryProvider` 对象的 `get()` 方法，获取一个新的 `ChatMemory`对象。
+#### TokenWindowChatMemory 实现类
+
+#### MessageWindowChatMemory 实现类
+
+#### 会话记忆配置
+##### ChatMemory 配置
+```Java
+@Slf4j  
+@Configuration  
+public class AiConfig {  
+    /**  
+     * 最大会话记录保存数  
+     */  
+    private static final int MAX_MESSAGES = 32;  
+  
+    @Bean  
+    public ChatMemory chatMemory() {  
+        return MessageWindowChatMemory.builder()  
+                                      .maxMessages(MAX_MESSAGES)  
+                                      .build();  
+    }  
+}
+```
+##### ChatMemoryProvider 配置
+```Java
+@Slf4j
+@Configuration
+public class AiConfig {
+    /**
+     * 最大会话记录保存数
+     */
+    private static final int MAX_MESSAGES = 32;
+    
+    @Bean
+    public ChatMemoryProvider chatMemoryProvider() {
+        return memoryId -> MessageWindowChatMemory
+        .builder()
+        .id(memoryId)
+        .maxMessages(MAX_MESSAGES)
+        .build();
+    }
+}
+```
+配置 `@AiService` 标记的方法。其中：
+- `@MemoryId`：标记在方法参数上，指示会话隔离时需要的 memoryId。
+- `@UserMessage`：标记在方法参数上，指示用户消息。
+```Java
+@AiService
+public interface OpenAiService {
+
+    /**
+     * 向 AI 提问
+     *
+     * @param memoryId memoryId
+     * @param question question
+     * @return answer
+     */
+     @SystemMessage(fromResource = "prompt/SystemPrompt.md")
+     Flux<String> chat(@MemoryId String memoryId, @UserMessage String question);
+}
+```
 ## Spring AI

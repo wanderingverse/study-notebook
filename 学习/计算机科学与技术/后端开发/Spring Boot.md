@@ -259,8 +259,13 @@ keytool -export -rfc -keystore keystore.p12 -alias tomcat -file keystore.crt
 ```
 ##### 配置 SpringBoot yaml 文件
 ```yaml
-server:  
-  port: 3721  
+server:
+  port: 3721
+  servlet:
+    encoding:  
+      enabled: true  
+      charset: UTF-8  
+      force: true
   ssl:  
     key-store: classpath:keystore.p12
     key-store-password: 123456
@@ -269,6 +274,10 @@ server:
   http2:
     enabled: true
 ```
+- servlet.encoding：
+	- enabled：启用字符编码过滤器，控制请求和响应的字符编码机制是否生效。
+	- charset：指定所有请求与响应内容的默认字符集。
+	- force：指定无论请求头中是否带有编码声明，都强制使用 charset 指定的字符集。
 - ssl.key-store：指向密钥库文件的存放位置。这里保存了私钥和证书。
 	- `classpath:keystore.p12`：`classpath` 表示放在 `resources` 目录下。此处的`keystore.p12` 为密钥库文件，保存私钥和证书。
 - ssl.key-store-password：打开密钥库文件的密码。Spring Boot 会在启动时读取密钥库文件，然后用指定的密码（此处是：123456）解密密钥库文件，获取里面的私钥和证书，根据 `ssl.key-alias` 指定的别名，找到对应的条目，然后用获取到的信息建立 HTTPS 连接。
