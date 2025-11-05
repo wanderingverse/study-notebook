@@ -329,9 +329,16 @@ langchian4j 提供接口 `ChatMemoryProvider`，能够自动管理当前应用�
 #### ChatMemoryProvider 接口
 `ChatMemoryProvider` 接口提供一个必须实现的 `get()` 方法。如果从存储会话记忆对象的容器中没有找到指定 `memoryId` 的 `ChatMemory` 对象，`langchian4j` 则会调用 `ChatMemoryProvider` 对象的 `get()` 方法，获取一个新的 `ChatMemory`对象。
 #### TokenWindowChatMemory 实现类
-
+`ChatMemory` 接口的实现类。
 #### MessageWindowChatMemory 实现类
+`ChatMemory` 接口的实现类。
+使用 `ChatMemoryStore` 存储和管理会话记忆。`ChatMemoryStore` 是一个接口，默认使用 `SingleSlotChatMemoryStore` 实现类实现会话记忆的存储和管理。该实现类中，使用 `List<ChatMessage> messages` 在内存中存储会话记忆。
+可通过自定义实现 `ChatMemoryStore` 实现类，持久化存储会话记忆。自定义实现`ChatMemoryStore` 实现类后，需要在 `ChatMemory` 接口配置中指定自定义的实现类。
+##### ChatMemoryStore 实现类
+实现 `ChatMemoryStore` 接口并重写接口定义的方法，持久化存储和管理会话记忆。以 `MySQL` 持久化为例：
+```Java
 
+```
 #### 会话记忆配置
 ##### ChatMemory 配置
 ```Java
@@ -352,6 +359,7 @@ public class AiConfig {
 }
 ```
 ##### ChatMemoryProvider 配置
+配置 `ChatMemoryProvider` 获取管理的会话。
 ```Java
 @Slf4j
 @Configuration
