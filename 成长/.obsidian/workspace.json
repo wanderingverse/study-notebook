@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a100bab2042b06aa",
+        "id": "4a6d5a7337a3cf05",
         "type": "tabs",
         "children": [
           {
-            "id": "990cb2cbe5835f39",
+            "id": "15bce37911f0750e",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -172,8 +172,9 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "990cb2cbe5835f39",
+  "active": "15bce37911f0750e",
   "lastOpenFiles": [
+    "经历/2025年/2025年11月5日.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "经历/2025年/2025年11月3日.mdenc",
     "工作/个人职业发展战略计划书.mdenc",
@@ -187,7 +188,6 @@
     "经历/记录/养生.mdenc",
     "经历/记录/头像.png",
     "经历/记录/考试.mdenc",
-    "经历/记录/负债.mdenc",
-    "经历/2025年/2025年4月18日.mdenc"
+    "经历/记录/负债.mdenc"
   ]
 }
