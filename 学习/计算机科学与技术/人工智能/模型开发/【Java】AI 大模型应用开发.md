@@ -331,13 +331,45 @@ langchian4j 提供接口 `ChatMemoryProvider`，能够自动管理当前应用�
 #### TokenWindowChatMemory 实现类
 `ChatMemory` 接口的实现类。
 #### MessageWindowChatMemory 实现类
-`ChatMemory` 接口的实现类。
-使用 `ChatMemoryStore` 存储和管理会话记忆。`ChatMemoryStore` 是一个接口，默认使用 `SingleSlotChatMemoryStore` 实现类实现会话记忆的存储和管理。该实现类中，使用 `List<ChatMessage> messages` 在内存中存储会话记忆。
-可通过自定义实现 `ChatMemoryStore` 实现类，持久化存储会话记忆。自定义实现`ChatMemoryStore` 实现类后，需要在 `ChatMemory` 接口配置中指定自定义的实现类。
+是 `ChatMemory` 接口的实现类。使用 `ChatMemoryStore` 存储和管理会话记忆。`ChatMemoryStore` 是一个接口，默认使用 `SingleSlotChatMemoryStore` 实现类实现会话记忆的存储和管理。在该实现类中，使用 `List<ChatMessage> messages` 在内存中存储会话记忆。
+可通过自定义实现 `ChatMemoryStore` 实现类，持久化存储会话记忆。
+自定义实现`ChatMemoryStore` 实现类后，需要在 `ChatMemory` 接口配置类中，通过 `.chatMemoryStore()`指定自定义的实现类。
 ##### ChatMemoryStore 实现类
-实现 `ChatMemoryStore` 接口并重写接口定义的方法，持久化存储和管理会话记忆。以 `MySQL` 持久化为例：
+实现 `ChatMemoryStore` 接口并重写接口定义的方法，持久化存储和管理会话记忆。以 `Redis` 持久化为例，自定义 `RedisChatMemoryStore` 实现类：
 ```Java
-
+public class RedisChatMemoryStore implements ChatMemoryStore {
+    @Resource
+    private RedisTemplate<String, List<ChatMessage>> redisTemplateForChatMessageList;
+  
+    /**
+     * 获取会话消息列表
+     *
+     * @param memoryId 会话 id
+     * @return List<ChatMessage>
+     */
+    @Override
+    public List<ChatMessage> getMessages(Object memoryId) {
+    String messagesObject = redisTemplateForChatMessageList.opsForValue().get(memoryId.toString());
+    return ChatMessageDeserializer.messagesFromJson(messagesObject);
+}
+  
+  
+    /**  
+     * 新增或更新会话消息  
+     *  
+     * @param memoryId        会话 id  
+     * @param chatMessageList 会话消息列表  
+     */  
+    @Override  
+    public void updateMessages(Object memoryId, List<ChatMessage> chatMessageList) {
+	    redisTemplateForChatMessageList.opsForValue().set(memoryId.toString(), ChatMessageSerializer.messagesToJson(chatMessageList));
+    }  
+  
+    @Override  
+    public void deleteMessages(Object memoryId) {  
+        redisTemplateForChatMessageList.delete(memoryId.toString());  
+    }  
+}
 ```
 #### 会话记忆配置
 ##### ChatMemory 配置
@@ -369,12 +401,16 @@ public class AiConfig {
      */
     private static final int MAX_MESSAGES = 32;
     
+    @Resource
+    private RedisChatMemoryStore redisChatMemoryStore;
+    
     @Bean
     public ChatMemoryProvider chatMemoryProvider() {
         return memoryId -> MessageWindowChatMemory
         .builder()
         .id(memoryId)
         .maxMessages(MAX_MESSAGES)
+        .chatMemoryStore(redisChatMemoryStore)
         .build();
     }
 }
@@ -397,4 +433,6 @@ public interface OpenAiService {
      Flux<String> chat(@MemoryId String memoryId, @UserMessage String question);
 }
 ```
+### RAG 知识库
+
 ## Spring AI

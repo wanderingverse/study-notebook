@@ -48,9 +48,15 @@
 			* request：存放请求数据传输对象（`{请求数据传输对象名}RequestDTO.java`）
 			* response：存放响应数据传输对象（`{响应数据传输对象名}ResponseDTO.java`）
 	* config：存放配置类、常量类、枚举类
-	* common：存放通用类、工具类
+	* common：存放通用类、常量类
+	* ex：存放全局异常和自定义异常相关类
+	* util：存放工具类
+	* repository：存放与数据持久化、数据库交互相关接口和实现类。
 * 【强制】SpringBoot 资源目录（`src/main/resource`）结构规范：
 	* templates：存放导出功能相关的文件模板。
+	* certificate：存放各种证书文件。
+	* static：存放静态资源文件。这个目录下的文件可直接通过 url 路径获取。
+		* 如：`src/main/resources/static/logo.png`，可直接通过`http://localhost:8080/logo.png`获取。
 ## 常量定义
 * 【强制】不允许任何魔法值（即未经预定义的常量）出现在代码中。
 * 【强制】业务需要的常量，按功能维护在以 Const 为类名后缀的常量类中，不要使用一个常量类维护所有常量。

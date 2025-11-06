@@ -106,6 +106,8 @@ Spring 会在启动时加载一个`AsyncAnnotationBeanPostProcessor`后置处理
 `ApplicationReadyEvent` 是 Spring Boot 提供的一个特定事件，表示 Spring 容器启动完成、所有 `ApplicationRunner` 和 `CommandLineRunner` 都执行完毕、应用已经完全就绪，可以接收请求
 ##### @Component
 注解在类上，标识这个类作为 Spring 中的一个组件，会被扫描并注册到Spring 容器中，受 Spring 管理。默认是 单例（singleton），除非显式指定作用域 `@Scope("prototype")`，表示显式声明原型，每次注入都会创建新实例。
+##### @Repository
+注解在DAO 层类上，表示这个类是一个 Repository 性质的类（数据访问层的具体实现类）。会被扫描并注册到Spring 容器中，受 Spring 管理。出现异常时，转换提供为统一的异常：`DataAccessException`，支持事务管理。
 ##### @Configuration
 注解在类上，标记这个类是一个配置类。Spring 会把 `@Configuration` 标记的类本身作为一个 Bean 放到容器中。被这个注解标记的配置类会被 CGLIB 代理，多次调用同一个 `@Bean` 方法，Spring 会保证返回同一个单例。
 ##### @Bean
