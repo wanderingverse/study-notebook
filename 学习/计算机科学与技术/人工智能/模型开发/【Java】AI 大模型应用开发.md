@@ -20,6 +20,51 @@ AI（Artificial Intelligence，人工智能）指使机器像人类一样思考�
 这种具备学习能力。可以自主学习人们事先准备好并交给他的数据。在学习的过程中，它会自动设置神经网络中需要的参数。
 通常会把参数规模在`100 B（1000 亿）`以上的模型称为**大模型**。
 token 是大模型处理文本的基本单位，不同的分词器计算得出的 token 和 token 数可能不一致。
+
+## RAG
+RAG（Retrieval Augmented Generation，检索增强生成）通过检索外部知识库的方式增强大模型的生成能力。
+### RAG 工作原理
+![](src/RAG%20工作原理时序图.png)
+当用户把问题发送给 AI 应用后，AI 应用会先根据用户的问题从知识库中检索对应的知识片段，得到知识片段后 AI 应用会结合用户的问题以及知识库中检索到的知识片段，组织要发送给大模型的消息。大模型接收到消息后，根据用户的问题、知识库检索到的知识片段以及自身已有的可生成知识，综合生成对应的结果后，响应给 AI 应用，最终由 AI 应用响应给用户。
+### RAG 实现原理
+#### RAG 存储
+![](src/RAG%20存储原理示意图.png)
+1. 准备数据，将存储到文档（`Document`）中。
+2. 借助文本分割器（`Text Splitter`）把文档中的数据内容分割成一个个小文本片段（`Segments`）
+3. 使用向量模型 `Embedding Model`（一种专用模型模型，擅长文本向量化）把一个个文本片段转换成向量（`Embeddings`）。
+4. 把每个向量（`Embeddings`）和其对应的文本片段（`Segments`）一并存储到向量数据库（`Embedding Store`）中。
+#### RAG 检索
+![](src/RAG%20检索原理示意图.png)
+1. 用户输入查询内容（`Query`）。
+2. 查询内容（`Query`）送入向量模型（`Embedding Model`），生成查询向量（`Query Embedding`）。
+3. 查询向量（`Query Embedding`）在向量数据库（`Embedding Store`）中进行`相似度搜索`，找到最相关的文本片段（`Relevant Segments`）。
+4. 将原始查询内容（`Query`）和找到的相关文本片段（`Relevant Segments`）一起送入 `AI 大模型`（`Language Model`），模型生成最终响应。
+### 知识库
+知识库使用向量数据库（`Vector Database`）构建。向量数据库用以存储和检索高维向量（`High-dimensional Vectors`）。按向量相似性索引进行搜索。
+- `Milvus` 面向高性能向量检索设计，支持大规模、高维向量数据。
+- `Chroma` 多用于本地或轻量级场景，注重快速向量存储和查询。
+- `MySQL` 原生不支持高效向量检索。`MySQL 8.0+` 引入了 `VECTOR` 类型支持，但功能有限。它可以存储向量（`FLOAT/DOUBLE` 数组）。支持使用`L2`进行简单的相似度评估，但性能无法与专门向量数据库相比。适合数据量小、检索需求不高的场景，不适合大规模向量相似检索。
+- `PostgreSQL` 提供 `pgvetor` 用于向量存储。
+- `Redis` 原生不支持向量存储和检索，但可以通过模块实现。
+	- `Redis Vector（Redis 7+）`：支持向量存储和近似最近邻（ANN）搜索。
+	- `RedisAI`：用于存储张量（tensor）和运行 AI/ML 模型推理，可存储向量，但本身不提供高性能向量索引和检索。
+	- `RediSearch（2.6+）`：支持文本、数字、标签索引，同时也支持向量字段和 ANN 检索，适用于文本/元数据+向量混合检索的场景。
+- `Elasticsearch 7.3+` 开始支持 `dense_vector` 类型，可以存储向量，支持 `cosine / dot / L2` 评估相似度，适合中等规模向量检索。
+### 相似度
+评估两个向量间语义相似度的指标。两个向量间空间距离越小（向量越接近），语义越相似。
+#### 欧氏距离（L2）
+#### 内积（Dot Product）
+#### 余弦相似度（Cosine Similarity）
+向量的余弦相似度用于指标坐标系中两个语义间的相似情况，值为 `cosθ`。
+![](src/余弦复杂度.png)
+任意非零向量 `v` 和 `u` 之间存在夹角 `θ`，则向量的余弦为此夹角 `θ` 的 `cos(θ)` 值。该值等于`向量内积`除以`向量模长的乘积`。向量内积为两个向量对应坐标的乘积和；向量的模长为单个向量所有坐标的根号下平方和。
+在第一象限中，余弦值范围为 `[0,1]`。当余弦值为 `0` 时，向量正交，两向量间距离最远；当余弦值为 `1` 时，两向量间距离最近。
+在任意象限中，余弦值的数学范围为 `[−1,1]`。
+定义余弦距离 `d(u,v) = 1 - cosθ`。余弦距离越小，语义越相似。
+- d = 0：余弦相似度 `cosθ` 为 `1`，两向量间语义最相似。
+- d = 1：余弦相似度 `cosθ` 为 `0`，两向量间语义最不相关。
+- d = 2：余弦相似度 `cosθ` 为 `-1`，两向量间语义最相反。
+
 # 大模型应用开发
 ## 部署和调用大模型
 ### 本地部署大模型
@@ -289,7 +334,7 @@ public class OpenAiController {
 核心作用是约束和引导模型的输出行为。
 #### @SystemMessage 注解
 标记在 `@AiService` 注解的接口中定义的方法声明上，用于设定系统提示词。
-```
+```Java
 @AiService
 public interface OpenAiService {
 
@@ -433,6 +478,22 @@ public interface OpenAiService {
      Flux<String> chat(@MemoryId String memoryId, @UserMessage String question);
 }
 ```
-### RAG 知识库
+### LangChain4J 实现 RAG
+#### 依赖 [langchain4j-easy-rag](https://docs.langchain4j.dev/tutorials/rag/#easy-rag)
+`langchain4j-easy-rag`是 `LangChain4J` 提供的 `GAG` 快速实现方案。提供基于内存的向量数据库和向量模型供开发使用。
+```xml
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-easy-rag</artifactId>
+    <version>1.8.0-beta15</version>
+</dependency>
+```
+#### RAG 存储
+LangChain4j 提供 `ClassPathDocumentLoader` 类，用于将指定目录下的文档加载到内存中并构造为文档。
+`langchain4j-easy-rag` 提供有可操作基于内存的向量数据库的类：`InmemoryEmbeddingStore`，用于构造向量数据库操作对象，操作一个 `langchain4j-easy-rag` 提供的、基于内存的向量数据库。
+```Java
+
+```
+
 
 ## Spring AI

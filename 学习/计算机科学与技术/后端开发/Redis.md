@@ -1,5 +1,8 @@
 [黑马程序员Redis入门到实战教程，深度透析redis底层原理+redis分布式锁+企业解决方案+黑马点评实战项目_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1cr4y1671t/?vd_source=32d7b7aca593de01e7de9c2be4a87152)
 
+[黑马Redis快速入门，一套搞定Redis，常见数据结构及命令，包含jedis应用与优化、springdataRedis应用与优化_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rV411M7eU/?vd_source=32d7b7aca593de01e7de9c2be4a87152)
+
+
 # Redis 概述
 ## 概述
 Redis（Remote Dictionary Server，远程字典服务）是一个开源的高性能键值存储数据库，支持多种数据结构以及范围查询、位图、超日志、地理空间索引、向量等。
@@ -92,7 +95,7 @@ redisTemplate.opsForZSet();
 ```
 ## 操作数据
 ```Java
-// 写入或覆盖写入指定的[key,value]到 Redis，可通过 Duration.ofXxx() 方法指定过期时间，timeout 缺省或值非正时，表示永不过期。
+// 写入或覆盖写入指定的[key,value]到 Redis，可通过 Duration.ofXxx() 方法指定过期时间 timeout（正整数），timeout 缺省时表示永不过期。
 valueOperations.set(K key, V value, Duration timeout);
 // 根据指定的 key 获取 value
 valueOperations.get(Object key);
