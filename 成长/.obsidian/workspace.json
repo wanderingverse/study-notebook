@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5e3f3ffeb74baa53",
+        "id": "1576fabd585cacf1",
         "type": "tabs",
         "children": [
           {
-            "id": "92420646025cf910",
+            "id": "78a7e3dc5f956e6f",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -160,7 +160,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,8 +171,12 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "92420646025cf910",
+  "active": "78a7e3dc5f956e6f",
   "lastOpenFiles": [
+    "经历/记录/命数.mdenc",
+    "经历/记录/头像.png",
+    "经历/记录/养生.mdenc",
+    "经历/记录/要求.mdenc",
     "经历/记录/考试.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "经历/记录/密码.mdenc",
@@ -181,13 +184,8 @@
     "经历/2025年/2025年11月3日.mdenc",
     "工作/个人职业发展战略计划书.mdenc",
     "经历/记录/谨记.mdenc",
-    "经历/记录/命数.mdenc",
     "觉醒/第一章 总述.md",
     "觉醒/第二章 人的存在是梦境.md",
-    "经历/记录/要求.mdenc",
-    "经历/自媒体/程序员健身.md",
-    "经历/记录/养生.mdenc",
-    "经历/记录/头像.png",
-    "经历/记录/负债.mdenc"
+    "经历/自媒体/程序员健身.md"
   ]
 }
