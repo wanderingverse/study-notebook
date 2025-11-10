@@ -489,11 +489,47 @@ public interface OpenAiService {
 </dependency>
 ```
 #### RAG 存储
-LangChain4j 提供 `ClassPathDocumentLoader` 类，用于将指定目录下的文档加载到内存中并构造为文档。
-`langchain4j-easy-rag` 提供有可操作基于内存的向量数据库的类：`InmemoryEmbeddingStore`，用于构造向量数据库操作对象，操作一个 `langchain4j-easy-rag` 提供的、基于内存的向量数据库。
+`langchain4j-easy-rag` 提供有一个 `ClassPathDocumentLoader` 类，其中提供的`loadDocumentsRecursively(String directoryOnClasspath)`方法可将`src/main/resources/directoryOnClasspath`中的所有文件（含子目录）加载到内存中并构造为文档。文件解析库默认依赖`Apache Tika`。可处理的文件类型包括：
+- txt
+- markdown
+- pdf
+`langchain4j-easy-rag` 提供有一个可操作基于内存的向量数据库的类：`InmemoryEmbeddingStore`，用于构造向量数据库操作对象，可操作一个基于内存的向量数据库。
+`langchain4j-easy-rag` 提供有一个文档拆分、向量化、存入向量数据库操作的统一封装类：`EmbeddingStoreIngestor`。提供一个 `ingest`方法，接收文档集合对象。在这个方法中，会使用其内置的文本分割器对文本进行分割，然后使用内置的向量模型对完成向量化，最后把向量存储到向量数据库中。
 ```Java
-
+@Bean
+public EmbeddingStore<TextSegment> embeddingStore() {
+    // 从 resource 路径指定目录下加载所有文件（包括子目录中文件）并对应为文档（Document）  
+    List<Document> documentList = ClassPathDocumentLoader.loadDocumentsRecursively("document");  
+    // 初始化向量数据库操作对象，用于操作 langchain4j-easy-rag 提供的基于内存的向量数据库
+    InMemoryEmbeddingStore<TextSegment> inMemoryEmbeddingStore = new InMemoryEmbeddingStore<>();
+    // 文档内容分割、向量化、存储到向量数据库
+    EmbeddingStoreIngestor embeddingStoreIngestor = EmbeddingStoreIngestor.builder().embeddingStore(inMemoryEmbeddingStore).build();
+    embeddingStoreIngestor.ingest(documentList);
+    return inMemoryEmbeddingStore;
+}
 ```
+#### RAG 检索
+`langchain4j-easy-rag` 提供有一个向量数据库检索对象：`EmbeddingStoreContentRetriever`，用于从向量数据库中检索数据。其中，当检索出的文本片段超过指定的`最大结果数 n`时，将仅保留得分数最高的前 `n` 个文本片段。
+```Java
+/**
+ * 余弦相似度
+ * between [0,1]
+ */public static final double COSINE_SIMILARITY = 0.5;
+ 
+/**
+ * 最大 RAG 检索结果数
+ */
+public static final int MAX_RESULT_NUMBER_FOR_RAG = 3;
 
-
+@Bean
+public ContentRetriever contentRetriever(EmbeddingStore<TextSegment> embeddingStore) {
+    return EmbeddingStoreContentRetriever.builder()
+    .embeddingStore(embeddingStore)
+    // 余弦相似度，[0,1]
+    .minScore(COSINE_SIMILARITY)
+    // 最大返回结果数
+    .maxResults(MAX_RESULT_NUMBER_FOR_RAG)
+    .build();
+}
+```
 ## Spring AI
