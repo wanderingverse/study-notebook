@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "fa281bed066c79ea",
+        "id": "eea8f7f01564c280",
         "type": "tabs",
         "children": [
           {
-            "id": "772be51a53029b03",
+            "id": "190211b700cde9ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/前端开发/React/React18.md",
+                "file": "计算机科学与技术/后端开发/Java 开发规范.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "React18"
+              "title": "Java 开发规范"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/前端开发/React/React18.md",
+                "file": "计算机科学与技术/后端开发/Java 开发规范.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "React18 的大纲"
+              "title": "Java 开发规范 的大纲"
             }
           },
           {
@@ -156,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -166,8 +167,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "772be51a53029b03",
+  "active": "190211b700cde9ae",
   "lastOpenFiles": [
+    "计算机科学与技术/后端开发/Java 设计模式.md",
+    "计算机科学与技术/后端开发/Spring Boot.md",
+    "计算机科学与技术/后端开发/幂等性保证方案.md",
+    "计算机科学与技术/后端开发/Nginx.md",
+    "计算机科学与技术/人工智能/提示词/ER 图生成建表语句.md",
     "计算机科学与技术/前端开发/React/React18.md",
     "计算机科学与技术/前端开发/Vue3/Vue.js.md",
     "计算机科学与技术/前端开发/React",
@@ -193,12 +199,7 @@
     "计算机科学与技术/后端开发/Git.md",
     "计算机科学与技术/后端开发/后台管理系统架构设计.md",
     "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
-    "计算机科学与技术/后端开发/持续集成和持续部署.md",
-    "计算机科学与技术/后端开发/单元测试与代码评审.md",
-    "临时/Mockito.md",
     "临时",
-    "计算机科学与技术/人工智能/提示词/技术问答规范.md",
-    "计算机科学与技术/人工智能/提示词/前端设计优化.md",
     "计算机科学与技术/人工智能/模型开发/src/RAG 检索原理示意图.png",
     "计算机科学与技术/人工智能/模型开发/src/RAG 存储原理示意图.png",
     "计算机科学与技术/人工智能/模型开发/src/余弦复杂度.png",
