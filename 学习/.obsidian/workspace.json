@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/Java 开发规范.md",
+                "file": "计算机科学与技术/数据库系统原理/MySQL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Java 开发规范"
+              "title": "MySQL"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/Java 开发规范.md",
+                "file": "计算机科学与技术/数据库系统原理/MySQL.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Java 开发规范 的大纲"
+              "title": "MySQL 的大纲"
             }
           },
           {
@@ -169,6 +169,10 @@
   },
   "active": "190211b700cde9ae",
   "lastOpenFiles": [
+    "计算机科学与技术/数据库系统原理/数据库系统原理.md",
+    "临时/Mockito.md",
+    "计算机科学与技术/数据库系统原理/MySQL.md",
+    "计算机科学与技术/后端开发/Java 开发规范.md",
     "计算机科学与技术/后端开发/Java 设计模式.md",
     "计算机科学与技术/后端开发/Spring Boot.md",
     "计算机科学与技术/后端开发/幂等性保证方案.md",
@@ -195,10 +199,6 @@
     "计算机科学与技术/操作系统/操作系统概述.md",
     "计算机科学与技术/操作系统/内存管理.md",
     "计算机科学与技术/操作系统/进程管理.md",
-    "计算机科学与技术/后端开发/开发常用注解和快捷键.md",
-    "计算机科学与技术/后端开发/Git.md",
-    "计算机科学与技术/后端开发/后台管理系统架构设计.md",
-    "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
     "临时",
     "计算机科学与技术/人工智能/模型开发/src/RAG 检索原理示意图.png",
     "计算机科学与技术/人工智能/模型开发/src/RAG 存储原理示意图.png",
