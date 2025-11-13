@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/数据库系统原理/MySQL.md",
+                "file": "计算机科学与技术/后端开发/Redis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MySQL"
+              "title": "Redis"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/数据库系统原理/MySQL.md",
+                "file": "计算机科学与技术/后端开发/Redis.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MySQL 的大纲"
+              "title": "Redis 的大纲"
             }
           },
           {
@@ -167,14 +167,23 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "190211b700cde9ae",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
+    "计算机科学与技术/后端开发/消息推送.md",
+    "计算机科学与技术/后端开发/Reactor.md",
+    "计算机科学与技术/编程语言/Java/Java 基础.md",
+    "计算机科学与技术/密码学/国家商用密码算法.md",
+    "计算机科学与技术/后端开发/Spring Boot.md",
+    "计算机科学与技术/后端开发/Servlet 容器.md",
+    "计算机科学与技术/后端开发/Java 开发规范.md",
+    "计算机科学与技术/后端开发/Git.md",
+    "计算机科学与技术/后端开发/认证和授权.md",
+    "计算机科学与技术/密码学/数据加密.md",
+    "计算机科学与技术/密码学/密码学.md",
+    "计算机科学与技术/数据库系统原理/MySQL.md",
     "计算机科学与技术/数据库系统原理/数据库系统原理.md",
     "临时/Mockito.md",
-    "计算机科学与技术/数据库系统原理/MySQL.md",
-    "计算机科学与技术/后端开发/Java 开发规范.md",
     "计算机科学与技术/后端开发/Java 设计模式.md",
-    "计算机科学与技术/后端开发/Spring Boot.md",
     "计算机科学与技术/后端开发/幂等性保证方案.md",
     "计算机科学与技术/后端开发/Nginx.md",
     "计算机科学与技术/人工智能/提示词/ER 图生成建表语句.md",
@@ -189,16 +198,7 @@
     "金融学/宏观经济学/宏观经济学.md",
     "金融学/货币金融学.md",
     "金融学/股票快速入门.md",
-    "金融学/投资学.md",
-    "金融学/经济数据分析.md",
-    "金融学/金融市场分析.md",
-    "计算机科学与技术/操作系统/文件管理/文件管理.md",
-    "计算机科学与技术/操作系统/操作系统命令/Windows.md",
     "计算机科学与技术/操作系统/操作系统命令",
-    "计算机科学与技术/操作系统/操作系统命令/Linux.md",
-    "计算机科学与技术/操作系统/操作系统概述.md",
-    "计算机科学与技术/操作系统/内存管理.md",
-    "计算机科学与技术/操作系统/进程管理.md",
     "临时",
     "计算机科学与技术/人工智能/模型开发/src/RAG 检索原理示意图.png",
     "计算机科学与技术/人工智能/模型开发/src/RAG 存储原理示意图.png",

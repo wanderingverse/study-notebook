@@ -1,13 +1,23 @@
-## Spring WebClient 概述
-#### Maven 构建
+# webflux
+## Maven 构建
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-webflux</artifactId>
 </dependency>
 ```
-
-## WebClient 快速入门
+## `Flux<T>`
+`Flux` 是 Reactor 响应式编程中的一部分，用来表示一个异步流，可以不断发送多个数据元素。
+### 链式调用
+```Java
+Flux.interval(...).map(tick -> { ... return T})
+```
+- `.interval(Duration period)` 指定每隔多长时间发送一次元素。如`.interval(Duration.ofSeconds(1))` 表示每 `1` 秒发送一次。
+- `.map(tick -> { ... })`是响应式流的转换操作符。每当 Flux 发送一次数据（`tick`），`map` 就会执行方法体，方法体中把 `tick` 转换成自定义的数据。最后 `return`。
+### 响应
+客户端接收 Flux 的响应，需要添加请求头：`Accept: text/event-stream`
+## WebClient
+### WebClient 实例化
 #### 创建 WebClient 实例
 ```java
 WebClient client = WebClient.create();
@@ -30,7 +40,7 @@ WebClient webClient = WebClient.builder()
                                .clientConnector(new ReactorClientHttpConnector(httpClient))  
                                .build();
 ```
-#### 发起请求
+### 发起请求
 ##### 指定请求方法
 调用 `method(HttpMethod method)` 指定请求的 HTTP 方法
 ```java

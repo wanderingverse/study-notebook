@@ -1,3 +1,5 @@
+[马士兵全套Spring源码深度解析：AOP、IOC、Bean生命周期、循环依赖、事务、SpringBoot自动装配等-码士集团_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1284y1p7HC/?vd_source=32d7b7aca593de01e7de9c2be4a87152)
+
 ### Spring MVC
 #### 拦截器（Interceptor）
 拦截器是一种动态拦截方法调用的机制，在 SpringMVC 中动态拦截控制器方法（Controller 方法）的执行。
@@ -166,7 +168,68 @@ spring-boot-starter-web 是 Spring Boot 框架里用于构建 Web 应用程序�
 - spring.application.name: ProjectName：指定当前 Spring Boot 应用的名字。
 #### 自定义 starter
 [参考](https://blog.csdn.net/m0_62128476/article/details/141948032)
-### ApplicationRunner
+### SpringBoot 启动机制
+1. 创建 SpringApplication 实例
+2. 加载 Environment
+3. 创建 ApplicationContext（上下文对象）
+4. 调用所有注册的 `ApplicationContextInitializer.initialize(context)`
+5. 刷新 ApplicationContext
+6. 创建 Bean、自动装配、加载配置
+7. 启动内嵌 Tomcat
+8. 发布 ApplicationReadyEvent
+9. 应用就绪
+#### SpringApplication initializers
+`SpringApplicationBuilder`（底层是 `SpringApplication`）提供有一个配置方法：`public SpringApplicationBuilder initializers(ApplicationContextInitializer<?>... initializers)`，作用是为应用注册一个或多个 `ApplicationContextInitializer` 实例。这些实例会在SpringBoot 启动过程中被调用。用于 `ApplicationContext` 正式刷新之前，做一些额外的初始化工作。
+其中，传入的 initializers 实例需要实现 `ApplicationContextInitializer` 接口，然后实现 `void initialize(C applicationContext)` 回调方法，Spring Boot 会在启动过程中自动调用该方法。
+```Java
+public interface ApplicationContextInitializer<C extends ConfigurableApplicationContext> {
+    void initialize(C applicationContext);
+}
+```
+示例：容器加载前检查端口。
+```Java
+/**  
+ * 端口检查器  
+ *  
+ * @author lihui * @since 2025/11/13 11:34 **/public class PortCheckInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {  
+    @Override  
+    public void initialize(@NotNull ConfigurableApplicationContext applicationContext) {  
+        Integer port = loadServerPortFromYml();  
+        if (port == null) {  
+            System.err.println("无法读取 application.yml 端口配置");  
+        } else if (!isPort(port)) {  
+            System.err.println("端口 " + port + " 无效");  
+        } else if (isPortAvailable(port)) {  
+            System.err.println("端口 " + port + " 已被占用");  
+        } else {  
+            return;  
+        }  
+        System.exit(1);  
+    }  
+  
+  
+    /**  
+     * 从 application.yml 中获取端口  
+     *  
+     * @return port     
+     */
+     private Integer loadServerPortFromYml() {  
+        try {  
+            YamlPropertySourceLoader loader = new YamlPropertySourceLoader();  
+            List<PropertySource<?>> sources = loader.load("application", new ClassPathResource("application.yml"));  
+            for (PropertySource<?> source : sources) {  
+                Object value = source.getProperty("server.port");  
+                if (value != null) {  
+                    return Integer.parseInt(value.toString());  
+                }  
+            }  
+        } catch (IOException ignored) {  
+        }  
+        return null;  
+    }  
+}
+```
+#### ApplicationRunner
 `ApplicationRunner` 是 Spring Boot 提供的**接口**，用于在应用启动后立即执行代码。
 它提供一个方法：
 ```java
@@ -177,7 +240,7 @@ void run(ApplicationArguments args) throws Exception;
 - 初始化缓存
 - 打印启动日志
 - 检查数据库或外部依赖是否可用
-#### 示例：启动后输出日志信息
+示例：启动后输出日志信息：
 ```java
 /**  
  * 启动后信息输出日志  
@@ -322,11 +385,10 @@ spring:
 在 springboot 项目发布为 jar 包后，默认使用项目中 spring.profiles.active 指定的配置，如需切换到其他配置文件，使用 java 启动项目时，通过 `--spring.profiles.active={profile}`指定使用的配置。
 ##### 外部加载配置文件
 Spring Boot 默认支持从以下位置加载配置文件，并会优先使用外部的配置覆盖内部 jar 包中的配置，且配置文件加载优先级从高到底列表如下：
-1. 工作目录
-2. `./config/`
-3. `/config/`
-4. `/`
-5. jar 包内部
+1. `./config/`：当前工作目录（项目根目录）下的 `config` 文件夹。
+2. `./`：当前工作目录（项目根目录）。
+3. `classpath:/config/`：jar 包内部的 `config` 目录（resources/config）。
+4. `classpath:/`：jar 包根目录（resources 根目录）。
 Spring Boot 的配置文件按层次结构进行合并，且外部配置优先级更高。Spring Boot 会将多个配置文件合并成一个 Environment，如果某个配置项在高优先级文件中未定义，则会使用低优先级文件中的配置项。
 #### 读取配置项
 在 Spring Boot 中，通过注入 `@Value` 注解或使用 `@ConfigurationProperties` 读取 `application.yml` 中的配置项。还可以通过注入 `Environment` 对象读取。
@@ -341,6 +403,26 @@ private String username;
 ```java
     @Autowired
     private Environment environment;
+```
+###### 初始化 `Environment` 对象
+适用于容器尚无法注入的场景。
+示例：
+```Java
+@Override  
+public void initialize(ConfigurableApplicationContext applicationContext) {  
+    Environment environment = applicationContext.getEnvironment();  
+    String port = environment.getProperty("server.port");  
+    if (!StringUtils.hasText(port)) {  
+        System.err.println("无法读取 application.yml 端口配置");  
+    } else if (!isPort(Integer.valueOf(port))) {  
+        System.err.println("端口 " + port + " 无效");  
+    } else if (isPortAvailable(Integer.parseInt(port))) {  
+        System.err.println("端口 " + port + " 已被占用");  
+    } else {  
+        return;  
+    }  
+    System.exit(1);  
+}
 ```
 ###### environment.getProperty() 获取配置项
 ```java
