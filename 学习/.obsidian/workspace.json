@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/Spring Boot.md",
+                "file": "计算机科学与技术/后端开发/Maven.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Spring Boot"
+              "title": "Maven"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "@PostConstruct",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/Spring Boot.md",
+                "file": "计算机科学与技术/后端开发/Maven.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring Boot 的大纲"
+              "title": "Maven 的大纲"
             }
           },
           {
@@ -157,7 +156,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -168,8 +166,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "190211b700cde9ae",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
+    "计算机科学与技术/后端开发/Spring Boot.md",
     "计算机科学与技术/后端开发/MinIO.md",
     "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
     "计算机科学与技术/数据库系统原理/MySQL.md",
@@ -185,7 +184,6 @@
     "计算机科学与技术/后端开发/消息推送.md",
     "计算机科学与技术/后端开发/Reactor.md",
     "计算机科学与技术/密码学/国家商用密码算法.md",
-    "计算机科学与技术/后端开发/Spring Boot.md",
     "计算机科学与技术/后端开发/Servlet 容器.md",
     "计算机科学与技术/后端开发/Git.md",
     "计算机科学与技术/后端开发/认证和授权.md",

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "df101340d315f7db",
+        "id": "0951778f0c81af06",
         "type": "tabs",
         "children": [
           {
-            "id": "463e6a99e7b42044",
+            "id": "c1723c6c17c511c3",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
+              "type": "markdown",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "读书/议论/张小龙的微信设计观.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "张小龙的微信设计观"
             }
           }
         ]
@@ -160,7 +160,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,22 +171,32 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "463e6a99e7b42044",
+  "active": "1cd6e6400dec75ec",
   "lastOpenFiles": [
+    "读书/摘抄/描述.md",
+    "读书/摘抄/短句.md",
+    "读书/想读的书.md",
+    "读书/觉醒/第一章 总述.md",
     "经历/记录/密码.mdenc",
-    "工作/网方华信/开发日报.mdenc",
-    "经历/2025年/2025年11月12日.mdenc",
-    "经历/记录/谨记.mdenc",
+    "经历/记录/负债.mdenc",
     "经历/记录/考试.mdenc",
+    "经历/记录/谨记.mdenc",
+    "工作/网方华信/开发日报.mdenc",
+    "经历/记录/要求.mdenc",
+    "工作/个人职业发展战略计划书.mdenc",
+    "工作/深造路径.mdenc",
+    "读书/议论/架构设计原则.md",
+    "读书/议论/为什么说有钱的人越来越有钱？.md",
+    "读书/议论/玄学理论.md",
+    "读书/议论/张小龙的微信设计观.md",
+    "读书/话题/爱情.md",
+    "读书/话题/生活.md",
+    "读书/话题/心理.md",
+    "读书/话题/学习.md",
+    "经历/2025年/2025年11月12日.mdenc",
     "经历/记录/命数.mdenc",
     "经历/记录/头像.png",
-    "经历/记录/养生.mdenc",
-    "经历/记录/要求.mdenc",
-    "经历/2025年/2025年11月5日.mdenc",
-    "经历/2025年/2025年11月3日.mdenc",
-    "工作/个人职业发展战略计划书.mdenc",
-    "觉醒/第一章 总述.md",
-    "觉醒/第二章 人的存在是梦境.md",
+    "读书/觉醒/第二章 人的存在是梦境.md",
     "经历/自媒体/程序员健身.md"
   ]
 }
