@@ -1,6 +1,29 @@
 [马士兵全套Spring源码深度解析：AOP、IOC、Bean生命周期、循环依赖、事务、SpringBoot自动装配等-码士集团_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1284y1p7HC/?vd_source=32d7b7aca593de01e7de9c2be4a87152)
 
 ### Spring MVC
+#### 线程绑定请求上下文
+Spring 自动维护一个线程绑定的请求上下文 `RequestContextHolder`。当一个 HTTP 请求到达 Spring MVC（或者 Spring Boot 内置的 Servlet 容器）时，Spring 会在 **DispatcherServlet** 或者 **过滤器链** 中，把 `HttpServletRequest` 和 `HttpServletResponse` 包装成 `ServletRequestAttributes`。然后通过 `RequestContextHolder.setRequestAttributes(...)`，把他们绑定到当前线程的 ThreadLocal上，每条请求的 Thread 都有一个独立的 RequestContext，不同请求互不干扰。
+这个机制属于 Spring Web 模块 `spring-web`。只要项目中引入了 Spring MVC 或 Spring Web，此功能就自动可用。
+##### 获取 HttpServletRequest
+```Java
+public static HttpServletRequest getHttpServletRequest() {
+    RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+    if (requestAttributes instanceof ServletRequestAttributes) {
+        return ((ServletRequestAttributes) requestAttributes).getRequest();
+    }
+    return null;
+}
+```
+##### 获取 HttpServletResponse
+```Java
+public static HttpServletResponse getHttpServletResponse() {
+    RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+    if (requestAttributes instanceof ServletRequestAttributes) {  
+        return ((ServletRequestAttributes) requestAttributes).getResponse();
+    }
+    return null;
+}
+```
 #### 拦截器（Interceptor）
 拦截器是一种动态拦截方法调用的机制，在 SpringMVC 中动态拦截控制器方法（Controller 方法）的执行。
 ##### 全局拦截器
@@ -107,7 +130,10 @@ Spring 会在启动时加载一个`AsyncAnnotationBeanPostProcessor`后置处理
 事件监听注解，用于监听 Spring 事件。
 `ApplicationReadyEvent` 是 Spring Boot 提供的一个特定事件，表示 Spring 容器启动完成、所有 `ApplicationRunner` 和 `CommandLineRunner` 都执行完毕、应用已经完全就绪，可以接收请求
 ##### @Component
-注解在类上，标识这个类作为 Spring 中的一个组件，会被扫描并注册到Spring 容器中，受 Spring 管理。默认是 单例（singleton），除非显式指定作用域 `@Scope("prototype")`，表示显式声明原型，每次注入都会创建新实例。
+注解在类上，标识这个类作为 Spring 中的一个组件，会被扫描并注册到Spring 容器中，受 Spring 管理。默认是单例（singleton）。
+除非显式指定作用域 `@Scope("prototype")`，表示显式声明原型，每次注入都会创建新实例。
+##### @Primary
+注解在类上。当有多个同类型容器时，指定优先使用那个。
 ##### @Repository
 注解在DAO 层类上，表示这个类是一个 Repository 性质的类（数据访问层的具体实现类）。会被扫描并注册到Spring 容器中，受 Spring 管理。出现异常时，转换提供为统一的异常：`DataAccessException`，支持事务管理。
 ##### @Configuration
