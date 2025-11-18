@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f996930b73133df9",
+        "id": "7060996e49982795",
         "type": "tabs",
         "children": [
           {
-            "id": "7eda6031001ba95f",
+            "id": "45782acc1674cbc3",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -160,7 +160,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,10 +171,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "7eda6031001ba95f",
+  "active": "45782acc1674cbc3",
   "lastOpenFiles": [
-    "经历/2025年/2025年11月17日.mdenc",
+    "经历/2025年/2025年11月18日.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年11月17日.mdenc",
     "读书/议论/张小龙的微信设计观.md",
     "读书/摘抄/描述.md",
     "读书/摘抄/短句.md",
@@ -196,7 +196,6 @@
     "读书/话题/心理.md",
     "读书/话题/学习.md",
     "经历/2025年/2025年11月12日.mdenc",
-    "经历/记录/命数.mdenc",
     "经历/记录/头像.png",
     "读书/觉醒/第二章 人的存在是梦境.md",
     "经历/自媒体/程序员健身.md"
