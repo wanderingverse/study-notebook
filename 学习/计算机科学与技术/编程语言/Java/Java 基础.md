@@ -96,6 +96,14 @@ https://www.runoob.com/java/java-multithreading.html
 #### 继承 Thread 类创建线程
 #### 通过 Callable 和 Future 创建线程
 ## 字符串
+## JVM 管理
+- 获取 JVM 运行时管理接口对象：`ManagementFactory.getRuntimeMXBean()`
+	- 获取 JVM 启动时间（毫秒）：`.getStartTime()`
+	- 获取 JVM 已运行时间（毫秒）：`.getUptime()`
+	- 获取 JVM 版本号：`.getVmVersion()`
+	- 获取 JVM 供应商：`.getVmVendor()`
+	- 获取 JVM 名称：`.getName()`
+	- 获取 JVM 输入参数：`.getInputArguments()`
 ### 字符串拼接
 - `MessageFormat`：`MessageFormat.format("字符串0：{0}；字符串1：{1}",stringNo1,stringNo2);`
 - `StringBuilder`：性能高（尤其是需要多次拼接时）
