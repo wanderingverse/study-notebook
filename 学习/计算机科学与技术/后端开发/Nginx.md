@@ -1,13 +1,17 @@
-### Nginx 概述
+# Nginx 概述
 Nginx 是一个开源 Web 服务器和反向代理服务器，可以实现负载均衡、缓存、反向代理、SSL 终止
 等功能。
-### 安装
+## 安装
+### 本机安装
 [nginx 下载](https://nginx.org/en/download.html)
-### 目录结构
+### Docker 安装
+[[nginx] 基于Docker安装Nginx - 千千寰宇 - 博客园](https://www.cnblogs.com/johnnyzen/p/18081630)
+
+## 目录结构
 - conf：存放 Nginx 配置文件的目录
 - html：存放静态 html 文件的目录
 - logs：存放Nginx日志的目录
-### 常用配置
+## 配置项
 在 `nginx.conf` 中配置。
 ```nginx
 server {
@@ -31,7 +35,7 @@ server {
 `server_name yourdomain.com`：指定浏览器访问时的域名。
 `location /`：匹配所有以`/` 开头的请求。
 `proxy_pass http://localhost:3721`：将请求反向代理给监听在 3721 端口的后端服务器。
-### 常用命令
+## 命令
 - **启动 Nginx**：`start nginx`
 - **重新加载 Nginx 配置，重启 Nginx**：`nginx -s reload`
 - **查看 Nginx 状态**：`systemctl status nginx`

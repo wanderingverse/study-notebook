@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/软件开发流程.md",
+                "file": "计算机科学与技术/后端开发/Nginx.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "软件开发流程"
+              "title": "Nginx"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "项目",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/软件开发流程.md",
+                "file": "计算机科学与技术/后端开发/Nginx.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "软件开发流程 的大纲"
+              "title": "Nginx 的大纲"
             }
           },
           {
@@ -169,6 +168,7 @@
   },
   "active": "1dec3010f625cd3a",
   "lastOpenFiles": [
+    "计算机科学与技术/后端开发/软件开发流程.md",
     "计算机科学与技术/数据库系统原理/MySQL.md",
     "计算机科学与技术/后端开发/项目管理工具.md",
     "计算机科学与技术/后端开发/src/build.gradle",
@@ -186,7 +186,6 @@
     "计算机科学与技术/后端开发/RuoYi 源码.md",
     "计算机科学与技术/后端开发/消息推送.md",
     "计算机科学与技术/后端开发/消息队列.md",
-    "计算机科学与技术/后端开发/软件开发流程.md",
     "计算机科学与技术/后端开发/幂等性保证方案.md",
     "计算机科学与技术/后端开发/开发常用注解和快捷键.md",
     "计算机科学与技术/后端开发/后台管理系统架构设计.md",
