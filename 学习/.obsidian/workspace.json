@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/Nginx.md",
+                "file": "计算机科学与技术/后端开发/Redis.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nginx"
+              "title": "Redis"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/Nginx.md",
+                "file": "计算机科学与技术/后端开发/Redis.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Nginx 的大纲"
+              "title": "Redis 的大纲"
             }
           },
           {
@@ -156,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -166,16 +167,22 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "1dec3010f625cd3a",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
-    "计算机科学与技术/后端开发/软件开发流程.md",
+    "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
+    "计算机科学与技术/人工智能/提示词/ER 图生成建表语句.md",
     "计算机科学与技术/数据库系统原理/MySQL.md",
+    "计算机科学与技术/编程语言/Java/Java 进阶.md",
+    "计算机科学与技术/操作系统/文件管理/文件管理.md",
+    "计算机科学与技术/后端开发/后台管理系统架构设计.md",
+    "计算机科学与技术/人工智能/模型开发/【Java】MCP 开发.md",
+    "计算机科学与技术/后端开发/Nginx.md",
+    "计算机科学与技术/后端开发/软件开发流程.md",
     "计算机科学与技术/后端开发/项目管理工具.md",
     "计算机科学与技术/后端开发/src/build.gradle",
     "计算机科学与技术/后端开发/Reactor.md",
     "计算机科学与技术/编程语言/C++/C++.md",
     "计算机科学与技术/编程语言/Java/Java 基础.md",
-    "计算机科学与技术/编程语言/Java/Java 进阶.md",
     "计算机科学与技术/后端开发/Spring Boot.md",
     "计算机科学与技术/后端开发/Servlet 容器.md",
     "计算机科学与技术/后端开发/认证和授权.md",
@@ -188,13 +195,7 @@
     "计算机科学与技术/后端开发/消息队列.md",
     "计算机科学与技术/后端开发/幂等性保证方案.md",
     "计算机科学与技术/后端开发/开发常用注解和快捷键.md",
-    "计算机科学与技术/后端开发/后台管理系统架构设计.md",
     "计算机科学与技术/密码学/国家商用密码算法.md",
-    "计算机科学与技术/密码学/密码学.md",
-    "计算机科学与技术/密码学/数据加密.md",
-    "计算机科学与技术/前端开发/React/React.md",
-    "计算机科学与技术/后端开发/Redis.md",
-    "计算机科学与技术/操作系统/操作系统命令/Windows.md",
     "计算机科学与技术/前端开发/React/src/package.json",
     "计算机科学与技术/前端开发/React/src",
     "计算机科学与技术/前端开发/React",

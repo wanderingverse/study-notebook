@@ -532,4 +532,114 @@ public ContentRetriever contentRetriever(EmbeddingStore<TextSegment> embeddingSt
     .build();
 }
 ```
+#### 文档加载器
+文档加载器的作用是将磁盘或者网络中的数据加载进程序。
+LangChain4j 提供了多种文档加载器。
+- `FileSystemDocumentLoader`：根据本地磁盘绝对路径加载。
+- `ClassPathDocumentLoader`：相对于类路径加载。
+- `UrlDocumentLoader`：根据url路径加载。
+##### 自定义文档加载器
+满足返回 `List<Document>`的自定义方法。示例：
+```Java
+@Service
+public class RagDocumentLoaderServiceImpl implements RagDocumentLoaderService {
+    @Override
+    public List<Document> load() {
+        List<Document> documentList = new ArrayList<>();
+        documentList.add(Document.from("我的名字叫荒草"));
+        return documentList;
+    }
+}
+```
+#### 文档解析器
+文档解析器的作用是解析文档文件中的内容，把原本非纯文本数据转化成纯文本数据。
+LangChain4j 提供了多种文档解析器。
+- TextDocumentParser：解析纯文本格式的文件。
+- ApachePdfBoxDocumentParser，解析 pdf 格式的文件。
+- ApachePoiDocumentParser：解析微软的 office 文件，如 DOC、PPT、XLS
+- ApacheTikaDocumentParser：LangChain4j 默认使用的文档解析器，几乎可以解析所有格式的文件。但可能在纯 PDF 文件方面的解析表现不够优秀，或者使用起来不够方便，此时可以考虑将默认的解析器切换为 ApachePdfBoxDocumentParser。
+##### ApachePdfBoxDocumentParser
+引入依赖：
+```XML
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-document-parser-apache-pdfbox</artifactId>
+    <version>1.8.0-beta15</version>
+ </dependency>
+```
+切换到 `ApachePdfBoxDocumentParser` 解析器：
+```Java
+List<Document> documentList = ClassPathDocumentLoader.loadDocumentsRecursively("document", new ApachePdfBoxDocumentParser());
+```
+#### 文档分割器
+文档分割器的作用是把一个大的文档切割成一个个小片段。
+langchain4j 提供了多种文档分割器。
+- DocuemntByParagraphSplitter：按照段落分割文本。
+- DocumentByLineSplitter：按照行分割文本。
+- DocumentBySentenceSplitter：按照句子分割文本。
+- DocumentByWordSplitter：按照词分割文本。
+- DocumentByCharacterSplitter：按照固定数量的字符分割文本。
+- DocumentByRegexSplitter：按照正则表达式分割文本。
+- DocumentSplitters.recursive(…)：递归式分割器。langchain4j 默认使用的文档分割器。优先段落分割，再按照行分割，再按照句子分割，再按照词分割。
+##### 配置文档分割器
+langchain4j 默认使用递归式分割器。可通过自行初始化文档分割器，配置自定义参数。
+构建文档分割器对象：
+```Java
+DocumentSplitter documentSplitter = DocumentSplitters.recursive(
+  每个片段最大容纳的字符, 
+  两个片段之间重叠字符的个数
+);
+```
+配置文本分割器对象：
+分割文本的操作默认被封装到 `EmbeddingStoreIngestor`中。需要通过`EmbeddingStoreIngestor.documentSplitter()` 方法指定使用哪个文本分割器。
+```Java
+// 文档内容分割
+DocumentSplitter documentSplitter = DocumentSplitters.recursive(500, 100);
+// 向量化、存储到向量数据库
+EmbeddingStoreIngestor embeddingStoreIngestor = EmbeddingStoreIngestor.builder()                                        .embeddingStore(inMemoryEmbeddingStore)
+.documentSplitter(documentSplitter)
+.build();
+```
+#### 向量模型
+向量模型的作用是把分割后的文本片段向量化或者把用户消息向量化。
+LangChain4j 提供了 EmbeddingModel 接口用于定义有关向量模型的方法。该接口中定义有 embed、embedall 等方法用于将文本片段向量化。
+LangChain4j 提供了一个基于内存的向量模型实现方案，默认被封装到EmbeddingStoreIngestor 中。
+但是这种内置的向量模型内有时候功能没有那么强大，说白了就是支持的向量维度太少，检索的时候没有那么精准，所以有些情况下我们需要替换它，使用一些功能更强大的向量模型。阿里云百炼平台也提供了专门用于向量化的向量模型text-embedding-v3，接下来我们看应该如何把我们程序中内存版本的向量模型替换成阿里云百炼提供的向量模型。
+##### 集成向量模型
+```yaml
+langchain4j:
+  open-ai:
+    embedding-model:
+      base-url:
+      api-key:
+      model-name: text-embedding-v4
+      log-requests: true
+      log-responses: true
+```
+##### 配置向量模型
+当在 yaml 文件中配置了向量模型信息，`LangChain4j` 会自动根据配置信息，在 IOC 容器中注册一个 `EmbeddingModel` 对象。
+使用时只需注入这个 `EmbeddingModel` 对象，并将其交给 `EmbeddingStoreIngestor` 和 `EmbeddingStoreContentRetriever` 即可。
+```Java
+@Resource
+private EmbeddingModel embeddingModel;
+
+// RAG 存储方法……
+EmbeddingStoreIngestor embeddingStoreIngestor = EmbeddingStoreIngestor.builder().embeddingModel(embeddingModel);
+
+// RAG 检索方法……
+EmbeddingStoreContentRetriever.builder().embeddingModel(embeddingModel);
+```
+
+#### 向量数据库操作对象
+EmbeddingStore 是LangChain4j 提供的用于操作向量数据库的接口，负责存储到向量数据库和从向量数据库中检索。
+LangChain4j 提供的 EmbeddingStore 接口中提供了两组方法。add 用于存储数据，search 用于检索数据。
+LangChain4j 提供了一个基于内存的向量数据库实现方案 InMemoryEmbeddingStore 并默认使用。
+可使用向量数据库，将向量数据存储到外部的向量数据库中。以 redisearch 向量数据库为例。
+
+
+
+
+
+
+
 ## Spring AI
