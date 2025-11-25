@@ -64,7 +64,30 @@ RAG（Retrieval Augmented Generation，检索增强生成）通过检索外部�
 - d = 0：余弦相似度 `cosθ` 为 `1`，两向量间语义最相似。
 - d = 1：余弦相似度 `cosθ` 为 `0`，两向量间语义最不相关。
 - d = 2：余弦相似度 `cosθ` 为 `-1`，两向量间语义最相反。
-
+##### 余弦相似度取值建议
+- 短文档片段、句子级：0.85~0.9
+- 长文档、主题丰富：0.7~0.8
+- 多文档、专业知识库：0.6~0.75
+## 会话记忆维持
+### 全量历史
+每次发起新一轮对话时，携带发送所有历史对话。
+会随对话轮次，越对话越花费 token，且越来越慢。适用于 demo 或简单应用。
+### 摘要式记忆
+将长对话不断压缩成摘要文本。每次发起新一轮对话时，不再携带发送所有历史对话，而是发送压缩后的记忆摘要。
+### 向量记忆
+将对话历史文档切片后做向量化（Embedding），然后存储到向量数据库。之后在需要的时候检索相似内容放回 prompt。
+### 分层上下文（Layered Context）
+短期记忆 + 长期记忆组合，分层控制。
+- 短期记忆：最近几轮对话的完整内容。
+- 长期记忆：使用摘要记忆或向量记忆。
+## Function Calling / Tools
+![](src/Function%20Calling%20原理.png)
+当用户将某个问题发送给 agent（AI 应用），AI 应用内部会组织要提交给大模型的数据。这些数据中包括描述 AI 应用中有哪些函数能够被大模型调用的相关内容。
+每一个函数的描述都包含三个部分：方法名称、方法作用、方法参数。当 AI 应用把这些数据发送给大模型后，大模型会先根据用户的问题以及上下文进行任务拆解，从而判断是否需要调用函数。
+如果有函数需要调用，则把需要调用的函数的名称、调用时需要使用的参数准备好，一并响应给 AI 应用。
+AI应用接收到响应后，需要执行对应的函数，得到对应的结果，把得到的结果和此前的会话信息一并组织好再发送给大模型。
+如果发现还需要调用其他的函数，则重复上述步骤，直到无需调用函数。
+最终把生成的结果响应给 AI 应用，并由 AI 应用发送给用户。
 # 大模型应用开发
 ## 部署和调用大模型
 ### 本地部署大模型
@@ -248,10 +271,12 @@ public interface OpenAiService {
 - wiringMode：指定装配模式。
 	- `AiServiceWiringMode.AUTOMATIC`：默认值。自动装配。
 	- `AiServiceWiringMode.EXPLICIT`：手动装配。
-- chatModel：指定需要使用的模型对象容器名。IOC 容器中 Bean 对象的容器名默认类名首字母小写。缺省时触发自动装配。
-- streamingChatModel：指定需要使用的流式模型对象容器名。缺省时触发自动装配。
-- chatMemory：指定需要使用的会话记忆存储对象容器名。缺省时触发自动装配。
-- chatMemoryProvider：指定需要使用的会话记忆隔离存储对象容器名。缺省时触发自动装配。
+- chatModel：指定需要使用的模型对象容器名。IOC 容器中 Bean 对象的容器名默认类名首字母小写。缺省时默认自动装配。
+- streamingChatModel：指定需要使用的流式模型对象容器名。缺省时默认自动装配。
+- chatMemory：指定需要使用的会话记忆存储对象容器名。缺省时默认自动装配。
+- chatMemoryProvider：指定需要使用的会话记忆隔离存储对象容器名。缺省时默认自动装配。
+- contentRetriever：指定需要使用的向量数据库检索对象。缺省时默认自动装配。
+- tools：指定提供 tools 方法的类。缺省时根据 @Tool 注解默认自动装配。
 #### 注入声明的接口并使用
 ```Java
 @SpringBootTest
@@ -478,7 +503,7 @@ public interface OpenAiService {
      Flux<String> chat(@MemoryId String memoryId, @UserMessage String question);
 }
 ```
-### LangChain4J 实现 RAG
+### RAG
 #### 依赖 [langchain4j-easy-rag](https://docs.langchain4j.dev/tutorials/rag/#easy-rag)
 `langchain4j-easy-rag`是 `LangChain4J` 提供的 `GAG` 快速实现方案。提供基于内存的向量数据库和向量模型供开发使用。
 ```xml
@@ -606,6 +631,7 @@ LangChain4j 提供了 EmbeddingModel 接口用于定义有关向量模型的方�
 LangChain4j 提供了一个基于内存的向量模型实现方案，默认被封装到EmbeddingStoreIngestor 中。
 但是这种内置的向量模型内有时候功能没有那么强大，说白了就是支持的向量维度太少，检索的时候没有那么精准，所以有些情况下我们需要替换它，使用一些功能更强大的向量模型。阿里云百炼平台也提供了专门用于向量化的向量模型text-embedding-v3，接下来我们看应该如何把我们程序中内存版本的向量模型替换成阿里云百炼提供的向量模型。
 ##### 集成向量模型
+max-segments-per-batch 用于在生成文本向量（embeddings）时控制一次批量处理的最大文本片段数量。避免一次性请求内容太多导致 API 报错或超时。
 ```yaml
 langchain4j:
   open-ai:
@@ -615,6 +641,7 @@ langchain4j:
       model-name: text-embedding-v4
       log-requests: true
       log-responses: true
+      max-segments-per-batch: 10
 ```
 ##### 配置向量模型
 当在 yaml 文件中配置了向量模型信息，`LangChain4j` 会自动根据配置信息，在 IOC 容器中注册一个 `EmbeddingModel` 对象。
@@ -634,12 +661,78 @@ EmbeddingStoreContentRetriever.builder().embeddingModel(embeddingModel);
 EmbeddingStore 是LangChain4j 提供的用于操作向量数据库的接口，负责存储到向量数据库和从向量数据库中检索。
 LangChain4j 提供的 EmbeddingStore 接口中提供了两组方法。add 用于存储数据，search 用于检索数据。
 LangChain4j 提供了一个基于内存的向量数据库实现方案 InMemoryEmbeddingStore 并默认使用。
-可使用向量数据库，将向量数据存储到外部的向量数据库中。以 redisearch 向量数据库为例。
+可使用向量数据库，将向量数据存储到外部的向量数据库中。
+以 `redisearch` 向量数据库为例。
+##### 安装 redisearch
+##### 添加依赖
+```Xml
+<dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j-community-redis-spring-boot-starter</artifactId>
+    <version>1.8.0-beta15</version>
+</dependency>
+```
+##### 配置向量数据库
+```yaml
+langchain4j:
+  community:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      dimension: 1536
+```
+dimension 表示向量维度，可选。
+配置完毕后，langchain4j 将自动在 IOC 容器中注册一个 `RedisEmbeddingStore` 对象，这个对象实现 `EmbeddingStore` 接口，封装了操作 `redissearch` 的系列 `API`。需要时可直接注入 `RedisEmbeddingStore` 使用。
+指定使用向量数据库存储：
+```Java
+@Resource  
+private RedisEmbeddingStore redisEmbeddingStore;
 
+...
 
+EmbeddingStoreIngestor embeddingStoreIngestor = EmbeddingStoreIngestor.builder()
+.embeddingStore(redisEmbeddingStore)
 
+...
 
+.build();
 
+...
 
+return redisEmbeddingStore;
+```
+指定使用向量数据库检索：
+```Java
+@Resource
+private RedisEmbeddingStore redisEmbeddingStore;
 
-## Spring AI
+...
+
+@Bean
+public ContentRetriever contentRetriever() {
+    return EmbeddingStoreContentRetriever.builder()
+    .embeddingStore(redisEmbeddingStore)
+    
+    ...
+    
+    .build();
+}
+```
+### Tools
+LangChain4j 提供了 `@Tool` 注解用于对方法的作用进行描述，提供了 `@P` 注解用于对方法的参数进行描述。
+将具有上述注解的方法所在类注册到 IOC 容器后，LangChain4j 能通过反射的方式自动获取到 `@Tool` 注解中的作用描述、`@P` 注解中的参数描述、以及方法名称，供与大模型交互。
+- `@Tool("方法描述")`：注解在方法上。
+- `@P("参数描述")`：注解在参数上。
+示例：
+```Java
+@Service
+public class AiCommonTool {
+    @Resource
+    private SystemInfoService systemInfoService;
+    
+    @Tool("获取当前时间")
+    public LocalDateTime getCurrentTime() {
+        return systemInfoService.getServerTime();
+    }
+}
+```

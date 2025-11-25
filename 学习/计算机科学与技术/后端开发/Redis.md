@@ -24,6 +24,8 @@ Redis 默认提供了 16 个数据库，数据库索引分别从 0 到 15。在�
 ### redis.conf 配置
 编辑 `redis.conf` 文件进行配置。
 - `redis` 密码：`requirepass 密码`
+## 连接客户端
+[Redis Insight](https://redis.io/insight/)
 ## SpringBoot 集成
 ### 添加 Maven 依赖
 ```xml
@@ -104,3 +106,25 @@ valueOperations.getAndDelete(K key);
 // 删除指定 key 及 value
 redisTemplate.delete(K key);
 ```
+# RediSearch
+RediSearch 是一个为 Redis 数据库提供高级索引和搜索功能的模块。支持全文搜索、向量相似度搜索和聚合查询等。
+## 安装和配置
+### Docker 安装
+`redislabs/redisearch` 镜像启动的 Redis 保留原本 Redis 的所有功能，额外自带了 RediSearch 模块。可直接删除原有的 Redis 原版镜像，重新安装带有 RediSearch 模块的 Redis。步骤同 Redis 的 Docker 安装方式。
+1. 拉取 `redisearch` 最新镜像：`docker pull redislabs/redisearch`
+2. 宿主机创建 redis 文件映射目录：推荐放置在 `/home/redis` 目录下。
+	1. 创建 `data` 目录，用于存放 `redis` 数据。如已有数据，考虑删除。否则可能导致版本不兼容。
+	2. 创建 `conf` 目录和 `conf/redis.conf` 文件，用于存放 redis 配置。
+3. 启动容器：`docker run -d --name redis -p 6379:6379 -v /home/redis/data:/data -v /home/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf redislabs/redisearch redis-server /usr/local/etc/redis/redis.conf`
+### redis.conf 配置
+编辑 `redis.conf` 文件进行配置，指定加载 redisearch 模块。
+```C++
+# redisearch 模块
+loadmodule /usr/lib/redis/modules/redisearch.so
+loadmodule /usr/lib/redis/modules/rejson.so
+```
+### 检查
+1. 进入 redis 容器：`docker exec -it redis bash`
+	- Redis 命令行客户端：`redis-cli`
+2. 查看当前 Redis 加载的模块：`docker exec -it redis redis-cli MODULE LIST`。
+3. 观察是否已加载 `redisearch` 模块：输出结果中包含 `search`。
