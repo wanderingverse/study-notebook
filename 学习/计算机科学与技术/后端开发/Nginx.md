@@ -6,7 +6,7 @@ Nginx 是一个开源 Web 服务器和反向代理服务器，可以实现负载
 [nginx 下载](https://nginx.org/en/download.html)
 ### Docker 安装
 [[nginx] 基于Docker安装Nginx - 千千寰宇 - 博客园](https://www.cnblogs.com/johnnyzen/p/18081630)
-
+[2024年最新 Docker 安装 Nginx 容器 (完整详细版) 2025年最新_docker 安装最新nginx-CSDN博客](https://blog.csdn.net/qq_33192671/article/details/144433363)
 ## 目录结构
 - conf：存放 Nginx 配置文件的目录
 - html：存放静态 html 文件的目录
@@ -41,4 +41,8 @@ server {
 - **查看 Nginx 状态**：`systemctl status nginx`
 - **配置开启自启**：`systemctl enable nginx`
 
+## 日志
+查看访问 nginx 的 IP 列表：`awk '{print $1}' /home/nginx/log/access.log | sort | uniq`
+
+前端项目部署 nginx
 https://zhuanlan.zhihu.com/p/431796992
