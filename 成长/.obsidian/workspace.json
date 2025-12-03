@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4b19e5b3fb83c85c",
+        "id": "0081b4708e943399",
         "type": "tabs",
         "children": [
           {
-            "id": "caaf0075dcfaa4a7",
+            "id": "93cb1848c4d1d0be",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/2025年/2025年12月2日.mdenc",
+                "file": "经历/记录/考试.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025年12月2日"
+              "title": "考试"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/记录/命数.mdenc",
+                "file": "经历/记录/考试.mdenc",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "命数 的反向链接列表"
+              "title": "考试 的反向链接列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/记录/命数.mdenc",
+                "file": "经历/记录/考试.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "命数 的大纲"
+              "title": "考试 的大纲"
             }
           }
         ],
@@ -173,21 +173,21 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "1cd6e6400dec75ec",
+  "active": "93cb1848c4d1d0be",
   "lastOpenFiles": [
+    "经历/记录/命数/本人.mdenc",
+    "经历/记录/日常.mdenc",
+    "经历/记录/考试.mdenc",
+    "经历/记录/命数/命数.mdenc",
+    "经历/记录/要求.mdenc",
+    "工作/网方华信/开发日报.mdenc",
+    "经历/记录/密码.mdenc",
+    "经历/记录/命数",
+    "经历/记录/李辉命盘.pdf",
+    "经历/记录/排盘.md",
     "经历/2025年/2025年11月26日.mdenc",
     "经历/2025年/2025年12月2日.mdenc",
-    "经历/2025年/2025年11月28日.mdenc",
-    "经历/2025年/2025年12月1日.mdenc",
-    "经历/记录/日常.mdenc",
     "经历/记录/头像.png",
-    "经历/记录/要求.mdenc",
-    "经历/记录/命数.mdenc",
-    "经历/生活/生活.mdenc",
-    "经历/记录/负债.mdenc",
-    "经历/记录/考试.mdenc",
-    "经历/记录/密码.mdenc",
-    "工作/网方华信/开发日报.mdenc",
     "读书/想读的书.md",
     "读书/摘抄/短句.md",
     "读书/摘抄/描述.md",
