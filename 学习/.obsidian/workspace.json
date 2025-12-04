@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/Nginx.md",
+                "file": "计算机科学与技术/编程语言/C&C++/C.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nginx"
+              "title": "C"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/Nginx.md",
+                "file": "计算机科学与技术/编程语言/C&C++/C.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Nginx 的大纲"
+              "title": "C 的大纲"
             }
           },
           {
@@ -167,8 +167,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "42664f1b013c4ba5",
+  "active": "86e5c08c065495e8",
   "lastOpenFiles": [
+    "计算机科学与技术/编程语言/C&C++/C++.md",
+    "计算机科学与技术/编程语言/C&C++/C.md",
+    "计算机科学与技术/后端开发/Nginx.md",
     "计算机科学与技术/后端开发/Redis.md",
     "计算机科学与技术/后端开发/后台管理系统架构设计.md",
     "计算机科学与技术/后端开发/认证和授权/OAuth 2.0.md",
@@ -193,12 +196,10 @@
     "计算机科学与技术/数据库系统原理/MySQL.md",
     "计算机科学与技术/编程语言/Java/Java 进阶.md",
     "计算机科学与技术/操作系统/文件管理/文件管理.md",
-    "计算机科学与技术/后端开发/Nginx.md",
     "计算机科学与技术/后端开发/软件开发流程.md",
     "计算机科学与技术/后端开发/项目管理工具.md",
     "计算机科学与技术/后端开发/src/build.gradle",
     "计算机科学与技术/后端开发/Reactor.md",
-    "计算机科学与技术/编程语言/C++/C++.md",
     "计算机科学与技术/编程语言/Java/Java 基础.md",
     "计算机科学与技术/后端开发/Spring Boot.md",
     "计算机科学与技术/后端开发/Servlet 容器.md",
