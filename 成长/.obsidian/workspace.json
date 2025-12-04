@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7a6ecefbef503bf2",
+        "id": "4f2d051459e8d76f",
         "type": "tabs",
         "children": [
           {
-            "id": "09a39d924cc1b8c8",
+            "id": "8e0192184abdaffe",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -161,6 +161,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,20 +173,20 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "09a39d924cc1b8c8",
+  "active": "8e0192184abdaffe",
   "lastOpenFiles": [
+    "经历/记录/密码.mdenc",
+    "经历/记录/考试.mdenc",
+    "经历/生活/生活.mdenc",
     "经历/记录/命数/本人.mdenc",
     "经历/记录/日常.mdenc",
-    "经历/记录/考试.mdenc",
     "经历/记录/命数/命数.mdenc",
     "经历/记录/要求.mdenc",
     "工作/网方华信/开发日报.mdenc",
-    "经历/记录/密码.mdenc",
     "经历/记录/命数",
     "经历/记录/李辉命盘.pdf",
     "经历/记录/排盘.md",
     "经历/2025年/2025年11月26日.mdenc",
-    "经历/2025年/2025年12月2日.mdenc",
     "经历/记录/头像.png",
     "读书/想读的书.md",
     "读书/摘抄/短句.md",
