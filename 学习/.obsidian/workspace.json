@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/编程语言/C&C++/C.md",
+                "file": "计算机科学与技术/人工智能/提示词/前端设计优化.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "C"
+              "title": "前端设计优化"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/编程语言/C&C++/C.md",
+                "file": "计算机科学与技术/人工智能/提示词/前端设计优化.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C 的大纲"
+              "title": "前端设计优化 的大纲"
             }
           },
           {
@@ -156,7 +156,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -169,8 +168,8 @@
   },
   "active": "86e5c08c065495e8",
   "lastOpenFiles": [
-    "计算机科学与技术/编程语言/C&C++/C++.md",
     "计算机科学与技术/编程语言/C&C++/C.md",
+    "计算机科学与技术/编程语言/C&C++/C++.md",
     "计算机科学与技术/后端开发/Nginx.md",
     "计算机科学与技术/后端开发/Redis.md",
     "计算机科学与技术/后端开发/后台管理系统架构设计.md",
