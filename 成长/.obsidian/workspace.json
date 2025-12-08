@@ -4,11 +4,19 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "6afd822c2d0644ec",
         "type": "tabs",
         "children": [
           {
             "id": "9b60bdba2bda98ff",
+=======
+        "id": "2bb981b8aebf904c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5187bfc374d908fd",
+>>>>>>> 4c94b2ac6ef1dc33e9f43c5534395653ef94c611
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -161,6 +169,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,7 +181,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
+<<<<<<< HEAD
   "active": "9b60bdba2bda98ff",
+=======
+  "active": "5187bfc374d908fd",
+>>>>>>> 4c94b2ac6ef1dc33e9f43c5534395653ef94c611
   "lastOpenFiles": [
     "经历/记录/日常.mdenc",
     "经历/记录/密码.mdenc",
