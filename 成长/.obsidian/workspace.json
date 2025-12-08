@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "24c3cc1e8b96d9ab",
+        "id": "6afd822c2d0644ec",
         "type": "tabs",
         "children": [
           {
-            "id": "9cfd9224283a5423",
+            "id": "9b60bdba2bda98ff",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/记录/命数/命数.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "命数"
             }
           }
         ]
@@ -172,20 +172,20 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "9cfd9224283a5423",
+  "active": "9b60bdba2bda98ff",
   "lastOpenFiles": [
-    "经历/记录/考试.mdenc",
+    "经历/记录/日常.mdenc",
     "经历/记录/密码.mdenc",
+    "经历/记录/负债.mdenc",
+    "经历/记录/考试.mdenc",
     "经历/生活/生活.mdenc",
     "经历/记录/命数/本人.mdenc",
-    "经历/记录/日常.mdenc",
     "经历/记录/命数/命数.mdenc",
     "经历/记录/要求.mdenc",
     "工作/网方华信/开发日报.mdenc",
     "经历/记录/命数",
     "经历/记录/李辉命盘.pdf",
     "经历/记录/排盘.md",
-    "经历/2025年/2025年11月26日.mdenc",
     "经历/记录/头像.png",
     "读书/想读的书.md",
     "读书/摘抄/短句.md",
