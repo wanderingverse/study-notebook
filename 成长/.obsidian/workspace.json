@@ -1,32 +1,24 @@
 {
   "main": {
-    "id": "352a0af6054aa25e",
+    "id": "0b937c8b861548f3",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "6afd822c2d0644ec",
+        "id": "d6d8b079c6087128",
         "type": "tabs",
         "children": [
           {
-            "id": "9b60bdba2bda98ff",
-=======
-        "id": "2bb981b8aebf904c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5187bfc374d908fd",
->>>>>>> 4c94b2ac6ef1dc33e9f43c5534395653ef94c611
+            "id": "ab5eceb203da2059",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/命数/命数.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "命数"
+              "title": "开发日报"
             }
           }
         ]
@@ -35,20 +27,20 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8c59ca4a5fc14188",
+    "id": "5a58f9c1ff92c73b",
     "type": "split",
     "children": [
       {
-        "id": "1145312cacac8956",
+        "id": "18fb409c2496f95b",
         "type": "tabs",
         "children": [
           {
-            "id": "1cd6e6400dec75ec",
+            "id": "b7cb50d0ccc53918",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabeticalReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -56,7 +48,7 @@
             }
           },
           {
-            "id": "3c2d54ecc5b5c8c2",
+            "id": "f534dff586392336",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -73,7 +65,7 @@
             }
           },
           {
-            "id": "cf34888ffe06fc58",
+            "id": "badaa5902a633837",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -89,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "4eba021517a316a0",
+    "id": "ec5aae743b23c54b",
     "type": "split",
     "children": [
       {
-        "id": "86002616b98de3f8",
+        "id": "1d87bf022de11f34",
         "type": "tabs",
         "children": [
           {
-            "id": "1776d5f122502d84",
+            "id": "2828fcfcb692a7f1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/记录/考试.mdenc",
+                "file": "经历/记录/要求.mdenc",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "考试 的反向链接列表"
+              "title": "要求 的反向链接列表"
             }
           },
           {
-            "id": "1bdb36b33bfc817f",
+            "id": "4862e43a55081de0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "觉醒/第一章 总述.md",
+                "file": "经历/记录/要求.mdenc",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "第一章 总述 的出链列表"
+              "title": "要求 的出链列表"
             }
           },
           {
-            "id": "6ce3cdabfa7bcabf",
+            "id": "57ff6c6483d133c4",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -145,22 +137,21 @@
             }
           },
           {
-            "id": "1b859702a920dc62",
+            "id": "c845b41fc09f281b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/记录/要求.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "开发日报 的大纲"
+              "title": "要求 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,7 +160,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -181,38 +171,16 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-<<<<<<< HEAD
-  "active": "9b60bdba2bda98ff",
-=======
-  "active": "5187bfc374d908fd",
->>>>>>> 4c94b2ac6ef1dc33e9f43c5534395653ef94c611
+  "active": "ab5eceb203da2059",
   "lastOpenFiles": [
+    "经历/记录/头像.png",
     "经历/记录/日常.mdenc",
     "经历/记录/密码.mdenc",
-    "经历/记录/负债.mdenc",
     "经历/记录/考试.mdenc",
-    "经历/生活/生活.mdenc",
-    "经历/记录/命数/本人.mdenc",
+    "经历/记录/计划.mdenc",
+    "经历/记录/负债.mdenc",
     "经历/记录/命数/命数.mdenc",
-    "经历/记录/要求.mdenc",
-    "工作/网方华信/开发日报.mdenc",
-    "经历/记录/命数",
-    "经历/记录/李辉命盘.pdf",
-    "经历/记录/排盘.md",
-    "经历/记录/头像.png",
-    "读书/想读的书.md",
-    "读书/摘抄/短句.md",
-    "读书/摘抄/描述.md",
-    "读书/话题/学习.md",
-    "读书/话题/爱情.md",
-    "读书/话题/生活.md",
-    "读书/话题/心理.md",
-    "读书/议论/张小龙的微信设计观.md",
-    "读书/觉醒/第一章 总述.md",
-    "读书/议论/架构设计原则.md",
-    "读书/议论/为什么说有钱的人越来越有钱？.md",
-    "读书/议论/玄学理论.md",
-    "读书/觉醒/第二章 人的存在是梦境.md",
-    "经历/自媒体/程序员健身.md"
+    "经历/记录/命数/本人.mdenc",
+    "工作/网方华信/开发日报.mdenc"
   ]
 }
