@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "servlet",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -168,7 +167,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6cccff96bfbcc536",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
     "计算机科学与技术/后端开发/项目管理工具.md",
     "计算机科学与技术/后端开发/认证和授权/认证和授权.md",

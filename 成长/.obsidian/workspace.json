@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "13536695d75f58e0",
+        "id": "12020e49025e4fbe",
         "type": "tabs",
         "children": [
           {
-            "id": "5a738d428336eb0f",
+            "id": "e5921a330e313b8c",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -172,18 +172,19 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "b7cb50d0ccc53918",
+  "active": "e5921a330e313b8c",
   "lastOpenFiles": [
+    "经历/记录/命数/命数.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年12月17日.mdenc",
+    "经历/2025年/2025年12月12日.mdenc",
+    "经历/2025年/2025年12月11日.mdenc",
     "经历/记录/负债.mdenc",
-    "经历/2025年/2025年12月12日.md",
     "经历/记录/密码.mdenc",
-    "经历/2025年/2025年12月11日.md",
     "经历/记录/头像.png",
     "经历/记录/日常.mdenc",
     "经历/记录/考试.mdenc",
     "经历/记录/计划.mdenc",
-    "经历/记录/命数/命数.mdenc",
     "经历/记录/命数/本人.mdenc"
   ]
 }
