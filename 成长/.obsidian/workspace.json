@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2bf1c391dc2e54a1",
+        "id": "0a6e3ca8b27987c0",
         "type": "tabs",
         "children": [
           {
-            "id": "e937d57ccf0647e2",
+            "id": "09d28b232378a713",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -172,10 +172,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "e937d57ccf0647e2",
+  "active": "09d28b232378a713",
   "lastOpenFiles": [
-    "经历/2025年/2025年12月17日.mdenc",
+    "经历/2025年/2025年12月19日.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年12月17日.mdenc",
     "经历/记录/密码.mdenc",
     "经历/记录/命数/命数.mdenc",
     "经历/2025年/2025年12月12日.mdenc",
@@ -184,7 +185,6 @@
     "经历/记录/头像.png",
     "经历/记录/日常.mdenc",
     "经历/记录/考试.mdenc",
-    "经历/记录/计划.mdenc",
-    "经历/记录/命数/本人.mdenc"
+    "经历/记录/计划.mdenc"
   ]
 }
