@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/人工智能/提示词/后端开发.md",
+                "file": "计算机科学与技术/编程语言/C&C++/C.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "后端开发"
+              "title": "C"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#include",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,13 +110,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/人工智能/提示词/后端开发.md",
+                "file": "计算机科学与技术/编程语言/C&C++/C.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "后端开发 的大纲"
+              "title": "C 的大纲"
             }
           },
           {
@@ -166,13 +167,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "42664f1b013c4ba5",
+  "active": "6cccff96bfbcc536",
   "lastOpenFiles": [
+    "计算机科学与技术/编程语言/C&C++/C++.md",
+    "计算机科学与技术/编程语言/C&C++/C.md",
+    "计算机科学与技术/人工智能/提示词/后端开发.md",
     "计算机科学与技术/后端开发/项目管理工具.md",
     "计算机科学与技术/后端开发/认证和授权/认证和授权.md",
-    "计算机科学与技术/人工智能/提示词/后端开发.md",
-    "计算机科学与技术/编程语言/C&C++/C.md",
-    "计算机科学与技术/编程语言/C&C++/C++.md",
     "计算机科学与技术/人工智能/提示词/ER 图生成建表语句.md",
     "计算机科学与技术/人工智能/提示词/前端设计优化.md",
     "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
