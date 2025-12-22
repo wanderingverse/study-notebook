@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "731cb9ea14d14db2",
+        "id": "95a07d1613fb5e85",
         "type": "tabs",
         "children": [
           {
-            "id": "a19004a563ee11f4",
+            "id": "83373bcd5e8c7752",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "开发日报"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -171,10 +172,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "a19004a563ee11f4",
+  "active": "83373bcd5e8c7752",
   "lastOpenFiles": [
-    "经历/记录/计划.mdenc",
     "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年12月22日.mdenc",
+    "经历/记录/计划.mdenc",
     "经历/2025年/2025年12月19日.mdenc",
     "经历/2025年/2025年12月17日.mdenc",
     "经历/记录/密码.mdenc",
@@ -183,7 +185,6 @@
     "经历/2025年/2025年12月11日.mdenc",
     "经历/记录/负债.mdenc",
     "经历/记录/头像.png",
-    "经历/记录/日常.mdenc",
-    "经历/记录/考试.mdenc"
+    "经历/记录/日常.mdenc"
   ]
 }
