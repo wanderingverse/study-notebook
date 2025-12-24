@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7dda0c9d6bbde283",
+        "id": "814ed91f45c5459d",
         "type": "tabs",
         "children": [
           {
-            "id": "18ffec4a9dbc9e1a",
+            "id": "a504bde3a5de0f89",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
@@ -94,17 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "经历/记录/要求.mdenc",
-                "collapseAll": false,
+                "file": "工作/网方华信/解除劳动合同通知书.mdenc",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "要求 的反向链接列表"
+              "title": "解除劳动合同通知书 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "经历/记录/要求.mdenc",
+                "file": "工作/网方华信/解除劳动合同通知书.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "要求 的出链列表"
+              "title": "解除劳动合同通知书 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/记录/要求.mdenc",
+                "file": "工作/网方华信/解除劳动合同通知书.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "要求 的大纲"
+              "title": "解除劳动合同通知书 的大纲"
             }
           }
         ]
@@ -172,19 +172,19 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "18ffec4a9dbc9e1a",
+  "active": "a504bde3a5de0f89",
   "lastOpenFiles": [
     "工作/网方华信/开发日报.mdenc",
-    "经历/2025年/2025年12月22日.mdenc",
-    "经历/记录/计划.mdenc",
-    "经历/2025年/2025年12月19日.mdenc",
-    "经历/2025年/2025年12月17日.mdenc",
-    "经历/记录/密码.mdenc",
-    "经历/记录/命数/命数.mdenc",
-    "经历/2025年/2025年12月12日.mdenc",
-    "经历/2025年/2025年12月11日.mdenc",
+    "工作/网方华信/解除劳动合同通知书.mdenc",
     "经历/记录/负债.mdenc",
+    "经历/记录/考试.mdenc",
+    "经历/记录/计划.mdenc",
+    "经历/记录/密码.mdenc",
+    "经历/记录/日常.mdenc",
     "经历/记录/头像.png",
-    "经历/记录/日常.mdenc"
+    "经历/记录/要求.mdenc",
+    "经历/记录/命数/本人.mdenc",
+    "经历/记录/命数/命数.mdenc",
+    "经历/2025年/2025年12月24日.mdenc"
   ]
 }
