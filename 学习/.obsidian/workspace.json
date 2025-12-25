@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/编程语言/C&C++/C.md",
+                "file": "计算机科学与技术/密码学/国家商用密码算法.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "C"
+              "title": "国家商用密码算法"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "国密",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,13 +110,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/编程语言/C&C++/C.md",
+                "file": "计算机科学与技术/密码学/国家商用密码算法.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C 的大纲"
+              "title": "国家商用密码算法 的大纲"
             }
           },
           {
@@ -169,8 +170,8 @@
   },
   "active": "86e5c08c065495e8",
   "lastOpenFiles": [
-    "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
     "计算机科学与技术/编程语言/C&C++/C.md",
+    "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
     "计算机科学与技术/人工智能/提示词/技术问答规范.md",
     "计算机科学与技术/人工智能/提示词/ER 图生成建表语句.md",
     "计算机科学与技术/人工智能/提示词/前端设计优化.md",
