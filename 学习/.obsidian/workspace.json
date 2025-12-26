@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "国密",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -168,7 +167,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "86e5c08c065495e8",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
     "计算机科学与技术/编程语言/C&C++/C.md",
     "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
