@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a56eba402fd5e6a4",
+        "id": "40b1dcba8740e61f",
         "type": "tabs",
         "children": [
           {
-            "id": "7c17b58822c3b0f3",
+            "id": "8b1f4f310de101b2",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/日常.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "日常"
+              "title": "开发日报"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/记录/日常.mdenc",
+                "file": "工作/网方华信/开发日报.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "日常 的大纲"
+              "title": "开发日报 的大纲"
             }
           }
         ],
@@ -172,12 +172,12 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "7c17b58822c3b0f3",
+  "active": "8b1f4f310de101b2",
   "lastOpenFiles": [
-    "经历/记录/日常.mdenc",
     "工作/网方华信/解除劳动合同通知书.mdenc",
-    "工作/硕士研究生/考研学习日报.md",
     "工作/网方华信/开发日报.mdenc",
+    "经历/记录/日常.mdenc",
+    "工作/硕士研究生/考研学习日报.md",
     "经历/记录/要求.mdenc",
     "读书/想读的书.md",
     "读书/议论/架构设计原则.md",
