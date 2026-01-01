@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/工作流引擎.md",
+                "file": "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "工作流引擎"
+              "title": "【Java】AI 大模型应用开发"
             }
           }
         ]
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/工作流引擎.md",
+                "file": "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "工作流引擎 的大纲"
+              "title": "【Java】AI 大模型应用开发 的大纲"
             }
           },
           {
@@ -157,7 +156,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -170,9 +168,10 @@
   },
   "active": "7d807fe41988bb16",
   "lastOpenFiles": [
-    "计算机科学与技术/后端开发/模板引擎.md",
-    "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
     "计算机科学与技术/人工智能/模型开发/【Java】MCP 开发.md",
+    "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
+    "计算机科学与技术/后端开发/工作流引擎.md",
+    "计算机科学与技术/后端开发/模板引擎.md",
     "计算机科学与技术/编程语言/C&C++/C.md",
     "计算机科学与技术/编程语言/C&C++/C++.md",
     "计算机科学与技术/后端开发/MinIO.md",
@@ -184,7 +183,6 @@
     "计算机科学与技术/后端开发/正则表达式.md",
     "计算机科学与技术/后端开发/消息推送.md",
     "计算机科学与技术/后端开发/消息队列.md",
-    "计算机科学与技术/后端开发/工作流引擎.md",
     "计算机科学与技术/后端开发/支付/支付宝支付.md",
     "计算机科学与技术/后端开发/支付/微信支付.md",
     "计算机科学与技术/数据库系统原理/数据库设计.md",
