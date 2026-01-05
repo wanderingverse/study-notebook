@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "40b1dcba8740e61f",
+        "id": "485f7fa5b93b7e55",
         "type": "tabs",
         "children": [
           {
-            "id": "8b1f4f310de101b2",
+            "id": "3ec084c45a57f034",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "工作/硕士研究生/考研学习日报.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "开发日报"
+              "title": "考研学习日报"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作/网方华信/开发日报.mdenc",
+                "file": "经历/记录/日常.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "开发日报 的大纲"
+              "title": "日常 的大纲"
             }
           }
         ],
@@ -156,11 +156,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,25 +172,25 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "8b1f4f310de101b2",
+  "active": "3ec084c45a57f034",
   "lastOpenFiles": [
-    "工作/网方华信/解除劳动合同通知书.mdenc",
-    "工作/网方华信/开发日报.mdenc",
-    "经历/记录/日常.mdenc",
-    "工作/硕士研究生/考研学习日报.md",
+    "经历/2026年/2026年1月5日.mdenc",
     "经历/记录/要求.mdenc",
+    "经历/记录/日常.mdenc",
+    "工作/硕士研究生/考研学习日报.mdenc",
+    "经历/记录/考试.mdenc",
+    "经历/记录/负债.mdenc",
+    "经历/记录/密码.mdenc",
+    "经历/记录/头像.png",
+    "工作/网方华信/开发日报.mdenc",
+    "经历/2025年/2025年12月24日.mdenc",
+    "经历/2026年",
+    "工作/网方华信/解除劳动合同通知书.mdenc",
     "读书/想读的书.md",
     "读书/议论/架构设计原则.md",
     "读书/议论/张小龙的微信设计观.md",
     "读书/话题/爱情.md",
     "读书/话题/生活.md",
-    "读书/话题/学习.md",
-    "经历/生活/生活.mdenc",
-    "经历/记录/密码.mdenc",
-    "经历/记录/考试.mdenc",
-    "经历/记录/负债.mdenc",
-    "工作/硕士研究生",
-    "经历/记录/计划.mdenc",
-    "经历/记录/头像.png"
+    "读书/话题/学习.md"
   ]
 }

@@ -8,7 +8,7 @@ Vue.js 是一套构建用户界面的渐进式框架。Vue 的目标是通过尽
 2. 查看 nodejs 版本：node -v
 3. 使用 npm 初始化 vue 项目：`npm create vue@latest`。还可通过 `vue ui` 命令打开 vue 提供的一个图形化界面，可视化创建和管理项目。
 	- Vue 官方脚手架从 Vue 3 开始，默认选用 **Vite** 作为构建工具。以前 Vue CLI 基于 webpack。
-	- 查看 vue 版本：nvm list vue。
+	- 查看 vue 版本：npm list vue。
 4. 安装依赖：在 vue 项目工作目录下执行 `npm install`。
 	- 安装指定依赖：`npm install 依赖名`
 	- 卸载指定依赖：`npm uninstall 依赖名`
