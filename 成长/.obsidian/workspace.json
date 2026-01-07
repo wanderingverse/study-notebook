@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b4ffab2bf95a4bc0",
+        "id": "9d8ca79aabc02614",
         "type": "tabs",
         "children": [
           {
-            "id": "7be06925c8afa53e",
+            "id": "0e55c31975afa8d6",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "工作/硕士研究生/考研学习日报.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "考研学习日报"
+              "title": "新标签页"
             }
           }
         ]
@@ -172,7 +168,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "7be06925c8afa53e",
+  "active": "0e55c31975afa8d6",
   "lastOpenFiles": [
     "经历/2026年/2026年1月5日.mdenc",
     "经历/记录/要求.mdenc",
