@@ -1,0 +1,6 @@
+- 查看连接设备的序列号：adb devices
+- 列出所有已安装应用：adb shell pm list packages
+- 查看正在运行的应用：
+	- Windows：adb shell dumpsys activity activities | findstr mResumedActivity
+	- Linux：adb shell dumpsys activity activities | grep mResumedActivity
+- 重启手机：adb reboot
