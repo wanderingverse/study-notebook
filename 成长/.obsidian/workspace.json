@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fc56b47fcd88308b",
+        "id": "9cfc057c5476e7ed",
         "type": "tabs",
         "children": [
           {
-            "id": "97daf43cd40f731b",
+            "id": "0112c6dbdf2b3135",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "经历/记录/日常.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "日常"
             }
           }
         ]
@@ -172,20 +172,19 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "97daf43cd40f731b",
+  "active": "0112c6dbdf2b3135",
   "lastOpenFiles": [
-    "经历/2026年/2026年1月15日.mdenc",
-    "工作/硕士研究生/考研学习日报.mdenc",
-    "经历/2026年/2026年1月5日.mdenc",
-    "经历/记录/要求.mdenc",
     "经历/记录/日常.mdenc",
+    "经历/记录/头像.png",
+    "经历/记录/要求.mdenc",
+    "经历/2026年/2026年1月21日.mdenc",
+    "工作/硕士研究生/考研学习日报.mdenc",
+    "经历/2026年/2026年1月20日.mdenc",
+    "经历/2026年/2026年1月15日.mdenc",
+    "经历/2026年/2026年1月5日.mdenc",
     "经历/记录/考试.mdenc",
     "经历/记录/负债.mdenc",
     "经历/记录/密码.mdenc",
-    "经历/记录/头像.png",
-    "工作/网方华信/开发日报.mdenc",
-    "经历/2025年/2025年12月24日.mdenc",
-    "经历/2026年",
     "读书/想读的书.md",
     "读书/议论/架构设计原则.md",
     "读书/议论/张小龙的微信设计观.md",
