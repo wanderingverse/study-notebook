@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2e15825533e48735",
+        "id": "4784654231bd9835",
         "type": "tabs",
         "children": [
           {
-            "id": "0a1e293f0ef9c937",
+            "id": "81ac120767299cd8",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
-              "state": {
-                "file": "经历/2026年/2026年2月3日.mdenc",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026年2月3日"
+              "title": "新标签页"
             }
           }
         ]
@@ -161,6 +157,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -172,17 +169,17 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "0a1e293f0ef9c937",
+  "active": "81ac120767299cd8",
   "lastOpenFiles": [
+    "经历/记录/命数/命数.mdenc",
+    "经历/记录/命数/提示词.mdenc",
     "经历/记录/日常.mdenc",
     "经历/记录/密码.mdenc",
     "经历/记录/考试.mdenc",
     "经历/记录/负债.mdenc",
     "经历/2026年/2026年1月31日.mdenc",
     "经历/2026年/2026年2月3日.mdenc",
-    "经历/记录/命数/提示词.mdenc",
     "经历/记录/命数/本人.mdenc",
-    "经历/记录/命数/命数.mdenc",
     "经历/2026年/2026年1月27日.mdenc",
     "经历/2026年/2026年1月26日.mdenc",
     "经历/记录/头像.png",
