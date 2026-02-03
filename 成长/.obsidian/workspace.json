@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4784654231bd9835",
+        "id": "8d493fa8c5c55177",
         "type": "tabs",
         "children": [
           {
-            "id": "81ac120767299cd8",
+            "id": "f7d35c02540f639d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -169,7 +169,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "81ac120767299cd8",
+  "active": "f7d35c02540f639d",
   "lastOpenFiles": [
     "经历/记录/命数/命数.mdenc",
     "经历/记录/命数/提示词.mdenc",
