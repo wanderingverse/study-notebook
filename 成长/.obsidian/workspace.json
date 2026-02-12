@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d04ea78e71d7fb84",
+        "id": "c44208185f81b8fe",
         "type": "tabs",
         "children": [
           {
-            "id": "165a9d3013185cc5",
+            "id": "d7bed6a7edbb1dea",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "经历/记录/命数/命数.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "命数"
             }
           }
         ]
@@ -173,19 +173,19 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "165a9d3013185cc5",
+  "active": "d7bed6a7edbb1dea",
   "lastOpenFiles": [
     "经历/记录/负债.mdenc",
-    "经历/2026年/2026年2月7日.mdenc",
     "经历/记录/命数/命数.mdenc",
+    "经历/记录/密码.mdenc",
+    "经历/2026年/2026年2月9日.mdenc",
+    "经历/记录/考试.mdenc",
+    "经历/2026年/2026年2月7日.mdenc",
     "经历/记录/命数/提示词.mdenc",
     "经历/记录/日常.mdenc",
-    "经历/记录/密码.mdenc",
-    "经历/记录/考试.mdenc",
     "经历/2026年/2026年1月31日.mdenc",
     "经历/2026年/2026年2月3日.mdenc",
     "经历/记录/命数/本人.mdenc",
-    "经历/2026年/2026年1月27日.mdenc",
     "经历/记录/头像.png",
     "读书/想读的书.md",
     "读书/议论/架构设计原则.md",
