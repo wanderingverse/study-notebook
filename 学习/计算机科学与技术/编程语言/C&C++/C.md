@@ -250,7 +250,7 @@ n为正整数（不允许数组的长度是0），且为编译时常量。
 ###### 一维数组
 使用索引（下标）值**随机访问**或修改数组中的元素：`数组名[索引值]`。随机访问指能够直接、立即访问序列中的任何一个元素，而不需要先访问其他元素。亦即：访问第n个元素不依赖于序列中的其他元素。它的时间复杂度是O(1)。
 C语言不会对数组访问的下标进行自动检查。若访问非法下标将会导致未定义的行为，如程序崩溃或返回错误数据等。
-将数组作为参数传递给函数时，传递的是数组首元素的地址。因此在函数内部无法通过此参数获取到数组长度信息（函数内部使用sizeof运算符计算时，计算出的是指针变量的大小，而不是数组的大小）。数组长度信息需作为额外参数传递。
+将数组作为参数传递给函数时，传递的是**数组首元素的地址**。因此在函数内部无法通过此参数获取到数组长度信息（函数内部使用sizeof运算符计算时，计算出的是指针变量的大小，而不是数组的大小）。数组长度信息需作为额外参数传递。
 #### 指针
 ##### 内存地址
 内存地址是（虚拟）内存空间中某个位置的唯一性标识。由于现代计算机的最小寻址单位是每8位1个字节，所以可以直接认为内存地址就是虚拟内存空间中某一个字节区域的唯一标识。
@@ -411,7 +411,7 @@ struct 结构体类型名 结构体变量名 = {成员变量1的初始化值,成
 ```C
 结构体类型别名 结构体变量名 = {成员变量1的初始化值,成员变量2的初始化值,……}
 ```
-按结构体定义时的顺序，逐一对应给成员进行赋值。若某个成员未被显式初始化，则应用该成员变量对应的默认初始化值。
+按结构体定义时的顺序，逐一对应给成员进行赋值。若某个成员未被显式初始化，则应用该成员变量对应的**默认初始化值**。
 ##### 操作结构体成员
 使用`.`结构体成员运算符访问和操作结构体中的成员。
 ```C
@@ -629,26 +629,26 @@ typedef struct linked_list_node {
     DataType data;
     // 指针域，此处存储该节点的后继节点
     struct linked_list_node *next;
-} LinedListNode;
+} LinkedListNode;
 
 // 链表结构体类型
 typedef struct linked_list {
     // 头指针
-    LinedListNode *head;
+    LinkedListNode *head;
     // 尾指针
-    LinedListNode *tail;
-} LinedList;
+    LinkedListNode *tail;
+} LinkedList;
 
 // 头插法：将给定的数据插入到链表头部
-void headInsert(LinedList *plist, DataType data);
+void headInsert(LinkedList *plist, DataType data);
 // 尾插法：将给定的数据追加到链表尾部
-void tailInsert(LinedList *plist, DataType data);
+void tailInsert(LinkedList *plist, DataType data);
 // 根据大小插入一个新结点
-void sortInsert(LinedList * plist, DataType data);
+void sortInsert(LinkedList *plist, DataType data);
 // 打印单链表
-void printList(LinedList * plist);
+void printList(LinkedList *plist);
 // 根据节点数据删除该结点
-void deleteByData(LinedList *plist, DataType data);
+void deleteByData(LinkedList *plist, DataType data);
 ```
 ## 算法
 ### 枚举思想
@@ -723,5 +723,7 @@ https://www.bilibili.com/video/BV1C7411K79w/?spm_id_from=333.337.search-card.all
 1. 用m除以n，得到商和余数r，用栈结构入栈余数r（保证先进后出）。
 2. 商视为除数，重复步骤1，直到商为 0 时停止。
 3. 出栈所有余数，得到的序列即为十进制数m的n进制数。
-#### 直线分平面
+#### 分平面问题
+##### 直线分平面
 
+##### 折线分平面
