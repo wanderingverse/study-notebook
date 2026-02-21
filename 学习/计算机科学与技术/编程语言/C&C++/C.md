@@ -621,12 +621,12 @@ double sqrt(double num);
 由一系列结点单向链接组成的数据结构，简称单链表。
 ```C
 // 抽象出数据类型，便于工程维护。此处以 int 类型数据示例
-typedef int DataType;
+typedef int DATA_TYPE;
 
 // 链表节点结构体类型
 typedef struct linked_list_node {
     // 数据域
-    DataType data;
+    DATA_TYPE data;
     // 指针域，此处存储该节点的后继节点
     struct linked_list_node *next;
 } LinkedListNode;
@@ -640,15 +640,17 @@ typedef struct linked_list {
 } LinkedList;
 
 // 头插法：将给定的数据插入到链表头部
-void headInsert(LinkedList *plist, DataType data);
+void headInsert(LinkedList *plist, DATA_TYPE data);
 // 尾插法：将给定的数据追加到链表尾部
-void tailInsert(LinkedList *plist, DataType data);
+void tailInsert(LinkedList *plist, DATA_TYPE data);
 // 根据大小插入一个新结点
-void sortInsert(LinkedList *plist, DataType data);
+void sortInsert(LinkedList *plist, DATA_TYPE data);
 // 打印单链表
 void printList(LinkedList *plist);
 // 根据节点数据删除该结点
-void deleteByData(LinkedList *plist, DataType data);
+void deleteByData(LinkedList *plist, DATA_TYPE data);
+// 合并两个升序链表：src 合并到 dest
+void mergeSortedLists(LinkedList *dest, LinkedList *src);
 ```
 ## 算法
 ### 枚举思想
@@ -727,3 +729,4 @@ https://www.bilibili.com/video/BV1C7411K79w/?spm_id_from=333.337.search-card.all
 ##### 直线分平面
 
 ##### 折线分平面
+#### 约瑟夫环（Josephus Problem）
