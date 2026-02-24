@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/项目管理/人月神话.md",
+                "file": "计算机科学与技术/编程语言/C&C++/C.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "人月神话"
+              "title": "C"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/项目管理/人月神话.md",
+                "file": "计算机科学与技术/编程语言/C&C++/C.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "人月神话 的大纲"
+              "title": "C 的大纲"
             }
           },
           {
@@ -167,8 +167,9 @@
       "publish:发布更改": false
     }
   },
-  "active": "42664f1b013c4ba5",
+  "active": "32892aa80c17efe7",
   "lastOpenFiles": [
+    "计算机科学与技术/项目管理/人月神话.md",
     "计算机科学与技术/图论/图论.md",
     "计算机科学与技术/数字电子技术/数字电子技术基础.md",
     "计算机科学与技术/数据库系统原理/MySQL.md",
@@ -198,7 +199,6 @@
     "计算机科学与技术/编程语言/C&C++/src/链表类型.png",
     "计算机科学与技术/编程语言/C&C++/src",
     "计算机科学与技术/数字电子技术",
-    "临时/Mockito.md",
     "计算机科学与技术/单片机/PZ-ISP.exe",
     "计算机科学与技术/单片机",
     "计算机科学与技术/前端开发/自动化",

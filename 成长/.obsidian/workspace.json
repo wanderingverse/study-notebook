@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0d244d0b8b42c694",
+        "id": "1c8be763aca3dab4",
         "type": "tabs",
         "children": [
           {
-            "id": "90815b1df54e1cff",
+            "id": "96a90feec66cfd6c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "meld-encrypted-view",
+              "state": {
+                "file": "经历/2026年/2026年2月24日.mdenc",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2026年2月24日"
             }
           }
         ]
@@ -169,8 +173,9 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "90815b1df54e1cff",
+  "active": "96a90feec66cfd6c",
   "lastOpenFiles": [
+    "经历/2026年/2026年2月24日.mdenc",
     "经历/记录/命数/提示词.mdenc",
     "经历/记录/命数/本人.mdenc",
     "经历/记录/密码.mdenc",
@@ -181,7 +186,6 @@
     "经历/2026年/2026年2月9日.mdenc",
     "经历/记录/考试.mdenc",
     "经历/2026年/2026年2月7日.mdenc",
-    "经历/记录/日常.mdenc",
     "经历/记录/头像.png",
     "读书/想读的书.md",
     "读书/议论/架构设计原则.md",
