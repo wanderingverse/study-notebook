@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8cb65801a9f26540",
+        "id": "e5cae35324116958",
         "type": "tabs",
         "children": [
           {
-            "id": "638d12f5acff2df7",
+            "id": "5f90e8dc450b6e52",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -173,9 +173,13 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "b7cb50d0ccc53918",
+  "active": "5f90e8dc450b6e52",
   "lastOpenFiles": [
+    "经历/2026年/2026年3月8日.mdenc",
+    "经历/2026年/2026年3月7日.mdenc",
     "经历/记录/命数/提示词.mdenc",
+    "经历/记录/命数/命数.mdenc",
+    "经历/记录/命数/本人.mdenc",
     "学习/考研/备考日报.md",
     "工作/网方华信/开发日报.mdenc",
     "学习/考研",
@@ -191,12 +195,8 @@
     "阅读/话题/生活.md",
     "阅读/话题/心理.md",
     "阅读/话题/学习.md",
-    "经历/2026年/2026年3月7日.mdenc",
     "经历/2026年/2026年3月6日.mdenc",
     "经历/2026年/2026年3月5日.mdenc",
-    "经历/记录/命数/命数.mdenc",
-    "经历/2026年/2026年3月4日.mdenc",
-    "经历/2026年/2026年3月3日.mdenc",
     "经历/记录/头像.png",
     "阅读/想读的书.md"
   ]
