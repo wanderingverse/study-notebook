@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/安卓开发/scrcpy.md",
+                "file": "命理学/四柱八字.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "scrcpy"
+              "title": "四柱八字"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/安卓开发/scrcpy.md",
+                "file": "命理学/四柱八字.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "scrcpy 的大纲"
+              "title": "四柱八字 的大纲"
             }
           },
           {
@@ -169,8 +169,8 @@
   },
   "active": "32892aa80c17efe7",
   "lastOpenFiles": [
-    "计算机科学与技术/安卓开发/adb.md",
     "计算机科学与技术/安卓开发/scrcpy.md",
+    "计算机科学与技术/安卓开发/adb.md",
     "计算机科学与技术/操作系统/操作系统命令/Linux.md",
     "计算机科学与技术/编程语言/C&C++/C.md",
     "计算机科学与技术/编程语言/C&C++/C++.md",
