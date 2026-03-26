@@ -40,9 +40,16 @@ server {
 - **重新加载 Nginx 配置，重启 Nginx**：`nginx -s reload`
 - **查看 Nginx 状态**：`systemctl status nginx`
 - **配置开启自启**：`systemctl enable nginx`
+- **配置文件路径**：`nginx -t`
 
 ## 日志
 查看访问 nginx 的 IP 列表：`awk '{print $1}' /home/nginx/log/access.log | sort | uniq`
 
 前端项目部署 nginx
 https://zhuanlan.zhihu.com/p/431796992
+## 单端口映射多服务
+如何用nginx在仅向外网暴露一个端口的情况下做多个内网服务的反向代理？
+用魔法DNS。互联网上有免费的公益泛解析 DNS 服务，比如 [http://nip.io](https://link.zhihu.com/?target=http%3A//nip.io)或 [http://sslip.io](https://link.zhihu.com/?target=http%3A//sslip.io)。你把 IP 地址写在域名前面，它就自动解析到这个 IP
+https://www.zhihu.com/question/640673121/answer/2020137422688662795
+## 同类工具
+traefik：专为云原生和容器环境设计的自动化智能网关。适用于 docker 内容器的管理，可设置访问密码等。
