@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/后端开发/Nginx.md",
+                "file": "计算机科学与技术/安卓开发/scrcpy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nginx"
+              "title": "scrcpy"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/后端开发/Nginx.md",
+                "file": "计算机科学与技术/安卓开发/scrcpy.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Nginx 的大纲"
+              "title": "scrcpy 的大纲"
             }
           },
           {
@@ -167,14 +167,14 @@
       "publish:发布更改": false
     }
   },
-  "active": "42664f1b013c4ba5",
+  "active": "ba0b5a06697eb533",
   "lastOpenFiles": [
-    "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
-    "计算机科学与技术/人工智能/AI 视觉/ComfyUI.md",
+    "计算机科学与技术/安卓开发/adb.md",
     "计算机科学与技术/安卓开发/scrcpy.md",
     "计算机科学与技术/后端开发/Nginx.md",
+    "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
+    "计算机科学与技术/人工智能/AI 视觉/ComfyUI.md",
     "计算机科学与技术/操作系统/操作系统命令/Linux.md",
-    "计算机科学与技术/安卓开发/adb.md",
     "计算机科学与技术/后端开发/ElasticSearch.md",
     "计算机科学与技术/人工智能/程序和工具/OpenClaw.md",
     "计算机科学与技术/编译原理/编译原理.md",

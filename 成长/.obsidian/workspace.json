@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9dfdd9baa47be304",
+        "id": "73e788b467146d91",
         "type": "tabs",
         "children": [
           {
-            "id": "60908c14f6500e22",
+            "id": "0ba3fabf591a1612",
             "type": "leaf",
             "state": {
-              "type": "meld-encrypted-view",
+              "type": "markdown",
               "state": {
-                "file": "经历/记录/密码.mdenc",
+                "file": "学习/考研/备考日报.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "密码"
+              "title": "备考日报"
             }
           }
         ]
@@ -173,7 +173,7 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "60908c14f6500e22",
+  "active": "0ba3fabf591a1612",
   "lastOpenFiles": [
     "经历/记录/要求.mdenc",
     "学习/考研/备考安排.md",
