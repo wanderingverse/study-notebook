@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/三维建模/Blender.md",
+                "file": "计算机科学与技术/安卓开发/scrcpy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Blender"
+              "title": "scrcpy"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/三维建模/Blender.md",
+                "file": "计算机科学与技术/安卓开发/scrcpy.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Blender 的大纲"
+              "title": "scrcpy 的大纲"
             }
           },
           {
@@ -167,8 +167,9 @@
       "publish:发布更改": false
     }
   },
-  "active": "42664f1b013c4ba5",
+  "active": "ba0b5a06697eb533",
   "lastOpenFiles": [
+    "计算机科学与技术/三维建模/Blender.md",
     "计算机科学与技术/人工智能/AI 视觉/ComfyUI.md",
     "计算机科学与技术/安卓开发/scrcpy.md",
     "计算机科学与技术/安卓开发/adb.md",
@@ -195,7 +196,6 @@
     "计算机科学与技术/离散数学/离散数学.md",
     "计算机科学与技术/计算机网络/第一章 计算机网络体系结构.md",
     "计算机科学与技术/计算机网络/第二章 物理层.md",
-    "计算机科学与技术/编程语言/Java/Java 基础.md",
     "计算机科学与技术/操作系统/文件管理/src/索引文件.png",
     "计算机科学与技术/编程语言/C&C++/src/链表类型.png",
     "计算机科学与技术/编程语言/C&C++/src",
