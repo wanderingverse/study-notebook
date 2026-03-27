@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73e788b467146d91",
+        "id": "14260f4367518802",
         "type": "tabs",
         "children": [
           {
-            "id": "0ba3fabf591a1612",
+            "id": "42abfc2e1eb93aa6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -173,11 +173,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "0ba3fabf591a1612",
+  "active": "42abfc2e1eb93aa6",
   "lastOpenFiles": [
+    "学习/考研/备考日报.md",
     "经历/记录/要求.mdenc",
     "学习/考研/备考安排.md",
-    "学习/考研/备考日报.md",
     "经历/记录/日常.mdenc",
     "经历/记录/命数/提示词.mdenc",
     "经历/记录/密码.mdenc",
@@ -188,7 +188,6 @@
     "经历/记录/命数/命数.mdenc",
     "经历/记录/命数/本人.mdenc",
     "经历/2026年/2026年3月8日.mdenc",
-    "经历/2026年/2026年3月7日.mdenc",
     "阅读/摘抄/短句.md",
     "阅读/摘抄/描述.md",
     "阅读/议论/架构设计原则.md",
