@@ -1,9 +1,10 @@
 # CentOS
+## 命令
 - `su -`：切换用户到默认用户（默认 root）
 - `ps -ef | grep 模糊查询内容`
 - `kill -9 pid号`
-- `netstat -ntl`
-- 查看系统内存（KB）使用情况：`free`
+- 查端口信息：`netstat -ntl`、`ss -ntpl`
+- 查看系统内存（KB）使用情况：`free -h`
 	- total：总物理内存
 	- used：已经使用的内存
 	- free：剩余（未使用的）内存
@@ -65,3 +66,5 @@
 	- 退出 bash：`exit`
 - 删除一个容器：`docker rm 容器名`
 - 删除一个镜像：`docker rmi 镜像名
+## 快捷键
+- 清屏：`ctrl+l`，等价于 `clear`
