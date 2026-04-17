@@ -25,7 +25,8 @@ Redis 默认提供了 16 个数据库，数据库索引分别从 0 到 15。在�
 编辑 `redis.conf` 文件进行配置。
 - `redis` 密码：`requirepass 密码`
 ## 连接客户端
-[Redis Insight](https://redis.io/insight/)
+[RedisInsight](https://github.com/redis/RedisInsight)
+连接格式：redis://用户名:密码@主机:端口
 ## SpringBoot 集成
 ### 添加 Maven 依赖
 ```xml
