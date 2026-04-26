@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "91723c79525781fd",
+        "id": "f5bb2ddb555a3871",
         "type": "tabs",
         "children": [
           {
-            "id": "086354f4c523bf71",
+            "id": "acf3e53064575973",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/2026年/2026年4月24日.mdenc",
+                "file": "经历/2026年/2026年4月26日.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026年4月24日"
+              "title": "2026年4月26日"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/2026年/2026年4月24日.mdenc",
+                "file": "经历/2026年/2026年4月26日.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026年4月24日 的大纲"
+              "title": "2026年4月26日 的大纲"
             }
           }
         ],
@@ -172,21 +172,22 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "b7cb50d0ccc53918",
+  "active": "acf3e53064575973",
   "lastOpenFiles": [
+    "经历/2025年/2025年5月21日.mdenc",
+    "经历/2026年/2026年4月26日.mdenc",
+    "经历/2025年/2025年5月22日.mdenc",
+    "经历/2025年/2025年6月23日.mdenc",
+    "经历/2025年/2025年7月12日.mdenc",
+    "经历/2025年/2025年7月30日.mdenc",
+    "经历/记录/命数/提示词.mdenc",
     "学习/考研/备考安排.md",
     "经历/2026年/2026年4月24日.mdenc",
     "学习/考研/备考日报.md",
-    "经历/记录/命数/提示词.mdenc",
     "经历/记录/命数/命数.mdenc",
     "经历/2026年/2026年4月16日.mdenc",
     "经历/2026年/2026年4月14日.mdenc",
     "经历/2026年/2026年4月10日.mdenc",
-    "工作/网方华信/开发日报.mdenc",
-    "经历/2026年/2026年4月8日.mdenc",
-    "经历/2026年/2026年4月2日.mdenc",
-    "工作/网方华信/解除劳动合同通知书.mdenc",
-    "经历/2026年/2026年4月1日.mdenc",
     "今日天气_2026-03-14.md",
     "阅读/摘抄/短句.md",
     "阅读/摘抄/描述.md",

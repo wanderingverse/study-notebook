@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "C语言",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -168,7 +167,7 @@
       "publish:发布更改": false
     }
   },
-  "active": "8c83f16bb142f0f1",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
     "计算机科学与技术/单片机/单片机.md",
     "计算机科学与技术/人工智能/模型开发/【Java】MCP 开发.md",
