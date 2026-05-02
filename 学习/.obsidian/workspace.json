@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/编程语言/C&C++/C.md",
+                "file": "命理学/四柱八字.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "C"
+              "title": "四柱八字"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/编程语言/C&C++/C.md",
+                "file": "命理学/四柱八字.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "C 的大纲"
+              "title": "四柱八字 的大纲"
             }
           },
           {
@@ -167,12 +167,13 @@
       "publish:发布更改": false
     }
   },
-  "active": "42664f1b013c4ba5",
+  "active": "8c83f16bb142f0f1",
   "lastOpenFiles": [
+    "计算机科学与技术/安卓开发/scrcpy.md",
+    "计算机科学与技术/编程语言/C&C++/C.md",
     "计算机科学与技术/单片机/单片机.md",
     "计算机科学与技术/人工智能/模型开发/【Java】MCP 开发.md",
     "计算机科学与技术/后端开发/前后端通信.md",
-    "计算机科学与技术/安卓开发/scrcpy.md",
     "计算机科学与技术/安卓开发/adb.md",
     "计算机科学与技术/人工智能/提示词/项目评审.md",
     "计算机科学与技术/人工智能/提示词/前端最佳实践与工程规范.md",
@@ -194,7 +195,6 @@
     "计算机科学与技术/后端开发/认证和授权/短信验证码授权登录.md",
     "计算机科学与技术/前端开发/前端开发基础/NodeJS.md",
     "计算机科学与技术/前端开发/Electron/Electron.md",
-    "计算机科学与技术/前端开发/自动化/playwright.md",
     "计算机科学与技术/人工智能/程序和工具",
     "计算机科学与技术/操作系统/文件管理/src/索引文件.png",
     "计算机科学与技术/编程语言/C&C++/src/链表类型.png",
