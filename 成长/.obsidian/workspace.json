@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "56ba79b87cc10b9f",
+        "id": "d3dad0f7fc112790",
         "type": "tabs",
         "children": [
           {
-            "id": "38af861448d046b8",
+            "id": "12848ff21f6510ff",
             "type": "leaf",
             "state": {
               "type": "meld-encrypted-view",
               "state": {
-                "file": "经历/2026年/2026年5月1日.mdenc",
+                "file": "经历/记录/密码.mdenc",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026年5月1日"
+              "title": "密码"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "经历/2026年/2026年5月1日.mdenc",
+                "file": "经历/记录/密码.mdenc",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026年5月1日 的大纲"
+              "title": "密码 的大纲"
             }
           }
         ],
@@ -172,8 +172,10 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "38af861448d046b8",
+  "active": "12848ff21f6510ff",
   "lastOpenFiles": [
+    "学习/考研/备考日报.md",
+    "学习/考研/备考安排.md",
     "经历/2026年/2026年5月1日.mdenc",
     "经历/2026年/2026年4月27日.mdenc",
     "经历/2025年/2025年5月21日.mdenc",
@@ -183,10 +185,7 @@
     "经历/2025年/2025年7月12日.mdenc",
     "经历/2025年/2025年7月30日.mdenc",
     "经历/记录/命数/提示词.mdenc",
-    "学习/考研/备考安排.md",
     "经历/2026年/2026年4月24日.mdenc",
-    "学习/考研/备考日报.md",
-    "经历/记录/命数/命数.mdenc",
     "今日天气_2026-03-14.md",
     "阅读/摘抄/短句.md",
     "阅读/摘抄/描述.md",
