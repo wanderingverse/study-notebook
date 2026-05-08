@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "guide.md",
+                "file": "阅读/话题/学习.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "guide 的大纲"
+              "title": "学习 的大纲"
             }
           }
         ],
@@ -172,10 +172,10 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "b7cb50d0ccc53918",
+  "active": "392552b06b9b97e3",
   "lastOpenFiles": [
-    "阅读/话题/学习.md",
     "guide.md",
+    "阅读/话题/学习.md",
     "经历/2026年/2026年5月3日.mdenc",
     "学习/考研/备考日报.md",
     "学习/考研/备考安排.md",
