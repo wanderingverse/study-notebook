@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "命理学/四柱八字.md",
+                "file": "计算机科学与技术/安卓开发/scrcpy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "四柱八字"
+              "title": "scrcpy"
             }
           }
         ]
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "命理学/四柱八字.md",
+                "file": "计算机科学与技术/安卓开发/scrcpy.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "四柱八字 的大纲"
+              "title": "scrcpy 的大纲"
             }
           },
           {
@@ -167,8 +167,9 @@
       "publish:发布更改": false
     }
   },
-  "active": "8c83f16bb142f0f1",
+  "active": "42664f1b013c4ba5",
   "lastOpenFiles": [
+    "命理学/四柱八字.md",
     "计算机科学与技术/安卓开发/scrcpy.md",
     "计算机科学与技术/编程语言/C&C++/C.md",
     "计算机科学与技术/单片机/单片机.md",
@@ -194,7 +195,6 @@
     "计算机科学与技术/后端开发/认证和授权/Google 授权登录.md",
     "计算机科学与技术/后端开发/认证和授权/短信验证码授权登录.md",
     "计算机科学与技术/前端开发/前端开发基础/NodeJS.md",
-    "计算机科学与技术/前端开发/Electron/Electron.md",
     "计算机科学与技术/人工智能/程序和工具",
     "计算机科学与技术/操作系统/文件管理/src/索引文件.png",
     "计算机科学与技术/编程语言/C&C++/src/链表类型.png",
