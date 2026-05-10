@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6315b2539f67ac16",
+        "id": "4748e2a20650ac0e",
         "type": "tabs",
         "children": [
           {
-            "id": "392552b06b9b97e3",
+            "id": "13e69b5edba1dd0f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "阅读/话题/学习.md",
+                "file": "学习/考研/备考日报.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "学习"
+              "title": "备考日报"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "阅读/话题/学习.md",
+                "file": "学习/考研/备考日报.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "学习 的大纲"
+              "title": "备考日报 的大纲"
             }
           }
         ],
@@ -172,10 +172,12 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "392552b06b9b97e3",
+  "active": "13e69b5edba1dd0f",
   "lastOpenFiles": [
-    "guide.md",
+    "经历/记录/日常.mdenc",
+    "经历/记录/命数/提示词.mdenc",
     "阅读/话题/学习.md",
+    "guide.md",
     "经历/2026年/2026年5月3日.mdenc",
     "学习/考研/备考日报.md",
     "学习/考研/备考安排.md",
@@ -187,7 +189,6 @@
     "经历/2025年/2025年6月23日.mdenc",
     "经历/2025年/2025年7月12日.mdenc",
     "经历/2025年/2025年7月30日.mdenc",
-    "经历/记录/命数/提示词.mdenc",
     "今日天气_2026-03-14.md",
     "阅读/摘抄/短句.md",
     "阅读/摘抄/描述.md",
