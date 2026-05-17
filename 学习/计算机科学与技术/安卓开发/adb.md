@@ -4,3 +4,4 @@
 	- Windows：adb shell dumpsys activity activities | findstr mResumedActivity
 	- Linux：adb shell dumpsys activity activities | grep mResumedActivity
 - 重启手机：adb reboot
+- 进入系统命令行：adb shell

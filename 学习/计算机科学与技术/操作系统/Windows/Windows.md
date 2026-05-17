@@ -1,2 +1,3 @@
 - 查看所有【或指定端口】的端口开放信息：`netstat -ano[ | findstr :端口号]`
 - 终止指定 PID 对应的进程：`taskkill -f -pid pid号`
+- arp -a：

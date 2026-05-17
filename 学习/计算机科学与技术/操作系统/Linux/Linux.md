@@ -66,5 +66,14 @@
 	- 退出 bash：`exit`
 - 删除一个容器：`docker rm 容器名`
 - 删除一个镜像：`docker rmi 镜像名
-## 快捷键
+# 软件包管理器
+## pkg
+- 更新软件列表：pkg update
+- 升级已安装的所有软件：pkg upgrade
+- 安装软件：pkg install <软件名>
+	- 默认安装最新稳定版
+- 搜索软件：pkg search <关键词>
+- 卸载软件：pkg uninstall <软件名>
+- 列出已安装的软件：pkg list-installed
+# 快捷键
 - 清屏：`ctrl+l`，等价于 `clear`
