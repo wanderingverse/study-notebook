@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "37e5e27e3854bfe1",
+        "id": "2f91fc9995c9ad7e",
         "type": "tabs",
         "children": [
           {
-            "id": "932c6fce33d26353",
+            "id": "c4f7940878dbe801",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习/考研/备考日报.md",
+                "file": "阅读/议论/置身钉内.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "备考日报"
+              "title": "置身钉内"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习/考研/备考日报.md",
+                "file": "阅读/议论/置身钉内.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "备考日报 的大纲"
+              "title": "置身钉内 的大纲"
             }
           }
         ],
@@ -172,8 +172,11 @@
       "meld-encrypt:Encrypt/Decrypt In-place": false
     }
   },
-  "active": "932c6fce33d26353",
+  "active": "c4f7940878dbe801",
   "lastOpenFiles": [
+    "阅读/议论/置身钉内.md",
+    "经历/记录/考试.mdenc",
+    "经历/2026年/2026年6月4日.mdenc",
     "学习/考研/备考日报.md",
     "经历/2025年/2025年12月24日.mdenc",
     "经历/2026年/2026年5月12日.mdenc",
@@ -186,8 +189,6 @@
     "经历/2026年/2026年5月1日.mdenc",
     "经历/2026年/2026年4月27日.mdenc",
     "经历/2025年/2025年5月21日.mdenc",
-    "经历/2026年/2026年4月26日.mdenc",
-    "经历/2025年/2025年5月22日.mdenc",
     "今日天气_2026-03-14.md",
     "阅读/摘抄/短句.md",
     "阅读/摘抄/描述.md",

@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机科学与技术/安卓开发/Termux.md",
+                "file": "计算机科学与技术/人工智能/程序和工具/OpenClaw.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Termux"
+              "title": "OpenClaw"
             }
           },
           {
@@ -124,13 +124,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机科学与技术/安卓开发/Termux.md",
+                "file": "计算机科学与技术/人工智能/程序和工具/OpenClaw.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Termux 的大纲"
+              "title": "OpenClaw 的大纲"
             }
           },
           {
@@ -184,9 +184,12 @@
   },
   "active": "e1039c8c94136840",
   "lastOpenFiles": [
+    "计算机科学与技术/人工智能/AI 视觉/ComfyUI.md",
+    "计算机科学与技术/人工智能/程序和工具/OpenClaw.md",
+    "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
+    "计算机科学与技术/安卓开发/Termux.md",
     "计算机科学与技术/安卓开发/scrcpy.md",
     "计算机科学与技术/安卓开发/adb.md",
-    "计算机科学与技术/安卓开发/Termux.md",
     "计算机科学与技术/操作系统/Windows/Windows.md",
     "计算机科学与技术/计算机网络/网络管理.md",
     "计算机科学与技术/计算机网络/Nmap.md",
@@ -210,10 +213,7 @@
     "计算机科学与技术/人工智能/提示词/前端 UI 设计与优化.md",
     "计算机科学与技术/人工智能/提示词/技术问答规范.md",
     "计算机科学与技术/人工智能/提示词/【个人成长】日复盘.md",
-    "计算机科学与技术/人工智能/提示词/温柔活泼型女朋友设定.md",
     "计算机科学与技术/人工智能/提示词/ER 图生成建表语句.md",
-    "计算机科学与技术/人工智能/模型开发/【Java】AI 大模型应用开发.md",
-    "计算机科学与技术/后端开发/Redis.md",
     "计算机科学与技术/人工智能/程序和工具",
     "计算机科学与技术/操作系统/文件管理/src/索引文件.png",
     "计算机科学与技术/编程语言/C&C++/src/链表类型.png",
