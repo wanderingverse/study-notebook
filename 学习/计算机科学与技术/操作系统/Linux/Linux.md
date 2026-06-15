@@ -77,3 +77,7 @@
 - 列出已安装的软件：pkg list-installed
 # 快捷键
 - 清屏：`ctrl+l`，等价于 `clear`
+# SSH
+## 连接工具
+Tabby
+[PuTTY](https://putty.org/index.html)

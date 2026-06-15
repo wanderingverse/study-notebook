@@ -1,4 +1,6 @@
-技能下载：[OpenClaw Skills Directory | Best ClawHub Plugins (ex-Moltbot)](https://openclawskills.wiki/)
+技能下载：
+1. [OpenClaw Skills Directory](https://openclawskills.wiki/)
+2. [ClawHub](https://clawhub.ai/)
 配置文件路径：`.openclaw\openclaw.json`，修改后需重启网关。
 初始化配置：openclaw onboard
 启动网关：openclaw gateway
@@ -58,6 +60,7 @@ OpenClaw 拥有后台 Dreaming（做梦整理）机制（可在配置中开启�
 在 OpenClaw 中，特定任务的工作流被称为 Skills。
 - 项目/工作区局部 Skills：~/.openclaw/workspace/skills
 - 全局通用 Skills：~/.openclaw/skills/
+#### 安装 skills
 #### 自定义工作流
 - 在 skills 目录下建一个新文件夹，如`skills/my-workflow/`
 - 在此文件夹下创建一个 SKILL.md 文件
@@ -133,8 +136,9 @@ ClawNode 它安装在手机上后，会将智能手机转换为一个受控的 A
     }
   },
 ```
-放行网关指令。
 然后使用 openclaw nodes status 命令查看连接情况，观察有无功能输出。若没有，执行openclaw nodes pending，查询到请求ID，然后执行：openclaw devices approve 查询到的ID。直到成功授权，有功能输出。
+### MCP Servers
+
 ### 自动化
 #### 浏览器自动化
 openclaw 可自动化控制内置浏览器。文档：[浏览器（由 OpenClaw 管理）](https://docs.openclaw.ai/zh-CN/tools/browser)

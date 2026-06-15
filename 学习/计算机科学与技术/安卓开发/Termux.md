@@ -19,7 +19,28 @@
 - 访问内部存储空间：termux-setup-storage
 	- 此命令将创建一个名为 `storage` 的文件夹（软链接）
 	- 手机内部存储位于 `storage/shared` 目录下。
+- 查询系统属性服务：getprop
+	- 此命令是 Android 系统提供的命令
+	- Android版本：getprop ro.build.version.release
+	- 手机型号：getprop ro.product.model
+	- 双卡状态：getprop gsm.sim.state
 ## 常用操作
+### 获取 Android 信息
+#### 获取 SIM 卡槽状态和运营商
+```bash
+echo "{\"sim1\":{\"state\":\"$(getprop gsm.sim.state | cut -d',' -f1)\",\"operator\":\"$(getprop gsm.operator.alpha0)\"},\"sim2\":{\"state\":\"$(getprop gsm.sim.state | cut -d',' -f2)\",\"operator\":\"$(getprop gsm.operator.alpha1)\"}}"
+```
+### proot-distro
+Termux 官方的脚本管理器，可以方便地在安卓手机上安装多个 Linux 发行版。
+#### 安装
+- 安装 proot-distro：`pkg install proot-distro`
+- 安装 ubuntu 系统：`proot-distro install ubuntu`
+#### 常用命令
+- 登陆系统：`proot-distro login ubuntu`
+- 登出系统：`exit`
+#### 常用操作
+在 Termux home 目录创建软链接 `ubuntu`，链接到 `ubuntu root` 根目录，以便在 Termux 中操作 ubuntu 内部文件。
+`ln -s /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/root ~/ubuntu`
 ### termux-api
 Termux 配套的安卓插件 + 命令行工具，能够让 Termux 命令行直接调用手机硬件、系统功能等，把安卓系统能力开放给终端脚本使用。需要[下载](https://github.com/termux/termux-api)并安装到安卓手机。
 1. 下载并安装到安卓手机，启动 app，按提示进行授权。
